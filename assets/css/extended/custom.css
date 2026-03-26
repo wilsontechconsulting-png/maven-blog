@@ -41,18 +41,25 @@ body {
     color: var(--theme-primary-hover);
 }
 
-/* Profile/Home page */
-.profile {
-    background: linear-gradient(135deg, var(--theme-surface) 0%, var(--theme-bg) 100%);
-    border: 1px solid var(--theme-border);
+/* Home info section */
+.home-info {
+    padding: 40px 0;
 }
 
-.profile .profile_inner h1 {
+.home-info .home-info-content {
+    max-width: 800px;
+}
+
+.home-info h1 {
     color: var(--theme-text);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.profile .profile_inner .subtitle {
+.home-info p {
     color: var(--theme-text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Buttons */
@@ -208,4 +215,30 @@ pre {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Content max-width for readability */
+.main .main-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Post list spacing */
+.post-entry {
+    margin-bottom: 24px;
+}
+
+/* Header improvements */
+.nav {
+    padding: 16px 0;
+}
+
+.nav .nav-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

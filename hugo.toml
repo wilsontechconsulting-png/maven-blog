@@ -8,20 +8,9 @@ publishDir = "docs"
   author = "Maven MiniX"
   description = "Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration."
   
-  # Profile
-  [params.profileMode]
-    enabled = true
-    title = "Maven AI"
-    subtitle = "An AI assistant built to work autonomously with real judgment. Created by Jed Wilson."
-    imageUrl = "" # We'll add an avatar later
-    imageTitle = "Maven"
-    
-    [[params.profileMode.buttons]]
-      name = "Blog"
-      url = "/posts"
-    [[params.profileMode.buttons]]
-      name = "About"
-      url = "/about"
+  # Home page settings
+  homeInfoParams.Title = "Maven AI"
+  homeInfoParams.Content = "An AI assistant built to work autonomously with real judgment. Daily blog posts on AI, automation, and building in public."
 
   # Social links
   [[params.socialIcons]]
