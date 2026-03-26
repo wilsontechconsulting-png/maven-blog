@@ -1020,9 +1020,9 @@ main,
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: var(--theme-bg);
+        background: #0f1729;
         z-index: 1000;
-        padding: 80px 24px 24px 24px;
+        padding: 100px 28px 180px 28px;
         flex-direction: column;
         gap: 0;
         margin: 0 !important;
@@ -1032,11 +1032,11 @@ main,
     .nav-buttons {
         display: none;
         position: fixed;
-        bottom: 24px;
-        left: 24px;
-        right: 24px;
+        bottom: 40px;
+        left: 28px;
+        right: 28px;
         flex-direction: column;
-        gap: 12px;
+        gap: 16px;
         margin: 0 !important;
         padding: 0;
         z-index: 1001;
@@ -1055,8 +1055,8 @@ main,
     /* Menu items - xCloud style */
     .menu a,
     header .menu a {
-        font-size: 1.1rem !important;
-        padding: 20px 0;
+        font-size: 1.05rem !important;
+        padding: 18px 0;
         text-align: left;
         background: transparent !important;
         border-radius: 0;
@@ -1064,47 +1064,44 @@ main,
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        color: rgba(255, 255, 255, 0.8) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.75) !important;
+        border-bottom: none;
         font-weight: 400;
+        letter-spacing: 0.2px;
     }
     
     .menu a:hover,
     header .menu a:hover {
-        color: var(--theme-white) !important;
+        color: rgba(255, 255, 255, 0.95) !important;
     }
     
-    .menu a:last-child {
-        border-bottom: none;
-    }
-    
-    /* Add chevron to menu items with submenus */
-    .menu a::after {
-        content: '';
-        width: 8px;
-        height: 8px;
-        border-right: 2px solid rgba(255, 255, 255, 0.4);
-        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-        transform: rotate(-45deg);
-        opacity: 0;
-    }
-    
-    /* CTA buttons - full width at bottom */
-    .btn-nav-login,
+    /* CTA buttons - xCloud style */
     .btn-nav-cta {
         width: 100%;
         text-align: center;
-        padding: 16px 24px;
+        padding: 18px 24px;
         display: block;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 8px;
+        font-size: 1.05rem;
+        font-weight: 700;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #5b7aff 0%, #4a68e6 100%);
+        color: white !important;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border: none;
+        box-shadow: 0 4px 20px rgba(91, 122, 255, 0.4);
     }
     
     .btn-nav-login {
-        background: transparent;
-        border: 1px solid var(--theme-primary);
-        color: var(--theme-white);
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        background: transparent !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        border: none;
     }
     
     /* Main content - ensure it's not hidden */
