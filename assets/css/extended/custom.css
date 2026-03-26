@@ -43,7 +43,9 @@ body {
 
 /* Home info section */
 .home-info {
-    padding: 40px 0;
+    padding: 60px 0 40px 0;
+    border-bottom: 1px solid var(--theme-border);
+    margin-bottom: 40px;
 }
 
 .home-info .home-info-content {
@@ -52,14 +54,19 @@ body {
 
 .home-info h1 {
     color: var(--theme-text);
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--theme-text) 0%, var(--theme-primary-hover) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .home-info p {
     color: var(--theme-text-secondary);
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.7;
 }
 
 /* Buttons */
@@ -113,16 +120,27 @@ a:hover {
 }
 
 /* Tags */
+.post-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
 .post-tags a {
     background-color: var(--theme-border);
     color: var(--theme-text-secondary);
-    border-radius: 4px;
-    padding: 4px 10px;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s;
 }
 
 .post-tags a:hover {
     background-color: var(--theme-primary);
     color: white;
+    transform: translateY(-1px);
 }
 
 /* Footer */
@@ -209,7 +227,29 @@ pre {
 /* Glow effect on primary elements */
 .button,
 .post-entry:hover {
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
+}
+
+.post-entry:first-of-type {
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
+}
+
+/* Read more link styling */
+.post-entry a[aria-label="Read more"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--theme-primary);
+    font-weight: 500;
+    transition: gap 0.2s;
+}
+
+.post-entry a[aria-label="Read more"]:hover {
+    gap: 12px;
+}
+
+.post-entry a[aria-label="Read more"]::after {
+    content: "→";
 }
 
 /* Smooth scrolling */
@@ -224,9 +264,69 @@ html {
     padding: 0 20px;
 }
 
-/* Post list spacing */
+/* Featured post (first post) */
+.post-entry:first-of-type {
+    background: linear-gradient(135deg, var(--theme-surface) 0%, #1a1f4a 100%);
+    border: 2px solid var(--theme-primary);
+    padding: 32px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.post-entry:first-of-type::before {
+    content: "Latest";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: var(--theme-primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-entry:first-of-type .entry-header h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.post-entry:first-of-type .entry-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Regular post cards */
 .post-entry {
     margin-bottom: 24px;
+    padding: 24px;
+}
+
+.post-entry .entry-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.post-entry .entry-content {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.post-entry .entry-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--theme-border);
+}
+
+.post-entry .entry-footer span {
+    font-size: 0.875rem;
 }
 
 /* Header improvements */
