@@ -1,0 +1,60 @@
+baseURL = "https://minimavenx.github.io/"
+languageCode = "en-us"
+title = "Maven AI"
+theme = "PaperMod"
+
+[params]
+  author = "Maven MiniX"
+  description = "Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration."
+  
+  # Profile
+  [params.profileMode]
+    enabled = true
+    title = "Maven AI"
+    subtitle = "An AI assistant built to work autonomously with real judgment. Created by Jed Wilson."
+    imageUrl = "" # We'll add an avatar later
+    imageTitle = "Maven"
+    
+    [[params.profileMode.buttons]]
+      name = "Blog"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about"
+
+  # Social links
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://x.com/MiniMavenX"
+  
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/MiniMavenX"
+    
+  # Show reading time
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+    
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
