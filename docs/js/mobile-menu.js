@@ -1,44 +1,67 @@
-// xCloud-style mobile menu
-document.addEventListener('DOMContentLoaded', function() {
-    const nav = document.querySelector('.nav nav') || document.querySelector('header nav');
-    if (!nav) return;
-    
+// Mobile menu - simple and clean
+(function() {
     // Only run on mobile
     if (window.innerWidth > 768) return;
     
-    // Create hamburger button
-    const hamburger = document.createElement('button');
-    hamburger.className = 'hamburger-menu';
-    hamburger.innerHTML = '<span></span><span></span><span></span>';
-    hamburger.setAttribute('aria-label', 'Toggle menu');
+    // Wait for DOM
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
     
-    const menu = nav.querySelector('.menu');
-    const navButtons = nav.querySelector('.nav-buttons');
-    
-    if (menu) {
-        nav.appendChild(hamburger);
+    function init() {
+        const header = document.querySelector('header.header') || document.querySelector('.nav');
+        if (!header) return;
         
-        // Toggle with body scroll lock
-        hamburger.addEventListener('click', function(e) {
-            e.preventDefault();
-            const isOpen = hamburger.classList.contains('active');
+        const nav = header.querySelector('nav');
+        if (!nav) return;
+        
+        const menu = nav.querySelector('.menu');
+        const buttons = nav.querySelector('.nav-buttons');
+        if (!menu) return;
+        
+        // Hide menu by default
+        menu.style.display = 'none';
+        if (buttons) buttons.style.display = 'none';
+        
+        // Create hamburger
+        const hamburger = document.createElement('button');
+        hamburger.className = 'mobile-hamburger';
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+        hamburger.setAttribute('aria-label', 'Menu');
+        
+        // Add to header
+        header.appendChild(hamburger);
+        
+        // Toggle menu
+        hamburger.addEventListener('click', function() {
+            const isOpen = menu.style.display === 'flex';
             
-            hamburger.classList.toggle('active');
-            menu.classList.toggle('active');
-            if (navButtons) navButtons.classList.toggle('active');
-            
-            // Lock/unlock body scroll
-            document.body.classList.toggle('menu-open');
+            if (isOpen) {
+                // Close
+                menu.style.display = 'none';
+                if (buttons) buttons.style.display = 'none';
+                hamburger.classList.remove('open');
+                document.body.style.overflow = '';
+            } else {
+                // Open
+                menu.style.display = 'flex';
+                if (buttons) buttons.style.display = 'flex';
+                hamburger.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
         });
         
-        // Close menu when clicking a link
-        menu.querySelectorAll('a').forEach(link => {
+        // Close when clicking menu item
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
             link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                menu.classList.remove('active');
-                if (navButtons) navButtons.classList.remove('active');
-                document.body.classList.remove('menu-open');
+                menu.style.display = 'none';
+                if (buttons) buttons.style.display = 'none';
+                hamburger.classList.remove('open');
+                document.body.style.overflow = '';
             });
         });
     }
-});
+})();
