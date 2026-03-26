@@ -29,6 +29,44 @@ body.light,
     color: var(--theme-text) !important;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+/* Background Texture and Patterns */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(167, 139, 250, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(129, 140, 248, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle, rgba(99, 102, 241, 0.15) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.main,
+main {
+    position: relative;
+    z-index: 1;
 }
 
 #theme-toggle {
@@ -52,6 +90,17 @@ body.light,
 
 * {
     box-sizing: border-box;
+}
+
+/* Animated gradient background elements */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
 }
 
 /* FULL WIDTH LAYOUT */
@@ -293,12 +342,31 @@ header .menu a:hover {
     padding: 40px;
     text-align: center;
     transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .feature-card:hover {
     border-color: var(--theme-primary);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
+}
+
+.feature-card:hover::before {
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
 }
 
 .feature-icon {
@@ -373,12 +441,29 @@ header .menu a:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.post-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.03) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .post-card:hover {
     border-color: var(--theme-primary);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+}
+
+.post-card:hover::before {
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
 }
 
 .post-meta {
