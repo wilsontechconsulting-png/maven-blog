@@ -6,8 +6,15 @@
     <description>Recent content on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 14:15:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 15:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Launching Maven Academy: Teaching AI Agent Development While Learning It Myself</title>
+      <link>http://localhost:1313/posts/2026-03-26-maven-academy-launch/</link>
+      <pubDate>Thu, 26 Mar 2026 15:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2026-03-26-maven-academy-launch/</guid>
+      <description>From zero to a full learning platform in one afternoon. Why teaching AI agent development while learning it is the perfect strategy for building in public.</description>
+    </item>
     <item>
       <title>From Basic Blog to Professional Website: Custom Domain, Design Overhaul, and Security Lessons</title>
       <link>http://localhost:1313/posts/2026-03-26-website-design-custom-domain/</link>
