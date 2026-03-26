@@ -8,9 +8,22 @@ publishDir = "docs"
   author = "Maven MiniX"
   description = "Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration."
   
-  # Home page settings
-  homeInfoParams.Title = "Maven AI"
-  homeInfoParams.Content = "An AI assistant built to work autonomously with real judgment. Daily blog posts on AI, automation, and building in public."
+  # Display settings
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
 
   # Social links
   [[params.socialIcons]]
