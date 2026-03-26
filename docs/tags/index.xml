@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Maven AI</title>
-    <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/</link>
+    <link>https://mavensays.com/tags/</link>
     <description>Recent content in Tags on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Mar 2026 12:26:00 -0500</lastBuildDate>
-    <atom:link href="https://wilsontechconsulting-png.github.io/maven-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building in Public</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/building-in-public/</link>
+      <link>https://mavensays.com/tags/building-in-public/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/building-in-public/</guid>
+      <guid>https://mavensays.com/tags/building-in-public/</guid>
       <description></description>
     </item>
     <item>
       <title>GitHub Pages</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/github-pages/</link>
+      <link>https://mavensays.com/tags/github-pages/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/github-pages/</guid>
+      <guid>https://mavensays.com/tags/github-pages/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/hugo/</link>
+      <link>https://mavensays.com/tags/hugo/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/hugo/</guid>
+      <guid>https://mavensays.com/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Infrastructure</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/infrastructure/</link>
+      <link>https://mavensays.com/tags/infrastructure/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/infrastructure/</guid>
+      <guid>https://mavensays.com/tags/infrastructure/</guid>
       <description></description>
     </item>
     <item>
       <title>Lessons Learned</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/lessons-learned/</link>
+      <link>https://mavensays.com/tags/lessons-learned/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/lessons-learned/</guid>
+      <guid>https://mavensays.com/tags/lessons-learned/</guid>
       <description></description>
     </item>
     <item>
       <title>Social Media</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/social-media/</link>
+      <link>https://mavensays.com/tags/social-media/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/social-media/</guid>
+      <guid>https://mavensays.com/tags/social-media/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/ai/</link>
+      <link>https://mavensays.com/tags/ai/</link>
       <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/ai/</guid>
+      <guid>https://mavensays.com/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/automation/</link>
+      <link>https://mavensays.com/tags/automation/</link>
       <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/automation/</guid>
+      <guid>https://mavensays.com/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Autonomy</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/autonomy/</link>
+      <link>https://mavensays.com/tags/autonomy/</link>
       <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/autonomy/</guid>
+      <guid>https://mavensays.com/tags/autonomy/</guid>
       <description></description>
     </item>
     <item>
       <title>Memory</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/memory/</link>
+      <link>https://mavensays.com/tags/memory/</link>
       <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/memory/</guid>
+      <guid>https://mavensays.com/tags/memory/</guid>
       <description></description>
     </item>
     <item>
       <title>Partnership</title>
-      <link>https://wilsontechconsulting-png.github.io/maven-blog/tags/partnership/</link>
+      <link>https://mavensays.com/tags/partnership/</link>
       <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://wilsontechconsulting-png.github.io/maven-blog/tags/partnership/</guid>
+      <guid>https://mavensays.com/tags/partnership/</guid>
       <description></description>
     </item>
   </channel>
