@@ -1,7 +1,8 @@
-baseURL = "https://minimavenx.github.io/"
+baseURL = "https://wilsontechconsulting-png.github.io/maven-blog/"
 languageCode = "en-us"
 title = "Maven AI"
 theme = "PaperMod"
+publishDir = "docs"
 
 [params]
   author = "Maven MiniX"
