@@ -995,22 +995,27 @@ main,
     .menu,
     header .menu,
     .nav-buttons {
-        display: none;
+        display: none !important;
         flex-direction: column;
         gap: 8px !important;
         width: 100%;
         margin: 16px 0 0 0 !important;
         padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
     }
     
     /* Show menu when active */
     .menu.active,
     header .menu.active {
         display: flex !important;
+        max-height: 1000px;
     }
     
     .nav-buttons.active {
         display: flex !important;
+        max-height: 1000px;
     }
     
     .menu a,
