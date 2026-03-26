@@ -902,54 +902,81 @@ main,
     text-decoration: underline;
 }
 
-/* Mobile Hamburger */
-.mobile-hamburger {
+/* Mobile Navigation Cards */
+.mobile-nav-cards {
     display: none;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 9999;
-    background: transparent;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 6px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.mobile-hamburger span {
+.mobile-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.mobile-nav-card {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 12px;
+    padding: 20px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--theme-white);
+    transition: all 0.2s;
+}
+
+.mobile-nav-card:hover {
+    border-color: var(--theme-primary);
+    transform: translateY(-2px);
+}
+
+.mobile-nav-card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
     display: block;
-    width: 28px;
-    height: 3px;
-    background: white;
-    transition: all 0.3s;
 }
 
-.mobile-hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+.mobile-nav-card .label {
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
-.mobile-hamburger.open span:nth-child(2) {
-    opacity: 0;
+.mobile-nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.mobile-hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+.mobile-nav-buttons a {
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mobile-nav-buttons .btn-primary {
+    background: var(--theme-primary);
+    color: white;
+}
+
+.mobile-nav-buttons .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--theme-primary);
+    color: var(--theme-primary);
 }
 
 /* Mobile Responsive (Phone) */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
-        padding-top: 0 !important;
+        padding-top: 70px !important;
     }
     
-    /* Show hamburger */
-    .mobile-hamburger {
-        display: flex;
-    }
-    
-    /* Header */
+    /* Simple header - logo only */
     header.header,
     .nav {
         position: fixed !important;
@@ -968,11 +995,12 @@ main,
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
+        justify-content: center !important;
     }
     
     .logo {
-        margin: 0 !important;
-        z-index: 9999;
+        margin: 0 auto !important;
+        text-align: center;
     }
     
     .logo a {
@@ -980,13 +1008,14 @@ main,
         display: flex;
         align-items: center;
         gap: 10px;
+        justify-content: center;
     }
     
     .logo img {
         height: 36px;
     }
     
-    /* Hide menu by default - CRITICAL */
+    /* Hide desktop menu completely on mobile */
     header .menu,
     .nav .menu,
     .menu,
@@ -994,92 +1023,11 @@ main,
     .nav .nav-buttons,
     .nav-buttons {
         display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
     }
     
-    /* Full screen menu overlay (when shown via JS) */
-    .menu[style*="display: flex"],
-    header .menu[style*="display: flex"],
-    .nav .menu[style*="display: flex"] {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        pointer-events: auto !important;
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        background: #0a0e27 !important;
-        z-index: 9998 !important;
-        padding: 80px 30px 200px 30px !important;
-        flex-direction: column !important;
-        gap: 0 !important;
-        margin: 0 !important;
-        overflow-y: auto !important;
-    }
-    
-    .nav-buttons[style*="display: flex"],
-    header .nav-buttons[style*="display: flex"],
-    .nav .nav-buttons[style*="display: flex"] {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        pointer-events: auto !important;
-    }
-    
-    /* Menu items */
-    .menu a {
-        font-size: 1.1rem !important;
-        padding: 20px 0 !important;
-        text-align: left !important;
-        background: transparent !important;
-        border: none !important;
-        border-radius: 0 !important;
-        color: rgba(255, 255, 255, 0.8) !important;
-        display: block !important;
-        width: 100% !important;
-    }
-    
-    .menu a:hover {
-        color: white !important;
-    }
-    
-    /* Bottom buttons */
-    .nav-buttons {
-        position: fixed !important;
-        bottom: 40px !important;
-        left: 30px !important;
-        right: 30px !important;
-        flex-direction: column !important;
-        gap: 12px !important;
-        z-index: 9998 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    
-    .btn-nav-cta {
-        width: 100% !important;
-        padding: 16px 24px !important;
-        font-size: 1rem !important;
-        font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1px !important;
-        border-radius: 8px !important;
-        background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
-        border: none !important;
-    }
-    
-    .btn-nav-login {
-        width: 100% !important;
-        padding: 12px !important;
-        font-size: 0.95rem !important;
-        background: transparent !important;
-        color: rgba(255, 255, 255, 0.7) !important;
-        border: none !important;
-        text-align: center !important;
+    /* Show mobile navigation cards */
+    .mobile-nav-cards {
+        display: block;
     }
     
     /* Main content - ensure it's not hidden */
