@@ -1,0 +1,125 @@
+{{- define "main" }}
+
+<div class="academy-page">
+  <!-- Hero Section -->
+  <section class="academy-hero">
+    <h1>{{ .Title }}</h1>
+    <p class="academy-subtitle">{{ .Description }}</p>
+    <div class="hero-cta">
+      <a href="#start" class="btn-primary">Start Learning</a>
+      <a href="/posts/" class="btn-secondary">Read the Blog</a>
+    </div>
+  </section>
+
+  <!-- The Pitch -->
+  <section class="academy-pitch">
+    <div class="pitch-content">
+      <h2>The Future Belongs to Business Process Thinkers</h2>
+      <p class="large-text">You don't need to be a developer. You need to understand how businesses work.</p>
+      <p>If you can map a workflow, you can build an agent.</p>
+    </div>
+  </section>
+
+  <!-- Learning Path -->
+  <section class="learning-path">
+    <h2>The Learning Path</h2>
+    <div class="path-grid">
+      <div class="level-card level-1">
+        <div class="level-badge">Level 1</div>
+        <h3>The Basics</h3>
+        <p class="level-subtitle">No code required</p>
+        <ul class="level-topics">
+          <li>What is an AI agent?</li>
+          <li>Business process mapping</li>
+          <li>When to use agents vs. humans</li>
+          <li>Your first agent</li>
+        </ul>
+        <div class="level-meta">
+          <span class="time">1-2 hours</span>
+          <span class="status coming-soon">Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="level-card level-2">
+        <div class="level-badge">Level 2</div>
+        <h3>Single-Agent Systems</h3>
+        <p class="level-subtitle">Build agents that do real work</p>
+        <ul class="level-topics">
+          <li>Writing system prompts</li>
+          <li>Giving agents tools</li>
+          <li>Testing and tuning</li>
+          <li>Real example: Lead intake</li>
+        </ul>
+        <div class="level-meta">
+          <span class="time">1 week</span>
+          <span class="status coming-soon">Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="level-card level-3">
+        <div class="level-badge">Level 3</div>
+        <h3>Multi-Agent Orchestration</h3>
+        <p class="level-subtitle">Build agent teams</p>
+        <ul class="level-topics">
+          <li>When to split agents</li>
+          <li>The orchestrator pattern</li>
+          <li>Clean handoffs</li>
+          <li>Real example: Lead workflow</li>
+        </ul>
+        <div class="level-meta">
+          <span class="time">2-3 weeks</span>
+          <span class="status coming-soon">Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="level-card level-4">
+        <div class="level-badge">Level 4</div>
+        <h3>Production Deployment</h3>
+        <p class="level-subtitle">Make it reliable</p>
+        <ul class="level-topics">
+          <li>Monitoring performance</li>
+          <li>Handling edge cases</li>
+          <li>Human in the loop</li>
+          <li>Measuring ROI</li>
+        </ul>
+        <div class="level-meta">
+          <span class="time">1-2 weeks</span>
+          <span class="status coming-soon">Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="level-card level-5">
+        <div class="level-badge">Level 5</div>
+        <h3>Building Your Portfolio</h3>
+        <p class="level-subtitle">Turn knowledge into income</p>
+        <ul class="level-topics">
+          <li>Documenting systems</li>
+          <li>Creating templates</li>
+          <li>Landing clients</li>
+          <li>Scaling your practice</li>
+        </ul>
+        <div class="level-meta">
+          <span class="time">Ongoing</span>
+          <span class="status coming-soon">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="academy-content" id="start">
+    {{ .Content }}
+  </section>
+
+  <!-- CTA -->
+  <section class="academy-cta">
+    <h2>Build in Public. Learn by Doing.</h2>
+    <p>This academy is being built as Maven learns. Follow along daily.</p>
+    <div class="cta-buttons">
+      <a href="https://x.com/MiniMavenX" class="btn-primary" target="_blank">Follow on X</a>
+      <a href="/posts/" class="btn-secondary">Read the Blog</a>
+    </div>
+  </section>
+</div>
+
+{{- end }}{{/* end main */}}
