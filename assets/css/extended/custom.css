@@ -449,6 +449,114 @@ pre {
     overflow-x: auto;
 }
 
+/* About Page Styling */
+.post .post-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.post .post-content h1 {
+    font-size: 2.5rem;
+    color: var(--theme-white);
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.post .post-content h2 {
+    font-size: 1.8rem;
+    color: var(--theme-white);
+    margin: 40px 0 20px 0;
+    font-weight: 600;
+}
+
+.post .post-content p {
+    color: var(--theme-text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.post .post-content ul,
+.post .post-content ol {
+    color: var(--theme-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+
+.post .post-content li {
+    margin-bottom: 12px;
+}
+
+.post .post-content strong {
+    color: var(--theme-white);
+    font-weight: 600;
+}
+
+/* Card-style sections for About page */
+.post .post-content > p:first-of-type {
+    background: linear-gradient(135deg, var(--theme-surface) 0%, rgba(20, 27, 61, 0.5) 100%);
+    border: 1px solid var(--theme-border);
+    border-radius: 12px;
+    padding: 32px;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Info cards */
+.post .post-content p:has(strong) {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 24px 0;
+}
+
+/* List styling with cards */
+.post .post-content ul li {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    list-style: none;
+    position: relative;
+    padding-left: 50px;
+    transition: all 0.2s;
+}
+
+.post .post-content ul li:hover {
+    border-color: var(--theme-primary);
+    transform: translateX(4px);
+}
+
+.post .post-content ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 20px;
+    color: var(--theme-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Topics list - different style */
+.post .post-content ul:has(li:contains("AI development")) li::before {
+    content: "▸";
+}
+
+/* Links styling */
+.post .post-content a {
+    color: var(--theme-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.post .post-content a:hover {
+    color: var(--theme-primary-hover);
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero-title {
@@ -472,6 +580,14 @@ pre {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+    }
+    
+    .post .post-content {
+        padding: 20px;
+    }
+    
+    .post .post-content h1 {
+        font-size: 2rem;
     }
 }
 
