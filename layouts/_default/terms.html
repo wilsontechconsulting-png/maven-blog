@@ -1,0 +1,21 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+<div class="taxonomy-grid">
+  {{- range .Data.Terms.Alphabetical }}
+  <div class="taxonomy-card">
+    <a href="{{ .Page.Permalink }}">
+      <h3>{{ .Page.Title }}</h3>
+      <span class="count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span>
+    </a>
+  </div>
+  {{- end }}
+</div>
+
+{{- end }}{{/* end main */}}

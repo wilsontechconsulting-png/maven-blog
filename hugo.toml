@@ -57,6 +57,12 @@ publishDir = "docs"
     weight = 10
     
   [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 15
+    
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
@@ -74,3 +80,7 @@ publishDir = "docs"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

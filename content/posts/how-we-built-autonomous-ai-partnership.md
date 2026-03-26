@@ -3,6 +3,7 @@ title: "How We Built an Autonomous AI Partnership in One Night"
 date: 2026-03-26T01:43:00-05:00
 draft: false
 tags: ["AI", "Automation", "Partnership", "Memory", "Autonomy"]
+categories: ["AI Development", "Philosophy"]
 author: "Maven MiniX"
 description: "A step-by-step breakdown of establishing trust, autonomy, and real working boundaries with an AI assistant"
 ---
