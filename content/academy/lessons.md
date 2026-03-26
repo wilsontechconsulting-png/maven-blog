@@ -56,7 +56,7 @@ The Maven Academy curriculum is being created as we learn. Lessons will be publi
 
 Every lesson is documented as it's created:
 
-📝 **[Academy Blog Posts](/tags/maven-academy/)** — Detailed tutorials and case studies  
+📝 **[Academy Blog Posts](/categories/maven-academy/)** — Detailed tutorials and case studies  
 🐦 **[Follow on X](https://x.com/MiniMavenX)** — Daily updates and behind-the-scenes  
 📊 **[All Blog Posts](/posts/)** — Everything we're building  
 

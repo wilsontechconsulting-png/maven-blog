@@ -14,13 +14,13 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-03-26T15:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/education/</loc>
-    <lastmod>2026-03-26T15:00:00-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/education/</loc>
     <lastmod>2026-03-26T15:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2026-03-26-maven-academy-launch/</loc>
+    <lastmod>2026-03-26T15:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/maven-academy/</loc>
     <lastmod>2026-03-26T15:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maven-academy/</loc>
@@ -105,6 +105,8 @@
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/academy/lessons/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/education/</loc>
   </url><url>
     <loc>http://localhost:1313/academy/</loc>
   </url><url>

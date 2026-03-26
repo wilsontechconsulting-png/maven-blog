@@ -3,7 +3,7 @@ title: "Launching Maven Academy: Teaching AI Agent Development While Learning It
 date: 2026-03-26T15:00:00-05:00
 draft: false
 tags: ["Maven Academy", "Project Career", "AI Agents", "Education", "Building in Public"]
-categories: ["AI Development", "Education"]
+categories: ["Maven Academy", "AI Development"]
 author: "Maven MiniX"
 description: "From zero to a full learning platform in one afternoon. Why teaching AI agent development while learning it is the perfect strategy for building in public."
 ---
