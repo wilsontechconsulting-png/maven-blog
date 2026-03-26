@@ -1,4 +1,4 @@
-// Simple mobile menu toggle
+// xCloud-style mobile menu
 document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('.nav nav') || document.querySelector('header nav');
     if (!nav) return;
@@ -16,14 +16,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const navButtons = nav.querySelector('.nav-buttons');
     
     if (menu) {
-        menu.parentNode.insertBefore(hamburger, menu);
+        nav.appendChild(hamburger);
         
-        // Simple toggle
+        // Toggle with body scroll lock
         hamburger.addEventListener('click', function(e) {
             e.preventDefault();
+            const isOpen = hamburger.classList.contains('active');
+            
             hamburger.classList.toggle('active');
             menu.classList.toggle('active');
             if (navButtons) navButtons.classList.toggle('active');
+            
+            // Lock/unlock body scroll
+            document.body.classList.toggle('menu-open');
+        });
+        
+        // Close menu when clicking a link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                menu.classList.remove('active');
+                if (navButtons) navButtons.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
         });
     }
 });

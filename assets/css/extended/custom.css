@@ -910,23 +910,35 @@ main,
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
+    padding: 8px;
+    z-index: 1002;
     position: absolute;
-    right: 16px;
-    top: 16px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hamburger-menu span {
-    width: 28px;
-    height: 3px;
+    width: 24px;
+    height: 2px;
     background-color: var(--theme-white);
     border-radius: 2px;
-    transition: all 0.3s ease;
+}
+
+/* X icon when menu is open */
+.hamburger-menu.active {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    transform: none;
+}
+
+.hamburger-menu.active span {
+    width: 28px;
 }
 
 .hamburger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
 .hamburger-menu.active span:nth-child(2) {
@@ -934,7 +946,7 @@ main,
 }
 
 .hamburger-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* Mobile Responsive (Phone) */
@@ -945,6 +957,11 @@ main,
         padding-top: 0 !important;
     }
     
+    /* Prevent scroll when menu open */
+    body.menu-open {
+        overflow: hidden;
+    }
+    
     /* Show hamburger on mobile */
     .hamburger-menu {
         display: flex;
@@ -953,10 +970,8 @@ main,
     /* Navigation - Clean header */
     header.header,
     .nav {
-        position: sticky !important;
-        top: 0;
-        z-index: 100;
-        padding: 14px 20px !important;
+        position: relative !important;
+        padding: 16px 20px !important;
         background-color: var(--theme-surface) !important;
         border-bottom: 1px solid var(--theme-border) !important;
     }
@@ -965,14 +980,13 @@ main,
     .nav nav {
         border-radius: 0 !important;
         padding: 0 !important;
-        flex-direction: column;
-        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
         max-width: 100%;
-        align-items: flex-start;
-        position: relative;
     }
     
     /* Logo - proper spacing */
@@ -980,6 +994,7 @@ main,
         width: auto;
         margin: 0 !important;
         padding: 0;
+        z-index: 1002;
     }
     
     .logo a,
@@ -996,38 +1011,38 @@ main,
         height: 36px;
     }
     
-    /* Hamburger positioning */
-    .hamburger-menu {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    /* Hide menu by default on mobile - simple show/hide */
+    /* Full screen overlay menu (xCloud style) */
     .menu,
     header .menu {
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--theme-bg);
+        z-index: 1000;
+        padding: 80px 24px 24px 24px;
         flex-direction: column;
         gap: 0;
-        width: 100%;
-        margin: 16px 0 0 0 !important;
-        padding: 12px 0 0 0;
-        border-top: 1px solid rgba(99, 102, 241, 0.3);
-        background: var(--theme-surface);
+        margin: 0 !important;
+        overflow-y: auto;
     }
     
     .nav-buttons {
         display: none;
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        right: 24px;
         flex-direction: column;
-        gap: 8px;
-        width: 100%;
-        margin: 8px 0 0 0 !important;
-        padding: 12px 0 0 0;
-        border-top: 1px solid rgba(99, 102, 241, 0.3);
+        gap: 12px;
+        margin: 0 !important;
+        padding: 0;
+        z-index: 1001;
     }
     
-    /* Show menu when active - simple */
+    /* Show menu when active */
     .menu.active,
     header .menu.active {
         display: flex;
@@ -1037,37 +1052,59 @@ main,
         display: flex;
     }
     
-    /* Clean menu items - tighter spacing */
+    /* Menu items - xCloud style */
     .menu a,
     header .menu a {
-        font-size: 0.95rem !important;
-        padding: 10px 0;
+        font-size: 1.1rem !important;
+        padding: 20px 0;
         text-align: left;
         background: transparent !important;
         border-radius: 0;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        color: var(--theme-white) !important;
-        transition: none;
+        color: rgba(255, 255, 255, 0.8) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-weight: 400;
     }
     
     .menu a:hover,
     header .menu a:hover {
-        color: var(--theme-primary) !important;
+        color: var(--theme-white) !important;
     }
     
-    /* CTA buttons - compact */
+    .menu a:last-child {
+        border-bottom: none;
+    }
+    
+    /* Add chevron to menu items with submenus */
+    .menu a::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+        transform: rotate(-45deg);
+        opacity: 0;
+    }
+    
+    /* CTA buttons - full width at bottom */
     .btn-nav-login,
     .btn-nav-cta {
         width: 100%;
         text-align: center;
-        padding: 12px 20px;
+        padding: 16px 24px;
         display: block;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
     }
     
     .btn-nav-login {
-        margin-bottom: 8px;
+        background: transparent;
+        border: 1px solid var(--theme-primary);
+        color: var(--theme-white);
     }
     
     /* Main content - ensure it's not hidden */
