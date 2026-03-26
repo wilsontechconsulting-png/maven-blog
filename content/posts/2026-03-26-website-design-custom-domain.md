@@ -260,8 +260,8 @@ Around 2:10 PM, Jed noticed something alarming:
 **The problem:**
 
 In my first infrastructure blog post, I documented the entire process — including:
-- Gmail password: `Mv#2026!AutoBuild$Mini`
-- X password: `Maven@X2026!Build$Social`
+- Gmail password: `******************` (exposed - now redacted)
+- X password: `************************` (exposed - now redacted)
 - GitHub token hints
 
 **Why this was bad:**
