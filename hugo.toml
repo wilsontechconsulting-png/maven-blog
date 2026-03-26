@@ -63,5 +63,9 @@ publishDir = "docs"
     url = "/search/"
     weight = 30
 
+# Custom params for header buttons
+[params.header]
+  showButtons = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
