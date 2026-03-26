@@ -698,37 +698,234 @@ main,
     text-decoration: underline;
 }
 
-/* Responsive */
+/* Mobile Responsive (Phone) */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
+    /* Global */
+    body {
+        font-size: 16px;
     }
     
-    .hero-subtitle {
-        font-size: 1.1rem;
+    /* Navigation */
+    header.header nav,
+    .nav nav {
+        border-radius: 16px !important;
+        padding: 12px 16px !important;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .logo a,
+    header .logo a {
+        font-size: 1.1rem !important;
+    }
+    
+    .logo img,
+    header .logo img {
+        height: 32px;
+    }
+    
+    .menu,
+    header .menu {
+        flex-direction: column;
+        gap: 12px !important;
+        width: 100%;
+    }
+    
+    .menu a,
+    header .menu a {
+        font-size: 0.9rem !important;
+        padding: 8px 12px;
+        text-align: center;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 8px;
+    }
+    
+    .btn-nav-login,
+    .btn-nav-cta {
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    
+    /* Hero Sections */
+    .hero,
+    .skills-hero,
+    .academy-hero {
+        padding: 60px 20px !important;
+    }
+    
+    .hero-title,
+    .skills-hero h1,
+    .academy-hero h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-subtitle,
+    .skills-subtitle,
+    .academy-subtitle {
+        font-size: 1rem !important;
     }
     
     .hero-cta {
         flex-direction: column;
+        width: 100%;
     }
     
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Grids */
     .features-grid,
-    .posts-grid {
-        grid-template-columns: 1fr;
+    .posts-grid,
+    .categories-grid,
+    .roadmap-grid,
+    .path-grid,
+    .posts-grid-container {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    /* Cards */
+    .feature-card,
+    .post-card,
+    .category-card,
+    .roadmap-card,
+    .level-card,
+    .post-entry {
+        padding: 20px !important;
+    }
+    
+    .feature-icon,
+    .category-icon {
+        font-size: 2.5rem;
+    }
+    
+    /* Sections */
+    .features,
+    .latest-posts,
+    .skills-categories,
+    .skills-roadmap,
+    .learning-path {
+        padding: 60px 20px !important;
     }
     
     .section-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        gap: 16px;
     }
     
-    .post .post-content {
-        padding: 20px;
+    .section-header h2,
+    .skills-categories h2,
+    .skills-roadmap h2,
+    .learning-path h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    /* Post Content */
+    .post .post-content,
+    .page .post-content,
+    .skills-content,
+    .academy-content {
+        padding: 20px !important;
     }
     
     .post .post-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem !important;
+    }
+    
+    .post .post-content h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .post .post-content h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    /* CTA Sections */
+    .skills-cta,
+    .academy-cta {
+        padding: 40px 20px !important;
+    }
+    
+    .skills-cta h2,
+    .academy-cta h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    /* Taxonomy */
+    .taxonomy-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Page Headers */
+    .page-header h1,
+    .post-header h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    /* Skills Page */
+    .skills-page {
+        padding: 20px !important;
+    }
+    
+    /* Academy Page */
+    .academy-page {
+        padding: 20px !important;
+    }
+    
+    .academy-pitch {
+        padding: 40px 20px !important;
+    }
+    
+    .pitch-content h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .pitch-content .large-text {
+        font-size: 1.2rem !important;
+    }
+    
+    /* Tables */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Code blocks */
+    pre {
+        padding: 12px;
+        font-size: 0.85rem;
+        overflow-x: auto;
+    }
+}
+
+/* Tablet Responsive (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-title,
+    .skills-hero h1,
+    .academy-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .features-grid,
+    .posts-grid,
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
