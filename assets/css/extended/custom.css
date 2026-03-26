@@ -13,11 +13,18 @@
 }
 
 /* Force theme colors everywhere */
-html {
+html,
+html.dark,
+html.light {
     background-color: var(--theme-bg) !important;
 }
 
-body {
+body,
+body.dark,
+body.light,
+.main,
+.list,
+.post {
     background-color: var(--theme-bg) !important;
     color: var(--theme-text) !important;
     margin: 0;
@@ -28,10 +35,19 @@ body {
     display: none !important;
 }
 
-/* Override PaperMod dark theme */
-.dark {
+/* Override PaperMod variables */
+:root,
+.dark,
+.light {
     --theme: var(--theme-bg) !important;
     --entry: var(--theme-surface) !important;
+    --primary: var(--theme-primary) !important;
+    --secondary: var(--theme-text-secondary) !important;
+    --tertiary: var(--theme-surface) !important;
+    --content: var(--theme-text) !important;
+    --hljs-bg: var(--theme-surface) !important;
+    --code-bg: var(--theme-border) !important;
+    --border: var(--theme-border) !important;
 }
 
 * {
@@ -345,12 +361,15 @@ body {
 }
 
 /* Blog List Page - Card Grid Layout */
-.posts-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
+.posts-grid-container,
+.main .posts-grid-container,
+.list .posts-grid-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)) !important;
+    gap: 24px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
 }
 
 .post-entry {
