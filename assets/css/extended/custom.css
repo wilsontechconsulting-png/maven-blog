@@ -322,6 +322,125 @@ header .menu a:hover {
     color: var(--theme-primary);
 }
 
+/* Academy Promo Section */
+.academy-promo {
+    max-width: 1000px;
+    margin: 60px auto 80px auto;
+    padding: 0 40px;
+}
+
+.academy-promo-content {
+    background: linear-gradient(135deg, var(--theme-surface) 0%, rgba(20, 27, 61, 0.8) 100%);
+    border: 2px solid var(--theme-primary);
+    border-radius: 16px;
+    padding: 60px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.academy-promo-content::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    animation: glow 6s ease-in-out infinite;
+}
+
+.promo-badge {
+    display: inline-block;
+    background: var(--theme-primary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.academy-promo h2 {
+    font-size: 2.8rem;
+    color: var(--theme-white);
+    margin-bottom: 20px;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-primary-hover);
+    margin-bottom: 16px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-description {
+    font-size: 1.1rem;
+    color: var(--theme-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-features {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--theme-text);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.promo-feature .feature-icon {
+    color: var(--theme-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-academy-cta {
+    display: inline-block;
+    background: var(--theme-primary);
+    color: white;
+    padding: 16px 48px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-academy-cta:hover {
+    background: var(--theme-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.5);
+}
+
 /* Features Section */
 .features {
     padding: 100px 40px;
@@ -874,6 +993,41 @@ main,
     .list {
         margin-top: 0 !important;
         padding-top: 20px !important;
+    }
+    
+    /* Academy Promo on Homepage */
+    .academy-promo {
+        margin: 40px auto 60px auto;
+        padding: 0 20px;
+    }
+    
+    .academy-promo-content {
+        padding: 40px 24px !important;
+    }
+    
+    .academy-promo h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .promo-subtitle {
+        font-size: 1.1rem !important;
+    }
+    
+    .promo-description {
+        font-size: 1rem !important;
+    }
+    
+    .promo-features {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .btn-academy-cta {
+        width: 100%;
+        padding: 14px 32px;
+        font-size: 1.1rem;
     }
     
     /* Hero Sections */
