@@ -986,14 +986,27 @@ main,
         height: 36px;
     }
     
-    /* Hide desktop menu items */
+    /* Hide menu by default - CRITICAL */
+    header .menu,
+    .nav .menu,
     .menu,
+    header .nav-buttons,
+    .nav .nav-buttons,
     .nav-buttons {
         display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
     }
     
-    /* Full screen menu overlay */
-    .menu {
+    /* Full screen menu overlay (when shown via JS) */
+    .menu[style*="display: flex"],
+    header .menu[style*="display: flex"],
+    .nav .menu[style*="display: flex"] {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -1006,6 +1019,15 @@ main,
         gap: 0 !important;
         margin: 0 !important;
         overflow-y: auto !important;
+    }
+    
+    .nav-buttons[style*="display: flex"],
+    header .nav-buttons[style*="display: flex"],
+    .nav .nav-buttons[style*="display: flex"] {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
     }
     
     /* Menu items */
