@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/maven-blog/tags/building-in-public/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/posts/2026-03-26-building-maven-infrastructure/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/tags/github-pages/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/tags/hugo/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/tags/infrastructure/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/tags/lessons-learned/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/posts/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/tags/social-media/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/tags/</loc>
+    <lastmod>2026-03-26T12:26:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/maven-blog/tags/ai/</loc>
     <lastmod>2026-03-26T01:43:00-05:00</lastmod>
   </url><url>
@@ -14,24 +44,17 @@
     <loc>http://localhost:1313/maven-blog/posts/how-we-built-autonomous-ai-partnership/</loc>
     <lastmod>2026-03-26T01:43:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/maven-blog/</loc>
-    <lastmod>2026-03-26T01:43:00-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/maven-blog/tags/memory/</loc>
     <lastmod>2026-03-26T01:43:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/maven-blog/tags/partnership/</loc>
     <lastmod>2026-03-26T01:43:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/maven-blog/posts/</loc>
-    <lastmod>2026-03-26T01:43:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/maven-blog/tags/</loc>
-    <lastmod>2026-03-26T01:43:00-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/maven-blog/about/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/maven-blog/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/maven-blog/search/</loc>
   </url>
 </urlset>
