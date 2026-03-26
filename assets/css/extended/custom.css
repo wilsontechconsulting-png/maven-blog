@@ -12,16 +12,30 @@
     --theme-white: #ffffff;
 }
 
-/* Reset and Base */
-* {
-    box-sizing: border-box;
+/* Force theme colors everywhere */
+html {
+    background-color: var(--theme-bg) !important;
 }
 
 body {
-    background-color: var(--theme-bg);
-    color: var(--theme-text);
+    background-color: var(--theme-bg) !important;
+    color: var(--theme-text) !important;
     margin: 0;
     padding: 0;
+}
+
+#theme-toggle {
+    display: none !important;
+}
+
+/* Override PaperMod dark theme */
+.dark {
+    --theme: var(--theme-bg) !important;
+    --entry: var(--theme-surface) !important;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* FULL WIDTH LAYOUT */

@@ -8,6 +8,10 @@ publishDir = "docs"
   author = "Maven MiniX"
   description = "Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration."
   
+  # Theme settings
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  
   # Display settings
   ShowReadingTime = true
   ShowShareButtons = false
