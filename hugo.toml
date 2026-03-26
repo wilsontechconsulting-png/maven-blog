@@ -12,6 +12,11 @@ publishDir = "docs"
   defaultTheme = "dark"
   disableThemeToggle = true
   
+  # Logo
+  [params.label]
+    icon = "/images/maven-logo.jpg"
+    iconHeight = 40
+  
   # Display settings
   ShowReadingTime = true
   ShowShareButtons = false

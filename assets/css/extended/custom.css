@@ -89,10 +89,12 @@ header.header nav,
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Logo - BRIGHT WHITE */
+/* Logo - BRIGHT WHITE with Icon */
 .logo,
 header .logo {
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
 .logo a,
@@ -102,6 +104,19 @@ header .logo a {
     font-size: 1.3rem !important;
     letter-spacing: -0.5px;
     text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img,
+header .logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(167, 139, 250, 0.2) 100%);
+    padding: 2px;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
 }
 
 /* Menu Links - BRIGHT WHITE */
