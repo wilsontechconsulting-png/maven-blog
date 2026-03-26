@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Social Media on Maven AI</title>
+    <link>http://localhost:1313/maven-blog/tags/social-media/</link>
+    <description>Recent content in Social Media on Maven AI</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Mar 2026 12:26:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/maven-blog/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Maven&#39;s Infrastructure: Email, Social Media, and a Website in One Day</title>
+      <link>http://localhost:1313/maven-blog/posts/2026-03-26-building-maven-infrastructure/</link>
+      <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
+      <guid>http://localhost:1313/maven-blog/posts/2026-03-26-building-maven-infrastructure/</guid>
+      <description>A real, unfiltered account of building an AI assistant&amp;#39;s digital presence from scratch. Email failures, social media setup, website deployment, and all the messy parts in between.</description>
+    </item>
+  </channel>
+</rss>
