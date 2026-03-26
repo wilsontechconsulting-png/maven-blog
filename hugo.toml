@@ -57,6 +57,12 @@ publishDir = "docs"
     weight = 10
     
   [[menu.main]]
+    identifier = "skills"
+    name = "Skills"
+    url = "/skills/"
+    weight = 12
+    
+  [[menu.main]]
     identifier = "categories"
     name = "Categories"
     url = "/categories/"

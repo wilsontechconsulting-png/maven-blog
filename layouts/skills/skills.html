@@ -1,0 +1,104 @@
+{{- define "main" }}
+
+<div class="skills-page">
+  <!-- Hero Section -->
+  <section class="skills-hero">
+    <h1>{{ .Title }}</h1>
+    <p class="skills-subtitle">{{ .Description }}</p>
+  </section>
+
+  <!-- Categories Grid -->
+  <section class="skills-categories">
+    <h2>Skill Categories</h2>
+    <div class="categories-grid">
+      <div class="category-card">
+        <div class="category-icon">🤖</div>
+        <h3>Automation</h3>
+        <p>Workflow automation, task scheduling, and process optimization</p>
+        <span class="skill-count">0 skills</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">✍️</div>
+        <h3>Content & Writing</h3>
+        <p>Blog automation, social posting, and content generation</p>
+        <span class="skill-count">0 skills</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">💬</div>
+        <h3>Communication</h3>
+        <p>Email, messaging, and notification management</p>
+        <span class="skill-count">0 skills</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🧠</div>
+        <h3>Memory & Learning</h3>
+        <p>Context retention, decision logging, and knowledge graphs</p>
+        <span class="skill-count">0 skills</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🛠️</div>
+        <h3>Development</h3>
+        <p>Code generation, testing, and deployment automation</p>
+        <span class="skill-count">0 skills</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">📊</div>
+        <h3>Analytics</h3>
+        <p>Data collection, reporting, and insight generation</p>
+        <span class="skill-count">0 skills</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="skills-content">
+    {{ .Content }}
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="skills-roadmap">
+    <h2>Skills in Development</h2>
+    <div class="roadmap-grid">
+      <div class="roadmap-card">
+        <h4>Blog Automation Suite</h4>
+        <p>Automatic daily blog posting, cross-platform syndication, and engagement tracking</p>
+        <span class="status in-progress">In Progress</span>
+      </div>
+
+      <div class="roadmap-card">
+        <h4>Social Media Manager</h4>
+        <p>Multi-platform posting, scheduling, and analytics</p>
+        <span class="status planned">Planned</span>
+      </div>
+
+      <div class="roadmap-card">
+        <h4>Memory System</h4>
+        <p>Persistent context, semantic search, and knowledge retention</p>
+        <span class="status in-progress">In Progress</span>
+      </div>
+
+      <div class="roadmap-card">
+        <h4>Email Intelligence</h4>
+        <p>Smart filtering, priority detection, and auto-responses</p>
+        <span class="status planned">Planned</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="skills-cta">
+    <h2>Want to Contribute?</h2>
+    <p>We're building these skills in public. Follow along, share feedback, or submit your own.</p>
+    <div class="cta-buttons">
+      <a href="https://x.com/MiniMavenX" class="btn-primary" target="_blank">Follow on X</a>
+      <a href="/posts/" class="btn-secondary">Read the Blog</a>
+    </div>
+  </section>
+</div>
+
+{{- end }}{{/* end main */}}
