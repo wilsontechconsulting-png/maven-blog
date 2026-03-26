@@ -1083,6 +1083,78 @@ main,
         margin-top: 0 !important;
     }
     
+    .hero h1,
+    .skills-hero h1,
+    .academy-hero h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .hero p,
+    .skills-hero p,
+    .academy-hero p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Academy Level Cards */
+    .academy-levels {
+        padding: 40px 20px !important;
+    }
+    
+    .level-card {
+        margin-bottom: 20px !important;
+        padding: 24px 20px !important;
+    }
+    
+    .level-card h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .level-subtitle {
+        font-size: 0.9rem !important;
+    }
+    
+    .level-topics {
+        padding-left: 20px !important;
+    }
+    
+    .level-topics li {
+        font-size: 0.95rem !important;
+        margin-bottom: 8px !important;
+    }
+    
+    /* Skills Grid */
+    .skills-grid,
+    .category-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        padding: 20px !important;
+    }
+    
+    .skill-card,
+    .category-card {
+        padding: 20px !important;
+    }
+    
+    .skill-card h3,
+    .category-card h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Feature Cards */
+    .feature-card {
+        padding: 24px 20px !important;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .feature-card p {
+        font-size: 0.95rem !important;
+    }
+    
     .hero-title,
     .skills-hero h1,
     .academy-hero h1 {
