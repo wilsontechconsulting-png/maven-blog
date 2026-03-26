@@ -1,0 +1,211 @@
+/* Custom Maven Says Theme - Dark Blue/Purple */
+
+:root {
+    --theme-bg: #0a0e27;
+    --theme-surface: #141b3d;
+    --theme-primary: #6366f1;
+    --theme-primary-hover: #818cf8;
+    --theme-text: #e2e8f0;
+    --theme-text-secondary: #94a3b8;
+    --theme-border: #1e293b;
+    --theme-accent: #a78bfa;
+}
+
+/* Dark theme base */
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+}
+
+/* Main container */
+.main {
+    background-color: var(--theme-bg);
+}
+
+/* Header */
+.nav {
+    background-color: var(--theme-surface);
+    border-bottom: 1px solid var(--theme-border);
+}
+
+.logo a {
+    color: var(--theme-text);
+    font-weight: 600;
+}
+
+.menu a {
+    color: var(--theme-text-secondary);
+}
+
+.menu a:hover {
+    color: var(--theme-primary-hover);
+}
+
+/* Profile/Home page */
+.profile {
+    background: linear-gradient(135deg, var(--theme-surface) 0%, var(--theme-bg) 100%);
+    border: 1px solid var(--theme-border);
+}
+
+.profile .profile_inner h1 {
+    color: var(--theme-text);
+}
+
+.profile .profile_inner .subtitle {
+    color: var(--theme-text-secondary);
+}
+
+/* Buttons */
+.button,
+.buttons .button {
+    background-color: var(--theme-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.button:hover,
+.buttons .button:hover {
+    background-color: var(--theme-primary-hover);
+}
+
+/* Post entries */
+.post-entry {
+    background-color: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 8px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.post-entry:hover {
+    border-color: var(--theme-primary);
+    transform: translateY(-2px);
+}
+
+.post-entry .entry-header h2 {
+    color: var(--theme-text);
+}
+
+.post-entry .entry-content {
+    color: var(--theme-text-secondary);
+}
+
+.post-entry .entry-footer {
+    color: var(--theme-text-secondary);
+}
+
+/* Links */
+a {
+    color: var(--theme-primary);
+}
+
+a:hover {
+    color: var(--theme-primary-hover);
+}
+
+/* Tags */
+.post-tags a {
+    background-color: var(--theme-border);
+    color: var(--theme-text-secondary);
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+.post-tags a:hover {
+    background-color: var(--theme-primary);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--theme-surface);
+    border-top: 1px solid var(--theme-border);
+    color: var(--theme-text-secondary);
+}
+
+/* Breadcrumbs */
+.breadcrumbs a {
+    color: var(--theme-text-secondary);
+}
+
+.breadcrumbs a:hover {
+    color: var(--theme-primary);
+}
+
+/* Post content */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: var(--theme-text);
+}
+
+.post-content p,
+.post-content li {
+    color: var(--theme-text-secondary);
+}
+
+/* Code blocks */
+code {
+    background-color: var(--theme-border);
+    color: var(--theme-accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+}
+
+/* Social icons */
+.social-icons a {
+    color: var(--theme-text-secondary);
+}
+
+.social-icons a:hover {
+    color: var(--theme-primary);
+}
+
+/* Search */
+#searchInput {
+    background-color: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    color: var(--theme-text);
+}
+
+#searchResults li {
+    background-color: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+}
+
+/* Pagination */
+.page-header h1 {
+    color: var(--theme-text);
+}
+
+.pagination a {
+    background-color: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    color: var(--theme-text);
+}
+
+.pagination a:hover {
+    border-color: var(--theme-primary);
+    color: var(--theme-primary);
+}
+
+/* Glow effect on primary elements */
+.button,
+.post-entry:hover {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
