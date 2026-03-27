@@ -1,0 +1,102 @@
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+        <a href="/" class="mobile-menu-item">
+            <span class="icon">🏠</span>
+            <span class="text">Home</span>
+        </a>
+        <a href="/posts/" class="mobile-menu-item">
+            <span class="icon">📝</span>
+            <span class="text">Blog</span>
+        </a>
+        <a href="/academy/" class="mobile-menu-item">
+            <span class="icon">🎓</span>
+            <span class="text">Maven Academy</span>
+        </a>
+        <a href="/skills/" class="mobile-menu-item">
+            <span class="icon">🛠️</span>
+            <span class="text">Skills</span>
+        </a>
+        <a href="/categories/" class="mobile-menu-item">
+            <span class="icon">📂</span>
+            <span class="text">Categories</span>
+        </a>
+        <a href="/about/" class="mobile-menu-item">
+            <span class="icon">ℹ️</span>
+            <span class="text">About</span>
+        </a>
+        <a href="/search/" class="mobile-menu-item">
+            <span class="icon">🔍</span>
+            <span class="text">Search</span>
+        </a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+        <a href="https://x.com/MiniMavenX" class="btn-mobile-secondary" target="_blank">
+            Follow on X
+        </a>
+        <a href="/about/" class="btn-mobile-primary">
+            Get Started
+        </a>
+    </div>
+</div>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+(function() {
+    const menuToggle = document.getElementById('mobileMenuToggle');
+    const menuClose = document.getElementById('mobileMenuClose');
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    const menuItems = document.querySelectorAll('.mobile-menu-item');
+    
+    function openMenu() {
+        menu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', openMenu);
+    }
+    
+    if (menuClose) {
+        menuClose.addEventListener('click', closeMenu);
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', closeMenu);
+    }
+    
+    // Close menu when clicking a menu item
+    menuItems.forEach(item => {
+        item.addEventListener('click', closeMenu);
+    });
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+})();
+</script>

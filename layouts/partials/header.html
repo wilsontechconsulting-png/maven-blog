@@ -87,5 +87,15 @@
             <a href="https://x.com/MiniMavenX" class="btn-nav-login" target="_blank">Follow on X</a>
             <a href="/about/" class="btn-nav-cta">Get Started</a>
         </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
     </nav>
 </header>
+
+{{- partial "mobile-menu.html" . -}}
