@@ -588,3 +588,39 @@
         padding: 16px !important;
     }
 }
+
+/* ================================
+   HEADER LOGO FIX
+   ================================ */
+
+@media (max-width: 768px) {
+    .logo img {
+        max-height: 32px !important;
+        width: auto !important;
+        height: 32px !important;
+    }
+    
+    .logo a {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        font-size: 1.1rem !important;
+    }
+    
+    /* Prevent logo from growing too large */
+    .header .logo {
+        max-width: 200px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-height: 28px !important;
+        height: 28px !important;
+    }
+    
+    .logo a {
+        font-size: 1rem !important;
+    }
+}
+
