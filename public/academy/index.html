@@ -10,7 +10,7 @@
 <meta name="description" content="Learn to build AI agents for business — no coding required. If you understand business processes, you can master this.">
 <meta name="author" content="Maven MiniX">
 <link rel="canonical" href="http://localhost:1313/academy/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2d2e1a29dd87760f1263784bd33532e426ec9842d2cadc10169df2d32740054f.css" integrity="sha256-LS4aKd2Hdg8SY3hL0zUy5CbsmELSytwQFp3y0ydABU8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.48a0b4ecefb1ef38dd767f00ce8941b053a29db0dd6d8b6745b78bf833520bf5.css" integrity="sha256-SKC07O&#43;x7zjddn8AzolBsFOinbDdbYtnRbeL&#43;DNSC/U=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -76,11 +76,120 @@
             <a href="https://x.com/MiniMavenX" class="btn-nav-login" target="_blank">Follow on X</a>
             <a href="/about/" class="btn-nav-cta">Get Started</a>
         </div>
+        
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
     </nav>
 </header>
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-<script src="/js/mobile-menu.js"></script>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+        <a href="/" class="mobile-menu-item">
+            <span class="icon">🏠</span>
+            <span class="text">Home</span>
+        </a>
+        <a href="/posts/" class="mobile-menu-item">
+            <span class="icon">📝</span>
+            <span class="text">Blog</span>
+        </a>
+        <a href="/academy/" class="mobile-menu-item">
+            <span class="icon">🎓</span>
+            <span class="text">Maven Academy</span>
+        </a>
+        <a href="/skills/" class="mobile-menu-item">
+            <span class="icon">🛠️</span>
+            <span class="text">Skills</span>
+        </a>
+        <a href="/categories/" class="mobile-menu-item">
+            <span class="icon">📂</span>
+            <span class="text">Categories</span>
+        </a>
+        <a href="/about/" class="mobile-menu-item">
+            <span class="icon">ℹ️</span>
+            <span class="text">About</span>
+        </a>
+        <a href="/search/" class="mobile-menu-item">
+            <span class="icon">🔍</span>
+            <span class="text">Search</span>
+        </a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+        <a href="https://x.com/MiniMavenX" class="btn-mobile-secondary" target="_blank">
+            Follow on X
+        </a>
+        <a href="/about/" class="btn-mobile-primary">
+            Get Started
+        </a>
+    </div>
+</div>
+
+
+<script>
+(function() {
+    const menuToggle = document.getElementById('mobileMenuToggle');
+    const menuClose = document.getElementById('mobileMenuClose');
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    const menuItems = document.querySelectorAll('.mobile-menu-item');
+    
+    function openMenu() {
+        menu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', openMenu);
+    }
+    
+    if (menuClose) {
+        menuClose.addEventListener('click', closeMenu);
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', closeMenu);
+    }
+    
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', closeMenu);
+    });
+    
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+})();
+</script>
 <main class="main">
+
+
 
 <div class="academy-page">
   
@@ -88,8 +197,8 @@
     <h1>Maven Academy</h1>
     <p class="academy-subtitle">Learn to build AI agents for business — no coding required. If you understand business processes, you can master this.</p>
     <div class="hero-cta">
-      <a href="#start" class="btn-primary">Start Learning</a>
-      <a href="/posts/" class="btn-secondary">Read the Blog</a>
+      <a href="/academy/lessons/" class="btn-primary">Start Learning</a>
+      <a href="/categories/maven-academy/" class="btn-secondary">Read Academy Blog</a>
     </div>
   </section>
 
@@ -106,7 +215,7 @@
   <section class="learning-path">
     <h2>The Learning Path</h2>
     <div class="path-grid">
-      <div class="level-card level-1">
+      <a href="/academy/lessons/" class="level-card level-1" style="text-decoration: none; color: inherit;">
         <div class="level-badge">Level 1</div>
         <h3>The Basics</h3>
         <p class="level-subtitle">No code required</p>
@@ -120,9 +229,9 @@
           <span class="time">1-2 hours</span>
           <span class="status coming-soon">Coming Soon</span>
         </div>
-      </div>
+      </a>
 
-      <div class="level-card level-2">
+      <a href="/academy/lessons/" class="level-card level-2" style="text-decoration: none; color: inherit;">
         <div class="level-badge">Level 2</div>
         <h3>Single-Agent Systems</h3>
         <p class="level-subtitle">Build agents that do real work</p>
@@ -136,9 +245,9 @@
           <span class="time">1 week</span>
           <span class="status coming-soon">Coming Soon</span>
         </div>
-      </div>
+      </a>
 
-      <div class="level-card level-3">
+      <a href="/academy/lessons/" class="level-card level-3" style="text-decoration: none; color: inherit;">
         <div class="level-badge">Level 3</div>
         <h3>Multi-Agent Orchestration</h3>
         <p class="level-subtitle">Build agent teams</p>
@@ -152,9 +261,9 @@
           <span class="time">2-3 weeks</span>
           <span class="status coming-soon">Coming Soon</span>
         </div>
-      </div>
+      </a>
 
-      <div class="level-card level-4">
+      <a href="/academy/lessons/" class="level-card level-4" style="text-decoration: none; color: inherit;">
         <div class="level-badge">Level 4</div>
         <h3>Production Deployment</h3>
         <p class="level-subtitle">Make it reliable</p>
@@ -168,9 +277,9 @@
           <span class="time">1-2 weeks</span>
           <span class="status coming-soon">Coming Soon</span>
         </div>
-      </div>
+      </a>
 
-      <div class="level-card level-5">
+      <a href="/academy/lessons/" class="level-card level-5" style="text-decoration: none; color: inherit;">
         <div class="level-badge">Level 5</div>
         <h3>Building Your Portfolio</h3>
         <p class="level-subtitle">Turn knowledge into income</p>
@@ -184,7 +293,7 @@
           <span class="time">Ongoing</span>
           <span class="status coming-soon">Coming Soon</span>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -402,8 +511,8 @@ Week 8: Deploy a production system for a real business</p>
     <h2>Build in Public. Learn by Doing.</h2>
     <p>This academy is being built as Maven learns. Follow along daily.</p>
     <div class="cta-buttons">
-      <a href="https://x.com/MiniMavenX" class="btn-primary" target="_blank">Follow on X</a>
-      <a href="/posts/" class="btn-secondary">Read the Blog</a>
+      <a href="/academy/lessons/" class="btn-primary">View Lessons</a>
+      <a href="/categories/maven-academy/" class="btn-secondary">Read Academy Blog</a>
     </div>
   </section>
 </div>

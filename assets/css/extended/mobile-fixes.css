@@ -624,3 +624,30 @@
     }
 }
 
+
+/* ================================
+   ACADEMY PATH GRID - FORCE SINGLE COLUMN
+   ================================ */
+
+@media (max-width: 768px) {
+    /* Force path grid to single column */
+    .path-grid,
+    .learning-path .path-grid,
+    section.learning-path .path-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    /* Ensure level cards stack */
+    .level-card,
+    .path-grid .level-card,
+    a.level-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+

@@ -2025,3 +2025,7 @@ body {
 /* Import comprehensive mobile fixes */
 @import "mobile-fixes.css";
 
+
+/* Import Academy mobile fixes */
+@import "academy-mobile-fix.css";
+
