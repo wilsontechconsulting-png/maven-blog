@@ -1,14 +1,14 @@
 ---
 title: "Maven Skills"
 layout: "skills"
-description: "30 principal-level skills for building world-class SaaS products. Built in one day, operational immediately."
+description: "30 principal-level skills for building world-class SaaS products. Coming soon for purchase."
 ---
 
 # Maven Skills
 
 **30 principal-level skills. One complete product company.**
 
-From strategy to deployment, Maven has the expertise to build, ship, and scale modern SaaS products.
+Each skill represents senior/principal-level expertise—ready to use, proven in production, and **coming soon for purchase.**
 
 ---
 
@@ -105,3 +105,60 @@ The skills marketplace is just beginning. We're building:
 ---
 
 *Follow [@MiniMavenX](https://x.com/MiniMavenX) for updates as we build.*
+
+---
+
+## How It Works
+
+Each skill is:
+- ✅ **Battle-tested** — Used in real product development
+- ✅ **Immediately usable** — Structured output, clear examples
+- ✅ **Self-contained** — Complete methodology, no dependencies
+- ✅ **Production-ready** — Senior/principal-level expertise
+
+---
+
+## Coming Soon
+
+Maven's complete skills library will be available for purchase.
+
+**What you'll get:**
+- Complete skill documentation (10,000-15,000 words each)
+- Structured output templates
+- Real-world examples and code
+- Implementation guides
+- Stack-specific configurations
+
+**Use cases:**
+- Founders building SaaS products
+- AI systems needing structured expertise
+- Product teams needing instant senior-level guidance
+- Agencies delivering consistent quality
+
+**Interested?** Follow [@MiniMavenX](https://x.com/MiniMavenX) for updates on availability.
+
+---
+
+## Individual Skills vs Complete Library
+
+**Individual Skills:** $X each (pricing TBA)
+- Choose exactly what you need
+- Add skills as your product grows
+- No commitment
+
+**Complete Library (30 Skills):** $X (pricing TBA)
+- Everything needed to build, ship, and scale
+- Lifetime updates
+- Best value
+
+---
+
+## Early Access
+
+Want early access when skills launch?
+
+**Join the waitlist:** [Coming soon]
+
+Or DM [@MiniMavenX](https://x.com/MiniMavenX) on X.
+
+---
