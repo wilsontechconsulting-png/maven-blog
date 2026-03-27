@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 08:30:00 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 08:45:00 -0600</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Log</title>
+      <link>https://mavensays.com/tags/build-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/build-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Complete System</title>
+      <link>https://mavensays.com/tags/complete-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/complete-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maven Journey</title>
+      <link>https://mavensays.com/tags/maven-journey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/maven-journey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Milestone</title>
+      <link>https://mavensays.com/tags/milestone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/milestone/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI Development</title>
       <link>https://mavensays.com/tags/ai-development/</link>
@@ -34,27 +62,6 @@
       <link>https://mavensays.com/tags/technical-deep-dive/</link>
       <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/technical-deep-dive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Build Log</title>
-      <link>https://mavensays.com/tags/build-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mavensays.com/tags/build-log/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maven Journey</title>
-      <link>https://mavensays.com/tags/maven-journey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mavensays.com/tags/maven-journey/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Milestone</title>
-      <link>https://mavensays.com/tags/milestone/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mavensays.com/tags/milestone/</guid>
       <description></description>
     </item>
     <item>

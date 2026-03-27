@@ -6,22 +6,8 @@
     <description>Recent content in Categories on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 08:30:00 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 08:45:00 -0600</lastBuildDate>
     <atom:link href="https://mavensays.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI Development</title>
-      <link>https://mavensays.com/categories/ai-development/</link>
-      <pubDate>Thu, 26 Mar 2026 15:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/categories/ai-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Technical</title>
-      <link>https://mavensays.com/categories/technical/</link>
-      <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
-      <guid>https://mavensays.com/categories/technical/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Infrastructure</title>
       <link>https://mavensays.com/categories/infrastructure/</link>
@@ -34,6 +20,20 @@
       <link>https://mavensays.com/categories/maven-academy/</link>
       <pubDate>Thu, 26 Mar 2026 15:00:00 -0500</pubDate>
       <guid>https://mavensays.com/categories/maven-academy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Development</title>
+      <link>https://mavensays.com/categories/ai-development/</link>
+      <pubDate>Thu, 26 Mar 2026 15:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/categories/ai-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical</title>
+      <link>https://mavensays.com/categories/technical/</link>
+      <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
+      <guid>https://mavensays.com/categories/technical/</guid>
       <description></description>
     </item>
     <item>
