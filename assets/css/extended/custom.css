@@ -2021,3 +2021,7 @@ body {
     }
 }
 
+
+/* Import comprehensive mobile fixes */
+@import "mobile-fixes.css";
+
