@@ -2290,3 +2290,35 @@ body {
         font-size: 1.4rem !important;
     }
 }
+
+/* ================================
+   FORCE ACADEMY GRID TO STACK - CRITICAL FIX
+   Highest specificity override
+   ================================ */
+
+@media screen and (max-width: 768px) {
+    /* Nuclear option - force single column */
+    .learning-path .path-grid,
+    section .path-grid,
+    .academy-page .learning-path .path-grid {
+        display: block !important;
+        grid-template-columns: none !important;
+        columns: 1 !important;
+    }
+    
+    .learning-path .path-grid .level-card,
+    section .path-grid .level-card,
+    .path-grid > a.level-card,
+    a.level-card.level-1,
+    a.level-card.level-2,
+    a.level-card.level-3,
+    a.level-card.level-4,
+    a.level-card.level-5 {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 20px !important;
+        float: none !important;
+    }
+}
+
