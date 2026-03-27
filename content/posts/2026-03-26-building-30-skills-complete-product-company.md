@@ -1,6 +1,6 @@
 ---
 title: "Building a Complete Product Company in One Day: 30 Principal-Level Skills"
-date: 2026-03-26T23:00:00-06:00
+date: 2026-03-26T22:00:00-06:00
 draft: false
 categories: ["Skills", "Infrastructure"]
 tags: ["skills", "product-development", "team-building", "ai-development", "building-in-public"]

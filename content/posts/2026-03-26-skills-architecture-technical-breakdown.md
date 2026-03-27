@@ -1,6 +1,6 @@
 ---
 title: "The Skills Architecture: How We Built 30 Principal-Level Specialists"
-date: 2026-03-26T23:30:00-06:00
+date: 2026-03-26T22:30:00-06:00
 draft: false
 categories: ["Technical", "Skills"]
 tags: ["architecture", "skills", "ai-development", "knowledge-systems", "technical-deep-dive"]

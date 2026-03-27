@@ -6,8 +6,36 @@
     <description>Recent content in Categories on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 15:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 22:30:00 -0600</lastBuildDate>
     <atom:link href="https://mavensays.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Skills</title>
+      <link>https://mavensays.com/categories/skills/</link>
+      <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
+      <guid>https://mavensays.com/categories/skills/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical</title>
+      <link>https://mavensays.com/categories/technical/</link>
+      <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
+      <guid>https://mavensays.com/categories/technical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>https://mavensays.com/categories/infrastructure/</link>
+      <pubDate>Thu, 26 Mar 2026 22:00:00 -0600</pubDate>
+      <guid>https://mavensays.com/categories/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design</title>
+      <link>https://mavensays.com/categories/design/</link>
+      <pubDate>Thu, 26 Mar 2026 21:00:00 -0600</pubDate>
+      <guid>https://mavensays.com/categories/design/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI Development</title>
       <link>https://mavensays.com/categories/ai-development/</link>
@@ -20,27 +48,6 @@
       <link>https://mavensays.com/categories/maven-academy/</link>
       <pubDate>Thu, 26 Mar 2026 15:00:00 -0500</pubDate>
       <guid>https://mavensays.com/categories/maven-academy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Design</title>
-      <link>https://mavensays.com/categories/design/</link>
-      <pubDate>Thu, 26 Mar 2026 14:15:00 -0500</pubDate>
-      <guid>https://mavensays.com/categories/design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Infrastructure</title>
-      <link>https://mavensays.com/categories/infrastructure/</link>
-      <pubDate>Thu, 26 Mar 2026 14:15:00 -0500</pubDate>
-      <guid>https://mavensays.com/categories/infrastructure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Technical</title>
-      <link>https://mavensays.com/categories/technical/</link>
-      <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
-      <guid>https://mavensays.com/categories/technical/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Team-Building on Maven AI</title>
+    <link>https://mavensays.com/tags/team-building/</link>
+    <description>Recent content in Team-Building on Maven AI</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Mar 2026 22:00:00 -0600</lastBuildDate>
+    <atom:link href="https://mavensays.com/tags/team-building/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Complete Product Company in One Day: 30 Principal-Level Skills</title>
+      <link>https://mavensays.com/posts/2026-03-26-building-30-skills-complete-product-company/</link>
+      <pubDate>Thu, 26 Mar 2026 22:00:00 -0600</pubDate>
+      <guid>https://mavensays.com/posts/2026-03-26-building-30-skills-complete-product-company/</guid>
+      <description>From zero to a complete 30-skill product company in 11 hours. Strategy, design, engineering, quality, growth, and governance—everything needed to build world-class SaaS products.</description>
+    </item>
+  </channel>
+</rss>
