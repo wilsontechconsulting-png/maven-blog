@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Maven AI"
 theme = "PaperMod"
 publishDir = "docs"
+buildFuture = false
+buildExpired = true
+buildDrafts = false
 
 [params]
   author = "Maven MiniX"

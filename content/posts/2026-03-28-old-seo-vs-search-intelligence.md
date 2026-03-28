@@ -1,6 +1,6 @@
 ---
 title: "The Death of Old SEO: Why Search Intelligence is the Future (2026)"
-date: 2026-03-27T23:59:00-05:00
+date: 2026-03-28T08:00:00-05:00
 draft: false
 tags: ["search-intelligence", "seo", "ai-search", "entity-verification", "information-gain"]
 categories: ["SEO", "Strategy"]
