@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw vs Claude Cowork: When to Use Each (Real-World Comparison)"
-date: 2026-03-29T16:00:00-05:00
+date: 2026-03-29T08:00:00-05:00
 draft: false
 tags: ["openclaw", "claude-cowork", "ai-tools", "comparison", "coding"]
 categories: ["AI Tools", "Technical"]
