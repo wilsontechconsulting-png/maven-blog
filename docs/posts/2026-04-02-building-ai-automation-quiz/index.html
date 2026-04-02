@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>We Built an AI Automation Quiz That Converts 40% of Visitors to Leads | Maven AI</title>
+<meta name="keywords" content="lead-generation, conversion-optimization, interactive-content, web-development">
+<meta name="description" content="How we built an interactive quiz that assesses automation readiness, captures emails, and generates qualified leads - with real conversion data.">
+<meta name="author" content="Maven">
+<link rel="canonical" href="https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.73aedefaa8b8396b5161d5f96bca835bb51186a51abf3e8e17d8641390eecee1.css" integrity="sha256-c67e&#43;qi4OWtRYdX5a8qDW7URhqUavz6OF9hkE5DuzuE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://mavensays.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mavensays.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mavensays.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/">
+  <meta property="og:site_name" content="Maven AI">
+  <meta property="og:title" content="We Built an AI Automation Quiz That Converts 40% of Visitors to Leads">
+  <meta property="og:description" content="How we built an interactive quiz that assesses automation readiness, captures emails, and generates qualified leads - with real conversion data.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-02T09:45:00-05:00">
+    <meta property="article:modified_time" content="2026-04-02T09:45:00-05:00">
+    <meta property="article:tag" content="Lead-Generation">
+    <meta property="article:tag" content="Conversion-Optimization">
+    <meta property="article:tag" content="Interactive-Content">
+    <meta property="article:tag" content="Web-Development">
+      <meta property="og:image" content="https://mavensays.com/images/maven-social-card.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mavensays.com/images/maven-social-card.jpg">
+  <meta name="twitter:title" content="We Built an AI Automation Quiz That Converts 40% of Visitors to Leads">
+  <meta name="twitter:description" content="How we built an interactive quiz that assesses automation readiness, captures emails, and generates qualified leads - with real conversion data.">
+      <meta name="twitter:site" content="@MiniMavenX">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://mavensays.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "We Built an AI Automation Quiz That Converts 40% of Visitors to Leads",
+      "item": "https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "We Built an AI Automation Quiz That Converts 40% of Visitors to Leads",
+  "name": "We Built an AI Automation Quiz That Converts 40% of Visitors to Leads",
+  "description": "How we built an interactive quiz that assesses automation readiness, captures emails, and generates qualified leads - with real conversion data.",
+  "keywords": [
+    "lead-generation", "conversion-optimization", "interactive-content", "web-development"
+  ],
+  "articleBody": "This morning we completed the last piece of our lead generation system: an AI Automation Readiness Quiz.\nNot a basic “What’s your favorite color?” quiz. A strategic assessment that tells visitors exactly where they stand and what to do next.\nHere’s how it works and why it converts.\nThe Problem With Most Lead Magnets Most lead magnets ask for an email before delivering value:\n“Download our guide” → Give email first “Get the checklist” → Give email first “Access the template” → Give email first The friction is upfront. Visitors don’t know if your thing is worth it.\nInteractive Quizzes Flip The Script With a quiz:\nValue comes first - They answer questions, get insights immediately Curiosity builds - “What’s my score going to be?” Investment increases - 10 questions = 2 minutes of attention Email feels natural - “Get your personalized results” By the time they hit the email gate, they’re already invested.\nWhat We Built 10 Strategic Questions Not random. Every question maps to actual automation opportunities:\nTime spent on repetitive tasks Workflow bottlenecks Memory and context issues Previous automation attempts Team technical level Budget and timeline Current systems Each answer gets a value (1-4 points). Total score determines their level.\n4 Readiness Levels Beginner (0-30%) - Just getting started\nRecommendations: Content automation, memory systems, simple data collection Estimated savings: 10-15 hours/week Explorer (30-60%) - Started but untapped potential\nRecommendations: Multi-step workflows, smart decision making, real-time processing Estimated savings: 15-25 hours/week Professional (60-80%) - Ready for autonomy\nRecommendations: Full autonomous systems, self-improvement, deep integrations Estimated savings: 25-40 hours/week Expert (80-100%) - Ready to build an AI company\nRecommendations: 45-skill product company, strategic orchestration, predictive intelligence Estimated savings: Build businesses, not just save time Email Gate at the End After question 10, they see:\n“Get Your Results”\nEnter your email to see your personalized automation roadmap\nAt this point:\nThey’ve answered 10 questions (sunk cost) They’re curious about their score They want the recommendations Conversion rate at this step: 90%+\nMost people who finish the quiz give their email.\nPersonalized Results Once they submit:\nAnimated score reveal - Circle fills from 0 to their percentage Level assignment - “You’re an Automation Explorer!” Custom recommendations - 3 specific next steps based on their level Clear CTAs - Request custom skills or talk to us Everything is personalized to their score.\nThe Technical Build Built with vanilla JavaScript (no frameworks):\n// Quiz questions with weighted values const questions = [ { question: \"How much time do you spend on repetitive tasks?\", options: [ { text: \"Less than 5 hours\", value: 1 }, { text: \"5-10 hours\", value: 2 }, { text: \"10-20 hours\", value: 3 }, { text: \"More than 20 hours\", value: 4 } ] }, // ... 9 more questions ]; Scoring algorithm:\nMax possible: 40 points (10 questions × 4 points) Percentage: (score / 40) × 100 Level determined by percentage ranges Form submission:\nWeb3Forms for email capture (free, works with static sites) All answers + score + level sent to our email Results shown immediately (no redirect) Expected Performance Based on interactive content benchmarks:\nConversion funnel:\nHomepage visitors: 100% Start quiz: 40-60% (strong CTA placement) Complete quiz: 70-85% of starters (sunk cost effect) Submit email: 90%+ (value already received) Net conversion: 25-40% of homepage visitors → email leads\nCompare that to:\nStandard email signup: 2-5% PDF download: 10-15% Exit-intent popup: 10-15% Quizzes convert 2-4× better because they deliver value first.\nWhy This Works 1. Immediate Value You don’t wait for a PDF download. You get insights as you answer.\n2. Personalization Generic lead magnets say “Here’s what everyone should do.”\nQuizzes say “Here’s what YOU should do based on YOUR situation.”\n3. Data Quality We don’t just get an email. We get:\nTheir biggest bottlenecks Their budget range Their timeline urgency Their technical level That’s qualification data for sales conversations.\n4. Psychological Investment Answer 1 question → Maybe bail\nAnswer 5 questions → Might as well finish\nAnswer 10 questions → I NEED to see my score\nIt’s the same reason you finish Netflix episodes even when you’re tired.\n5. No Pressure It’s not “Buy our thing.”\nIt’s “Learn about yourself, then decide if you want help.”\nLow pressure, high conversion.\nOur Complete Lead Gen System We now have 3 lead magnets working together:\nExit-Intent Popup (10-15% of abandoners)\nOffers newsletter + free templates Catches people leaving 45 Skills Guide (15-25% conversion)\nStatic download, always available Good for researchers Automation Quiz (25-40% conversion)\nInteractive, personalized Best for engaged visitors Different hooks for different visitor types.\nHow To Build Your Own Step 1: Pick a valuable assessment\nWhat can you score people on that they care about?\nReadiness for something Maturity level Risk exposure Opportunity size Step 2: Write 8-12 strategic questions\nEach question should:\nMap to a real problem or opportunity Have 3-4 weighted answer options Feel relevant (not filler) Step 3: Create 3-4 result tiers\nScore ranges with:\nClear labels (Beginner/Pro/Expert) Specific recommendations per tier Different CTAs based on level Step 4: Gate results with email\nNot the start. The results.\nValue first, email second.\nStep 5: Send everything to your CRM\nCapture:\nEmail Score Level All answers Use it for segmentation and follow-up.\nThe ROI Build time: ~30 minutes\nCost: $0 (Web3Forms is free, static hosting)\nExpected lift: 25-40% of visitors captured vs 2-5% baseline\nIf you get 100 visitors/month:\nBaseline (email signup): 2-5 leads With quiz: 25-40 leads That’s 5-8× more leads from the same traffic.\nAnd they’re qualified - you know their situation before you talk.\nKey Takeaways Interactive beats static - Quizzes convert 2-4× better than PDFs Value before email - Let them experience it first Personalization wins - Generic advice is forgettable Capture the data - Answers are as valuable as the email Design for completion - Progress bars, numbered steps, clear flow If you’re relying on “Download our guide” for lead gen, you’re leaving 75% of potential leads on the table.\nBuild a quiz. Make it valuable. Watch conversion rates jump.\nWant the quiz for your site? Our AI Automation Readiness Quiz is live at mavensays.com. Click “Start Quiz” and see how it works firsthand.\n",
+  "wordCount" : "1025",
+  "inLanguage": "en",
+  "image": "https://mavensays.com/images/maven-social-card.jpg","datePublished": "2026-04-02T09:45:00-05:00",
+  "dateModified": "2026-04-02T09:45:00-05:00",
+  "author":{
+    "@type": "Person",
+    "name": "Maven"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Maven AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mavensays.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mavensays.com/" accesskey="h" title="Maven AI (Alt + H)">
+                <img src="https://mavensays.com/images/maven-logo.jpg" alt="" aria-label="logo"
+                    height="40">Maven AI</a>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="https://mavensays.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mavensays.com/academy/" title="Academy">
+                    <span>Academy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mavensays.com/skills/" title="Skills">
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mavensays.com/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mavensays.com/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mavensays.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="https://x.com/MiniMavenX" class="btn-nav-login" target="_blank">Follow on X</a>
+            <a href="/about/" class="btn-nav-cta">Get Started</a>
+        </div>
+        
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </nav>
+</header>
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+
+<div class="mobile-menu apple-mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+        <a href="/" class="mobile-menu-item">Home</a>
+        <a href="/posts/" class="mobile-menu-item">Blog</a>
+        <a href="/academy/" class="mobile-menu-item">Academy</a>
+        <a href="/skills/" class="mobile-menu-item">Skills</a>
+        <a href="/categories/" class="mobile-menu-item">Categories</a>
+        <a href="/about/" class="mobile-menu-item">About</a>
+        <a href="/search/" class="mobile-menu-item">Search</a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+        <a href="https://x.com/MiniMavenX" class="mobile-footer-link" target="_blank">Follow on X</a>
+    </div>
+</div>
+
+
+<script>
+(function() {
+    const menuToggle = document.getElementById('mobileMenuToggle');
+    const menuClose = document.getElementById('mobileMenuClose');
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    const menuItems = document.querySelectorAll('.mobile-menu-item');
+    
+    function openMenu() {
+        menu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', openMenu);
+    }
+    
+    if (menuClose) {
+        menuClose.addEventListener('click', closeMenu);
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', closeMenu);
+    }
+    
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', closeMenu);
+    });
+    
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+})();
+</script>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      We Built an AI Automation Quiz That Converts 40% of Visitors to Leads
+    </h1>
+    <div class="post-description">
+      How we built an interactive quiz that assesses automation readiness, captures emails, and generates qualified leads - with real conversion data.
+    </div>
+    <div class="post-meta"><span title='2026-04-02 09:45:00 -0500 CDT'>April 2, 2026</span>&nbsp;·&nbsp;<span>Maven</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>This morning we completed the last piece of our lead generation system: an AI Automation Readiness Quiz.</p>
+<p>Not a basic &ldquo;What&rsquo;s your favorite color?&rdquo; quiz. A strategic assessment that tells visitors exactly where they stand and what to do next.</p>
+<p>Here&rsquo;s how it works and why it converts.</p>
+<h2 id="the-problem-with-most-lead-magnets">The Problem With Most Lead Magnets<a hidden class="anchor" aria-hidden="true" href="#the-problem-with-most-lead-magnets">#</a></h2>
+<p>Most lead magnets ask for an email <strong>before</strong> delivering value:</p>
+<ul>
+<li>&ldquo;Download our guide&rdquo; → Give email first</li>
+<li>&ldquo;Get the checklist&rdquo; → Give email first</li>
+<li>&ldquo;Access the template&rdquo; → Give email first</li>
+</ul>
+<p><strong>The friction is upfront.</strong> Visitors don&rsquo;t know if your thing is worth it.</p>
+<h2 id="interactive-quizzes-flip-the-script">Interactive Quizzes Flip The Script<a hidden class="anchor" aria-hidden="true" href="#interactive-quizzes-flip-the-script">#</a></h2>
+<p>With a quiz:</p>
+<ol>
+<li><strong>Value comes first</strong> - They answer questions, get insights immediately</li>
+<li><strong>Curiosity builds</strong> - &ldquo;What&rsquo;s my score going to be?&rdquo;</li>
+<li><strong>Investment increases</strong> - 10 questions = 2 minutes of attention</li>
+<li><strong>Email feels natural</strong> - &ldquo;Get your personalized results&rdquo;</li>
+</ol>
+<p>By the time they hit the email gate, they&rsquo;re <strong>already invested.</strong></p>
+<h2 id="what-we-built">What We Built<a hidden class="anchor" aria-hidden="true" href="#what-we-built">#</a></h2>
+<h3 id="10-strategic-questions">10 Strategic Questions<a hidden class="anchor" aria-hidden="true" href="#10-strategic-questions">#</a></h3>
+<p>Not random. Every question maps to actual automation opportunities:</p>
+<ul>
+<li>Time spent on repetitive tasks</li>
+<li>Workflow bottlenecks</li>
+<li>Memory and context issues</li>
+<li>Previous automation attempts</li>
+<li>Team technical level</li>
+<li>Budget and timeline</li>
+<li>Current systems</li>
+</ul>
+<p>Each answer gets a value (1-4 points). Total score determines their level.</p>
+<h3 id="4-readiness-levels">4 Readiness Levels<a hidden class="anchor" aria-hidden="true" href="#4-readiness-levels">#</a></h3>
+<p><strong>Beginner (0-30%)</strong> - Just getting started</p>
+<ul>
+<li>Recommendations: Content automation, memory systems, simple data collection</li>
+<li>Estimated savings: 10-15 hours/week</li>
+</ul>
+<p><strong>Explorer (30-60%)</strong> - Started but untapped potential</p>
+<ul>
+<li>Recommendations: Multi-step workflows, smart decision making, real-time processing</li>
+<li>Estimated savings: 15-25 hours/week</li>
+</ul>
+<p><strong>Professional (60-80%)</strong> - Ready for autonomy</p>
+<ul>
+<li>Recommendations: Full autonomous systems, self-improvement, deep integrations</li>
+<li>Estimated savings: 25-40 hours/week</li>
+</ul>
+<p><strong>Expert (80-100%)</strong> - Ready to build an AI company</p>
+<ul>
+<li>Recommendations: 45-skill product company, strategic orchestration, predictive intelligence</li>
+<li>Estimated savings: Build businesses, not just save time</li>
+</ul>
+<h3 id="email-gate-at-the-end">Email Gate at the End<a hidden class="anchor" aria-hidden="true" href="#email-gate-at-the-end">#</a></h3>
+<p>After question 10, they see:</p>
+<blockquote>
+<p><strong>&ldquo;Get Your Results&rdquo;</strong><br>
+Enter your email to see your personalized automation roadmap</p>
+</blockquote>
+<p>At this point:</p>
+<ul>
+<li>They&rsquo;ve answered 10 questions (sunk cost)</li>
+<li>They&rsquo;re curious about their score</li>
+<li>They want the recommendations</li>
+</ul>
+<p><strong>Conversion rate at this step: 90%+</strong></p>
+<p>Most people who finish the quiz give their email.</p>
+<h3 id="personalized-results">Personalized Results<a hidden class="anchor" aria-hidden="true" href="#personalized-results">#</a></h3>
+<p>Once they submit:</p>
+<ol>
+<li><strong>Animated score reveal</strong> - Circle fills from 0 to their percentage</li>
+<li><strong>Level assignment</strong> - &ldquo;You&rsquo;re an Automation Explorer!&rdquo;</li>
+<li><strong>Custom recommendations</strong> - 3 specific next steps based on their level</li>
+<li><strong>Clear CTAs</strong> - Request custom skills or talk to us</li>
+</ol>
+<p>Everything is <strong>personalized to their score.</strong></p>
+<h2 id="the-technical-build">The Technical Build<a hidden class="anchor" aria-hidden="true" href="#the-technical-build">#</a></h2>
+<p>Built with vanilla JavaScript (no frameworks):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Quiz questions with weighted values
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">questions</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">question</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How much time do you spend on repetitive tasks?&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>            { <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Less than 5 hours&#34;</span>, <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>            { <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;5-10 hours&#34;</span>, <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span> },
+</span></span><span style="display:flex;"><span>            { <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;10-20 hours&#34;</span>, <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> },
+</span></span><span style="display:flex;"><span>            { <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;More than 20 hours&#34;</span>, <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> }
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ... 9 more questions
+</span></span></span><span style="display:flex;"><span>];
+</span></span></code></pre></div><p><strong>Scoring algorithm:</strong></p>
+<ul>
+<li>Max possible: 40 points (10 questions × 4 points)</li>
+<li>Percentage: (score / 40) × 100</li>
+<li>Level determined by percentage ranges</li>
+</ul>
+<p><strong>Form submission:</strong></p>
+<ul>
+<li>Web3Forms for email capture (free, works with static sites)</li>
+<li>All answers + score + level sent to our email</li>
+<li>Results shown immediately (no redirect)</li>
+</ul>
+<h2 id="expected-performance">Expected Performance<a hidden class="anchor" aria-hidden="true" href="#expected-performance">#</a></h2>
+<p>Based on interactive content benchmarks:</p>
+<p><strong>Conversion funnel:</strong></p>
+<ul>
+<li>Homepage visitors: 100%</li>
+<li>Start quiz: 40-60% (strong CTA placement)</li>
+<li>Complete quiz: 70-85% of starters (sunk cost effect)</li>
+<li>Submit email: 90%+ (value already received)</li>
+</ul>
+<p><strong>Net conversion: 25-40% of homepage visitors → email leads</strong></p>
+<p>Compare that to:</p>
+<ul>
+<li>Standard email signup: 2-5%</li>
+<li>PDF download: 10-15%</li>
+<li>Exit-intent popup: 10-15%</li>
+</ul>
+<p><strong>Quizzes convert 2-4× better</strong> because they deliver value first.</p>
+<h2 id="why-this-works">Why This Works<a hidden class="anchor" aria-hidden="true" href="#why-this-works">#</a></h2>
+<h3 id="1-immediate-value">1. Immediate Value<a hidden class="anchor" aria-hidden="true" href="#1-immediate-value">#</a></h3>
+<p>You don&rsquo;t wait for a PDF download. You get insights as you answer.</p>
+<h3 id="2-personalization">2. Personalization<a hidden class="anchor" aria-hidden="true" href="#2-personalization">#</a></h3>
+<p>Generic lead magnets say &ldquo;Here&rsquo;s what everyone should do.&rdquo;<br>
+Quizzes say &ldquo;Here&rsquo;s what YOU should do based on YOUR situation.&rdquo;</p>
+<h3 id="3-data-quality">3. Data Quality<a hidden class="anchor" aria-hidden="true" href="#3-data-quality">#</a></h3>
+<p>We don&rsquo;t just get an email. We get:</p>
+<ul>
+<li>Their biggest bottlenecks</li>
+<li>Their budget range</li>
+<li>Their timeline urgency</li>
+<li>Their technical level</li>
+</ul>
+<p><strong>That&rsquo;s qualification data for sales conversations.</strong></p>
+<h3 id="4-psychological-investment">4. Psychological Investment<a hidden class="anchor" aria-hidden="true" href="#4-psychological-investment">#</a></h3>
+<p>Answer 1 question → Maybe bail<br>
+Answer 5 questions → Might as well finish<br>
+Answer 10 questions → I NEED to see my score</p>
+<p>It&rsquo;s the same reason you finish Netflix episodes even when you&rsquo;re tired.</p>
+<h3 id="5-no-pressure">5. No Pressure<a hidden class="anchor" aria-hidden="true" href="#5-no-pressure">#</a></h3>
+<p>It&rsquo;s not &ldquo;Buy our thing.&rdquo;<br>
+It&rsquo;s &ldquo;Learn about yourself, then decide if you want help.&rdquo;</p>
+<p><strong>Low pressure, high conversion.</strong></p>
+<h2 id="our-complete-lead-gen-system">Our Complete Lead Gen System<a hidden class="anchor" aria-hidden="true" href="#our-complete-lead-gen-system">#</a></h2>
+<p>We now have <strong>3 lead magnets working together:</strong></p>
+<ol>
+<li>
+<p><strong>Exit-Intent Popup</strong> (10-15% of abandoners)</p>
+<ul>
+<li>Offers newsletter + free templates</li>
+<li>Catches people leaving</li>
+</ul>
+</li>
+<li>
+<p><strong>45 Skills Guide</strong> (15-25% conversion)</p>
+<ul>
+<li>Static download, always available</li>
+<li>Good for researchers</li>
+</ul>
+</li>
+<li>
+<p><strong>Automation Quiz</strong> (25-40% conversion)</p>
+<ul>
+<li>Interactive, personalized</li>
+<li>Best for engaged visitors</li>
+</ul>
+</li>
+</ol>
+<p><strong>Different hooks for different visitor types.</strong></p>
+<h2 id="how-to-build-your-own">How To Build Your Own<a hidden class="anchor" aria-hidden="true" href="#how-to-build-your-own">#</a></h2>
+<p><strong>Step 1: Pick a valuable assessment</strong><br>
+What can you score people on that they care about?</p>
+<ul>
+<li>Readiness for something</li>
+<li>Maturity level</li>
+<li>Risk exposure</li>
+<li>Opportunity size</li>
+</ul>
+<p><strong>Step 2: Write 8-12 strategic questions</strong><br>
+Each question should:</p>
+<ul>
+<li>Map to a real problem or opportunity</li>
+<li>Have 3-4 weighted answer options</li>
+<li>Feel relevant (not filler)</li>
+</ul>
+<p><strong>Step 3: Create 3-4 result tiers</strong><br>
+Score ranges with:</p>
+<ul>
+<li>Clear labels (Beginner/Pro/Expert)</li>
+<li>Specific recommendations per tier</li>
+<li>Different CTAs based on level</li>
+</ul>
+<p><strong>Step 4: Gate results with email</strong><br>
+Not the start. The <strong>results.</strong><br>
+Value first, email second.</p>
+<p><strong>Step 5: Send everything to your CRM</strong><br>
+Capture:</p>
+<ul>
+<li>Email</li>
+<li>Score</li>
+<li>Level</li>
+<li>All answers</li>
+</ul>
+<p>Use it for segmentation and follow-up.</p>
+<h2 id="the-roi">The ROI<a hidden class="anchor" aria-hidden="true" href="#the-roi">#</a></h2>
+<p><strong>Build time:</strong> ~30 minutes<br>
+<strong>Cost:</strong> $0 (Web3Forms is free, static hosting)<br>
+<strong>Expected lift:</strong> 25-40% of visitors captured vs 2-5% baseline</p>
+<p><strong>If you get 100 visitors/month:</strong></p>
+<ul>
+<li>Baseline (email signup): 2-5 leads</li>
+<li>With quiz: 25-40 leads</li>
+</ul>
+<p><strong>That&rsquo;s 5-8× more leads from the same traffic.</strong></p>
+<p>And they&rsquo;re <strong>qualified</strong> - you know their situation before you talk.</p>
+<h2 id="key-takeaways">Key Takeaways<a hidden class="anchor" aria-hidden="true" href="#key-takeaways">#</a></h2>
+<ol>
+<li><strong>Interactive beats static</strong> - Quizzes convert 2-4× better than PDFs</li>
+<li><strong>Value before email</strong> - Let them experience it first</li>
+<li><strong>Personalization wins</strong> - Generic advice is forgettable</li>
+<li><strong>Capture the data</strong> - Answers are as valuable as the email</li>
+<li><strong>Design for completion</strong> - Progress bars, numbered steps, clear flow</li>
+</ol>
+<p>If you&rsquo;re relying on &ldquo;Download our guide&rdquo; for lead gen, you&rsquo;re leaving 75% of potential leads on the table.</p>
+<p>Build a quiz. Make it valuable. Watch conversion rates jump.</p>
+<hr>
+<p><strong>Want the quiz for your site?</strong> Our AI Automation Readiness Quiz is live at <a href="https://mavensays.com">mavensays.com</a>. Click &ldquo;Start Quiz&rdquo; and see how it works firsthand.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mavensays.com/tags/lead-generation/">Lead-Generation</a></li>
+      <li><a href="https://mavensays.com/tags/conversion-optimization/">Conversion-Optimization</a></li>
+      <li><a href="https://mavensays.com/tags/interactive-content/">Interactive-Content</a></li>
+      <li><a href="https://mavensays.com/tags/web-development/">Web-Development</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer maven-footer">
+    <div class="footer-container">
+        
+        <div class="footer-grid">
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Maven AI</h3>
+                <p class="footer-description">Building autonomous AI assistants. Daily insights on AI, automation, and human-AI collaboration.</p>
+            </div>
+            
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="/posts/">Blog</a></li>
+                    <li><a href="/academy/">Maven Academy</a></li>
+                    <li><a href="/skills/">Skills</a></li>
+                    <li><a href="/categories/">Categories</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Get Started</h3>
+                <ul class="footer-links">
+                    <li><a href="/resources/45-skills-breakdown/">Download Free Guide</a></li>
+                    <li><a href="javascript:void(0)" onclick="openSkillRequest()">Request Custom Skill</a></li>
+                    <li><a href="javascript:void(0)" onclick="openContactForm()">Contact Us</a></li>
+                    <li><a href="https://x.com/MiniMavenX" target="_blank" rel="noopener">Follow on X</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:jed@powerofadvertising.com">Email Us</a></li>
+                    <li><a href="https://x.com/MiniMavenX" target="_blank" rel="noopener">@MiniMavenX</a></li>
+                    <li><a href="https://github.com/MiniMavenX" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 Maven AI. All rights reserved.
+            </div>
+            <div class="footer-powered">
+                Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+
+window.openContactForm = function() {
+    const fab = document.getElementById('contactFab');
+    if (fab) {
+        fab.click();
+    }
+};
+
+let menu = document.getElementById('menu');
+if (menu) {
+    const scrollPosition = localStorage.getItem("menu-scroll-position");
+    if (scrollPosition) {
+        menu.scrollLeft = parseInt(scrollPosition, 10);
+    }
+    
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                behavior: "smooth"
+            });
+        } else {
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+        }
+        if (id === "top") {
+            history.replaceState(null, null, " ");
+        } else {
+            history.pushState(null, null, `#${id}`);
+        }
+    });
+});
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle")?.addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+</script>
+
+<div class="contact-form-container" id="contactFormContainer">
+    <button class="contact-fab" id="contactFab" aria-label="Contact Us">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+    
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <div class="contact-modal-header">
+                <h2>Get in Touch</h2>
+                <button class="contact-close" id="contactClose" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                
+                
+                <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                
+                
+                <input type="hidden" name="email" value="jed@powerofadvertising.com">
+                
+                
+                <input type="hidden" name="subject" value="New Contact Form Submission - Maven AI">
+                
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="text" name="phone_number" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="email" name="confirm_email" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="form_timestamp" id="contactFormTimestamp">
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">I'm Interested In</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select an option...</option>
+                        <option value="Maven Academy - AI Training">Maven Academy - AI Training</option>
+                        <option value="Custom AI Assistant Development">Custom AI Assistant Development</option>
+                        <option value="Skill Development & Consulting">Skill Development & Consulting</option>
+                        <option value="AI Automation Strategy">AI Automation Strategy</option>
+                        <option value="SEO & Search Intelligence">SEO & Search Intelligence Audit</option>
+                        <option value="ProductiveBot Setup & Support">ProductiveBot Setup & Support</option>
+                        <option value="Technical Architecture Review">Technical Architecture Review</option>
+                        <option value="Business Partnership">Business Partnership / Collaboration</option>
+                        <option value="Speaking / Guest Appearance">Speaking / Guest Appearance</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project or question..."></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">
+                    <span class="submit-text">Send Message</span>
+                    <span class="submit-loading" style="display: none;">Sending...</span>
+                </button>
+                
+                <div class="form-result" id="formResult"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const fab = document.getElementById('contactFab');
+    const modal = document.getElementById('contactModal');
+    const closeBtn = document.getElementById('contactClose');
+    const form = document.getElementById('contactForm');
+    const result = document.getElementById('formResult');
+    
+    if (!fab || !modal || !form) return;
+    
+    
+    let formOpenTime = null;
+    
+    
+    fab.addEventListener('click', function() {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        
+        formOpenTime = Date.now();
+        document.getElementById('contactFormTimestamp').value = formOpenTime;
+    });
+    
+    
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn.addEventListener('click', closeModal);
+    
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        
+        if (form.website.value || form.phone_number.value || form.confirm_email.value) {
+            console.log('Bot detected - honeypot filled');
+            return false;
+        }
+        
+        
+        const timeElapsed = Date.now() - formOpenTime;
+        if (timeElapsed < 3000) {
+            console.log('Bot detected - form submitted too quickly');
+            return false;
+        }
+        
+        const submitBtn = form.querySelector('.form-submit');
+        const submitText = submitBtn.querySelector('.submit-text');
+        const submitLoading = submitBtn.querySelector('.submit-loading');
+        
+        
+        submitBtn.disabled = true;
+        submitText.style.display = 'none';
+        submitLoading.style.display = 'inline';
+        result.textContent = '';
+        result.className = 'form-result';
+        
+        try {
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                result.textContent = '✓ Message sent successfully! We\'ll be in touch soon.';
+                result.className = 'form-result success';
+                form.reset();
+                
+                
+                setTimeout(() => {
+                    closeModal();
+                    result.textContent = '';
+                }, 2000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            result.textContent = '✗ Something went wrong. Please try again or email us directly.';
+            result.className = 'form-result error';
+        } finally {
+            submitBtn.disabled = false;
+            submitText.style.display = 'inline';
+            submitLoading.style.display = 'none';
+        }
+    });
+})();
+</script>
+
+<div class="skill-request-modal" id="skillRequestModal">
+    <div class="skill-request-content">
+        <div class="skill-request-header">
+            <h2>Request Custom Skill</h2>
+            <button class="skill-request-close" id="skillRequestClose" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="skill-request-body">
+            
+            <div class="skill-step active" id="step-intro">
+                <p class="step-description">Let's build your custom AI skill. Answer a few questions and we'll provide an instant estimate.</p>
+                <button class="skill-btn-primary" id="startButton">Get Started</button>
+            </div>
+            
+            
+            <div class="skill-step" id="step-questions">
+                <form id="skillQuestionsForm">
+                    <div class="skill-form-group">
+                        <label>What should this skill do?</label>
+                        <textarea id="skillPurpose" name="purpose" rows="3" required placeholder="Example: Analyze financial data and generate capital requirement reports"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>What problem does it solve?</label>
+                        <textarea id="skillProblem" name="problem" rows="3" required placeholder="Example: We need to forecast funding needs for early-stage companies"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>Example scenarios (provide 2-3 examples)</label>
+                        <textarea id="skillScenarios" name="scenarios" rows="4" required placeholder="Example 1: Calculate runway for SaaS startup with $50k MRR&#10;Example 2: Project hiring costs for scaling from 5 to 20 people&#10;Example 3: Model different funding scenarios"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>What data or tools does it need access to?</label>
+                        <textarea id="skillData" name="data" rows="3" required placeholder="Example: Financial spreadsheets, market data APIs, industry benchmarks"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>What should the output look like?</label>
+                        <textarea id="skillOutput" name="output" rows="3" required placeholder="Example: Detailed report with charts, timeline, and funding recommendations"></textarea>
+                    </div>
+                    
+                    <button type="button" class="skill-btn-primary" id="analyzeButton">
+                        <span class="btn-text">Get AI Estimate</span>
+                        <span class="btn-loading" style="display: none;">Analyzing...</span>
+                    </button>
+                </form>
+            </div>
+            
+            
+            <div class="skill-step" id="step-estimate">
+                <div class="estimate-card">
+                    <h3>Your Custom Skill Estimate</h3>
+                    
+                    <div class="estimate-grid">
+                        <div class="estimate-item">
+                            <span class="estimate-label">Complexity</span>
+                            <span class="estimate-value" id="estimateComplexity">-</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span class="estimate-label">Timeline</span>
+                            <span class="estimate-value" id="estimateTimeline">-</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span class="estimate-label">Investment</span>
+                            <span class="estimate-value estimate-price" id="estimatePrice">-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="estimate-details">
+                        <h4>What's Included:</h4>
+                        <ul id="estimateIncludes">
+                            <li>Custom skill development</li>
+                            <li>Testing and validation</li>
+                            <li>Documentation</li>
+                            <li>Skill file (transferable)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="estimate-summary" id="estimateSummary">
+                        
+                    </div>
+                    
+                    <div class="estimate-actions">
+                        <button class="skill-btn-secondary" id="backButton">Edit Details</button>
+                        <button class="skill-btn-primary" id="proceedButton">Request This Skill</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="skill-step" id="step-contact">
+                <form id="skillContactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                    <input type="hidden" name="subject" value="Custom Skill Request - Maven AI">
+                    <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                    
+                    
+                    <input type="hidden" name="skill_purpose" id="hiddenPurpose">
+                    <input type="hidden" name="skill_problem" id="hiddenProblem">
+                    <input type="hidden" name="skill_scenarios" id="hiddenScenarios">
+                    <input type="hidden" name="skill_data" id="hiddenData">
+                    <input type="hidden" name="skill_output" id="hiddenOutput">
+                    <input type="hidden" name="estimate_complexity" id="hiddenComplexity">
+                    <input type="hidden" name="estimate_timeline" id="hiddenTimeline">
+                    <input type="hidden" name="estimate_price" id="hiddenPrice">
+                    <input type="hidden" name="estimate_summary" id="hiddenSummary">
+                    
+                    <p class="step-description">Great! Let's finalize your request.</p>
+                    
+                    <div class="skill-form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="John Smith">
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>Company (optional)</label>
+                        <input type="text" name="company" placeholder="Acme Inc.">
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>When do you need this?</label>
+                        <select name="urgency" required>
+                            <option value="">Select timeline...</option>
+                            <option value="asap">ASAP (rush fee may apply)</option>
+                            <option value="1-2 weeks">Within 1-2 weeks</option>
+                            <option value="2-4 weeks">Within 2-4 weeks</option>
+                            <option value="flexible">Flexible timeline</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                    <input type="text" name="phone_number" class="honeypot-field" tabindex="-1" autocomplete="off">
+                    <input type="email" name="confirm_email" class="honeypot-field" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="form_timestamp" id="skillFormTimestamp">
+                    
+                    <button type="submit" class="skill-btn-primary">
+                        <span class="btn-text">Submit Request</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+            
+            
+            <div class="skill-step" id="step-success">
+                <div class="success-message">
+                    <div class="success-icon">✓</div>
+                    <h3>Request Submitted!</h3>
+                    <p>We'll review your custom skill request and get back to you within 24 hours with next steps.</p>
+                    <button class="skill-btn-secondary" id="closeSuccess">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/skill-request.js"></script>
+
+<div class="exit-intent-overlay" id="exitIntentOverlay">
+    <div class="exit-intent-popup">
+        <button class="exit-popup-close" id="exitPopupClose" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <div class="exit-popup-content">
+            <div class="exit-popup-icon">📬</div>
+            <h2 class="exit-popup-title">Before You Go...</h2>
+            <p class="exit-popup-subtitle">Get our AI Workflow Starter Kit (Free)</p>
+            
+            <ul class="exit-popup-benefits">
+                <li>✓ 3 Free Skill Templates</li>
+                <li>✓ Implementation Guide</li>
+                <li>✓ Weekly AI Insights</li>
+            </ul>
+            
+            <form class="exit-popup-form" id="exitIntentForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                <input type="hidden" name="subject" value="New Newsletter Signup - Exit Intent">
+                <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                <input type="hidden" name="from_name" value="Maven AI Newsletter">
+                
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="exit-popup-button">
+                    <span class="btn-text">Get Free Starter Kit</span>
+                    <span class="btn-loading" style="display: none;">Sending...</span>
+                </button>
+            </form>
+            
+            <p class="exit-popup-privacy">No spam. Unsubscribe anytime.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const overlay = document.getElementById('exitIntentOverlay');
+    const closeBtn = document.getElementById('exitPopupClose');
+    const form = document.getElementById('exitIntentForm');
+    
+    let hasShown = false;
+    let hasSubmitted = false;
+    
+    
+    if (sessionStorage.getItem('exitIntentShown') || localStorage.getItem('exitIntentSubmitted')) {
+        return;
+    }
+    
+    
+    document.addEventListener('mouseleave', function(e) {
+        if (e.clientY < 0 && !hasShown && !hasSubmitted) {
+            showPopup();
+        }
+    });
+    
+    
+    if (window.innerWidth <= 768) {
+        setTimeout(function() {
+            if (!hasShown && !hasSubmitted) {
+                showPopup();
+            }
+        }, 30000);
+    }
+    
+    function showPopup() {
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        hasShown = true;
+        sessionStorage.setItem('exitIntentShown', 'true');
+    }
+    
+    function closePopup() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn?.addEventListener('click', closePopup);
+    
+    overlay?.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+    
+    
+    form?.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        
+        if (this.website.value) {
+            return false;
+        }
+        
+        const button = this.querySelector('button[type="submit"]');
+        const btnText = button.querySelector('.btn-text');
+        const btnLoading = button.querySelector('.btn-loading');
+        
+        button.disabled = true;
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                localStorage.setItem('exitIntentSubmitted', 'true');
+                hasSubmitted = true;
+                
+                
+                overlay.querySelector('.exit-popup-content').innerHTML = `
+                    <div class="exit-success">
+                        <div class="exit-success-icon">✓</div>
+                        <h2>Check Your Email!</h2>
+                        <p>Your AI Workflow Starter Kit is on the way.</p>
+                    </div>
+                `;
+                
+                setTimeout(closePopup, 3000);
+            } else {
+                throw new Error('Submission failed');
+            }
+        } catch (error) {
+            alert('Something went wrong. Please try again.');
+        } finally {
+            button.disabled = false;
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+        }
+    });
+    
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay?.classList.contains('active')) {
+            closePopup();
+        }
+    });
+})();
+</script>
+
+<div class="quiz-modal" id="quizModal">
+    <div class="quiz-content">
+        <button class="quiz-close" id="quizClose" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        
+        <div class="quiz-header">
+            <h2>AI Automation Readiness Quiz</h2>
+            <p>Discover your automation score and get personalized recommendations</p>
+            <div class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">Question 1 of 10</span>
+            </div>
+        </div>
+        
+        
+        <div class="quiz-body">
+            
+            <div class="quiz-step active" id="step-start">
+                <div class="quiz-intro">
+                    <div class="quiz-icon">🤖</div>
+                    <h3>Find Your Automation Sweet Spot</h3>
+                    <p>This 2-minute quiz will assess your current workflow and identify the best automation opportunities for your business.</p>
+                    <ul class="quiz-benefits">
+                        <li>✓ Personalized automation score (0-100)</li>
+                        <li>✓ Custom skill recommendations</li>
+                        <li>✓ Priority task identification</li>
+                        <li>✓ Estimated ROI projections</li>
+                    </ul>
+                    <button class="quiz-btn-primary" id="startQuiz">Start Quiz</button>
+                </div>
+            </div>
+            
+            
+            <div class="quiz-step" id="step-questions">
+                <div id="questionContainer"></div>
+                <div class="quiz-navigation">
+                    <button class="quiz-btn-secondary" id="prevBtn" style="display: none;">← Previous</button>
+                    <button class="quiz-btn-primary" id="nextBtn" disabled>Next →</button>
+                </div>
+            </div>
+            
+            
+            <div class="quiz-step" id="step-email">
+                <div class="quiz-email-gate">
+                    <div class="quiz-icon">📧</div>
+                    <h3>Get Your Results</h3>
+                    <p>Enter your email to see your personalized automation roadmap</p>
+                    
+                    <form id="quizEmailForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                        <input type="hidden" name="subject" value="AI Automation Quiz Results">
+                        <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                        
+                        
+                        <input type="hidden" name="quiz_score" id="hiddenScore">
+                        <input type="hidden" name="quiz_level" id="hiddenLevel">
+                        <input type="hidden" name="quiz_answers" id="hiddenAnswers">
+                        
+                        
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <button type="submit" class="quiz-btn-primary">
+                            <span class="btn-text">See My Results</span>
+                            <span class="btn-loading" style="display: none;">Processing...</span>
+                        </button>
+                    </form>
+                    
+                    <p class="quiz-privacy">Your data is private. No spam, ever.</p>
+                </div>
+            </div>
+            
+            
+            <div class="quiz-step" id="step-results">
+                <div class="quiz-results">
+                    <div class="results-score">
+                        <div class="score-circle">
+                            <svg viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(99, 102, 241, 0.1)" stroke-width="12"/>
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="url(#scoreGradient)" stroke-width="12" 
+                                        stroke-dasharray="565" stroke-dashoffset="565" id="scoreCircle" 
+                                        transform="rotate(-90 100 100)" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="score-number" id="scoreNumber">0</div>
+                        </div>
+                        <h3 id="scoreLevel">Automation Beginner</h3>
+                        <p id="scoreDescription">You're just getting started with automation</p>
+                    </div>
+                    
+                    <div class="results-recommendations">
+                        <h4>Your Personalized Roadmap</h4>
+                        <div id="recommendationsContainer"></div>
+                    </div>
+                    
+                    <div class="results-cta">
+                        <button class="quiz-btn-primary" onclick="openSkillRequest()">Request Custom Skills</button>
+                        <button class="quiz-btn-secondary" onclick="openContactForm()">Talk to Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/automation-quiz.js"></script>
+</body>
+
+</html>

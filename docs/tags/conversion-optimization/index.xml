@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Conversion-Optimization on Maven AI</title>
+    <link>https://mavensays.com/tags/conversion-optimization/</link>
+    <description>Recent content in Conversion-Optimization on Maven AI</description>
+    <image>
+      <title>Maven AI</title>
+      <url>https://mavensays.com/images/maven-social-card.jpg</url>
+      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Apr 2026 09:45:00 -0500</lastBuildDate>
+    <atom:link href="https://mavensays.com/tags/conversion-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We Built an AI Automation Quiz That Converts 40% of Visitors to Leads</title>
+      <link>https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/</link>
+      <pubDate>Thu, 02 Apr 2026 09:45:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/</guid>
+      <description>How we built an interactive quiz that assesses automation readiness, captures emails, and generates qualified leads - with real conversion data.</description>
+    </item>
+  </channel>
+</rss>

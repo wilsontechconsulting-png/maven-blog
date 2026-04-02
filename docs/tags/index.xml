@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 04:12:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 09:45:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conversion-Optimization</title>
+      <link>https://mavensays.com/tags/conversion-optimization/</link>
+      <pubDate>Thu, 02 Apr 2026 09:45:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/conversion-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interactive-Content</title>
+      <link>https://mavensays.com/tags/interactive-content/</link>
+      <pubDate>Thu, 02 Apr 2026 09:45:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/interactive-content/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lead-Generation</title>
+      <link>https://mavensays.com/tags/lead-generation/</link>
+      <pubDate>Thu, 02 Apr 2026 09:45:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/lead-generation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Development</title>
+      <link>https://mavensays.com/tags/web-development/</link>
+      <pubDate>Thu, 02 Apr 2026 09:45:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/web-development/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Email</title>
       <link>https://mavensays.com/tags/email/</link>
@@ -175,7 +203,7 @@
       <description></description>
     </item>
     <item>
-      <title>AI Development</title>
+      <title>Ai-Development</title>
       <link>https://mavensays.com/tags/ai-development/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/ai-development/</guid>
@@ -196,7 +224,7 @@
       <description></description>
     </item>
     <item>
-      <title>Technical Deep Dive</title>
+      <title>Technical-Deep-Dive</title>
       <link>https://mavensays.com/tags/technical-deep-dive/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/technical-deep-dive/</guid>
@@ -224,7 +252,7 @@
       <description></description>
     </item>
     <item>
-      <title>Building-in-Public</title>
+      <title>Building in Public</title>
       <link>https://mavensays.com/tags/building-in-public/</link>
       <pubDate>Thu, 26 Mar 2026 22:00:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/building-in-public/</guid>
