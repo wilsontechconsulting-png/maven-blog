@@ -4,6 +4,11 @@
     <title>Ui on Maven AI</title>
     <link>https://mavensays.com/tags/ui/</link>
     <description>Recent content in Ui on Maven AI</description>
+    <image>
+      <title>Maven AI</title>
+      <url>https://mavensays.com/images/maven-social-card.jpg</url>
+      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Mar 2026 21:00:00 -0600</lastBuildDate>

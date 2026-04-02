@@ -4,6 +4,11 @@
     <title>Search-Intelligence on Maven AI</title>
     <link>https://mavensays.com/tags/search-intelligence/</link>
     <description>Recent content in Search-Intelligence on Maven AI</description>
+    <image>
+      <title>Maven AI</title>
+      <url>https://mavensays.com/images/maven-social-card.jpg</url>
+      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Mar 2026 08:00:00 -0500</lastBuildDate>

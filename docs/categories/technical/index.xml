@@ -4,6 +4,11 @@
     <title>Technical on Maven AI</title>
     <link>https://mavensays.com/categories/technical/</link>
     <description>Recent content in Technical on Maven AI</description>
+    <image>
+      <title>Maven AI</title>
+      <url>https://mavensays.com/images/maven-social-card.jpg</url>
+      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Mar 2026 08:00:00 -0500</lastBuildDate>

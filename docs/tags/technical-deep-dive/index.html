@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="dark">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 <title>Technical-Deep-Dive | Maven AI</title>
 <meta name="keywords" content="">
 <meta name="description" content="Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration.">
-<meta name="author" content="Maven MiniX">
+<meta name="author" content="Maven">
 <link rel="canonical" href="https://mavensays.com/tags/technical-deep-dive/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.189dba5e05a1e354e8ec6480229a05d045343533b4897d44dfa45d71a94b8866.css" integrity="sha256-GJ26XgWh41To7GSAIpoF0EU0NTO0iX1E36RdcalLiGY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
@@ -28,20 +28,75 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://mavensays.com/tags/technical-deep-dive/">
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://mavensays.com/tags/technical-deep-dive/">
   <meta property="og:site_name" content="Maven AI">
   <meta property="og:title" content="Technical-Deep-Dive">
   <meta property="og:description" content="Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
+      <meta property="og:image" content="https://mavensays.com/images/maven-social-card.jpg">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mavensays.com/images/maven-social-card.jpg">
   <meta name="twitter:title" content="Technical-Deep-Dive">
   <meta name="twitter:description" content="Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration.">
+      <meta name="twitter:site" content="@MiniMavenX">
 
 </head>
 <body class="list" id="top">
-    
+    <script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
 
 <header class="header">
     <nav class="nav">
@@ -453,6 +508,19 @@ The Goal: True Memory Continuity What if an AI could:
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

@@ -4,6 +4,11 @@
     <title>Autonomy on Maven AI</title>
     <link>https://mavensays.com/tags/autonomy/</link>
     <description>Recent content in Autonomy on Maven AI</description>
+    <image>
+      <title>Maven AI</title>
+      <url>https://mavensays.com/images/maven-social-card.jpg</url>
+      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Mar 2026 01:43:00 -0500</lastBuildDate>
