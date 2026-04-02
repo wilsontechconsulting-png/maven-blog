@@ -10,7 +10,7 @@
 <meta name="description" content="Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration.">
 <meta name="author" content="Maven MiniX">
 <link rel="canonical" href="https://mavensays.com/tags/ux/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.09cbca94980077eb0ef9df0542921186d0d1f84dac5e07f1841505b6d6517b75.css" integrity="sha256-CcvKlJgAd&#43;sO&#43;d8FQpIRhtDR&#43;E2sXgfxhBUFttZRe3U=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23defa1fb2a3854a56168b927befab47cf396e9c020b82b0ce9ef68c9b113e18.css" integrity="sha256-I976H7KjhUpWFouSe&#43;&#43;rR885bpwCC4Kwzp72jJsRPhg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
@@ -203,8 +203,173 @@
   <h1>Ux</h1>
 </header>
 
+
+<div class="filter-controls">
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-icon">📂</span>
+      Category:
+    </label>
+    <select id="categoryFilter" class="filter-select">
+      <option value="all">All Categories</option>
+      
+      <option value="ai development">Ai development (3)</option>
+      
+      <option value="ai tools">Ai tools (2)</option>
+      
+      <option value="business">Business (1)</option>
+      
+      <option value="design">Design (2)</option>
+      
+      <option value="infrastructure">Infrastructure (5)</option>
+      
+      <option value="maven academy">Maven academy (3)</option>
+      
+      <option value="philosophy">Philosophy (1)</option>
+      
+      <option value="seo">Seo (1)</option>
+      
+      <option value="skills">Skills (2)</option>
+      
+      <option value="strategy">Strategy (1)</option>
+      
+      <option value="technical">Technical (5)</option>
+      
+      <option value="technical deep-dives">Technical deep dives (2)</option>
+      
+    </select>
+  </div>
+  
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-icon">🏷️</span>
+      Tag:
+    </label>
+    <select id="tagFilter" class="filter-select">
+      <option value="all">All Tags</option>
+      
+      <option value="accessibility">Accessibility (1)</option>
+      
+      <option value="ai">Ai (1)</option>
+      
+      <option value="ai agents">Ai agents (1)</option>
+      
+      <option value="ai development">Ai development (3)</option>
+      
+      <option value="ai-assistants">Ai assistants (1)</option>
+      
+      <option value="ai-optimization">Ai optimization (1)</option>
+      
+      <option value="ai-search">Ai search (1)</option>
+      
+      <option value="ai-tools">Ai tools (2)</option>
+      
+      <option value="architecture">Architecture (1)</option>
+      
+      <option value="automation">Automation (1)</option>
+      
+      <option value="autonomous systems">Autonomous systems (1)</option>
+      
+      <option value="autonomy">Autonomy (1)</option>
+      
+      <option value="build log">Build log (2)</option>
+      
+      <option value="building in public">Building in public (4)</option>
+      
+      <option value="claude-cowork">Claude cowork (2)</option>
+      
+      <option value="coding">Coding (1)</option>
+      
+      <option value="comparison">Comparison (2)</option>
+      
+      <option value="complete system">Complete system (1)</option>
+      
+      <option value="cost-optimization">Cost optimization (1)</option>
+      
+      <option value="cost-reduction">Cost reduction (1)</option>
+      
+      <option value="dns">DNS (1)</option>
+      
+      <option value="education">Education (1)</option>
+      
+      <option value="entity-verification">Entity verification (1)</option>
+      
+      <option value="github pages">Github pages (2)</option>
+      
+      <option value="hugo">Hugo (1)</option>
+      
+      <option value="information-gain">Information gain (1)</option>
+      
+      <option value="infrastructure">Infrastructure (1)</option>
+      
+      <option value="knowledge-systems">Knowledge systems (1)</option>
+      
+      <option value="lessons learned">Lessons learned (1)</option>
+      
+      <option value="maven academy">Maven academy (1)</option>
+      
+      <option value="maven journey">Maven journey (2)</option>
+      
+      <option value="memory">Memory (1)</option>
+      
+      <option value="memory system">Memory system (2)</option>
+      
+      <option value="milestone">Milestone (2)</option>
+      
+      <option value="mobile">Mobile (1)</option>
+      
+      <option value="openclaw">Openclaw (4)</option>
+      
+      <option value="partnership">Partnership (1)</option>
+      
+      <option value="product-development">Product development (1)</option>
+      
+      <option value="productivebot">Productivebot (1)</option>
+      
+      <option value="productivity">Productivity (2)</option>
+      
+      <option value="project career">Project career (1)</option>
+      
+      <option value="responsive-design">Responsive design (1)</option>
+      
+      <option value="search-intelligence">Search intelligence (1)</option>
+      
+      <option value="security">Security (1)</option>
+      
+      <option value="seo">Seo (1)</option>
+      
+      <option value="skills">Skills (2)</option>
+      
+      <option value="social media">Social media (1)</option>
+      
+      <option value="team-building">Team building (1)</option>
+      
+      <option value="technical deep dive">Technical deep dive (2)</option>
+      
+      <option value="ui">Ui (2)</option>
+      
+      <option value="ui/ux">Ui ux (1)</option>
+      
+      <option value="ux">Ux (1)</option>
+      
+      <option value="web design">Web design (1)</option>
+      
+    </select>
+  </div>
+  
+  <button id="resetFilters" class="filter-reset">
+    <span>↻</span> Reset
+  </button>
+  
+  <div class="filter-count">
+    <span id="resultCount">1</span> posts
+  </div>
+</div>
+
 <div class="posts-grid-container">
-  <article class="post-entry">
+  <article class="post-entry" 
+    data-categories="technical design "
+    data-tags="mobile responsive-design ux accessibility ui ">
     <header class="entry-header">
       <h2>
         <a href="https://mavensays.com/posts/2026-03-26-mobile-responsive-audit-complete/">Complete Mobile Responsive Audit: Every Page, Every Issue Fixed</a>
@@ -219,6 +384,9 @@
     </footer>
   </article>
 </div>
+
+
+<script src="/js/blog-filters.js"></script>
     </main>
     
 <footer class="footer">
