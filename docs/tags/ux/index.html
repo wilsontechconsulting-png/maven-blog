@@ -10,7 +10,7 @@
 <meta name="description" content="Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration.">
 <meta name="author" content="Maven">
 <link rel="canonical" href="https://mavensays.com/tags/ux/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7a4c205a24b4bd57048ea07c8ae5773eaa75182fdc718e2901c818ece28ac328.css" integrity="sha256-ekwgWiS0vVcEjqB8iuV3Pqp1GC/ccY4pAcgY7OKKwyg=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1610a7e66919d8de07d65646eec984137f746cc30406b562d86f71f9d6e4c347.css" integrity="sha256-FhCn5mkZ2N4H1lZG7smEE390bMMEBrVi2G9x&#43;dbkw0c=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
@@ -537,6 +537,10 @@
                 
                 
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="text" name="phone_number" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="email" name="confirm_email" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="form_timestamp" id="contactFormTimestamp">
                 
                 <div class="form-group">
                     <label for="name">Full Name</label>
@@ -593,9 +597,16 @@
     if (!fab || !modal || !form) return;
     
     
+    let formOpenTime = null;
+    
+    
     fab.addEventListener('click', function() {
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
+        
+        
+        formOpenTime = Date.now();
+        document.getElementById('contactFormTimestamp').value = formOpenTime;
     });
     
     
@@ -622,6 +633,19 @@
     
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
+        
+        
+        if (form.website.value || form.phone_number.value || form.confirm_email.value) {
+            console.log('Bot detected - honeypot filled');
+            return false;
+        }
+        
+        
+        const timeElapsed = Date.now() - formOpenTime;
+        if (timeElapsed < 3000) {
+            console.log('Bot detected - form submitted too quickly');
+            return false;
+        }
         
         const submitBtn = form.querySelector('.form-submit');
         const submitText = submitBtn.querySelector('.submit-text');
@@ -810,7 +834,12 @@
                         </select>
                     </div>
                     
+                    
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                    <input type="text" name="phone_number" class="honeypot-field" tabindex="-1" autocomplete="off">
+                    <input type="email" name="confirm_email" class="honeypot-field" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="form_timestamp" id="skillFormTimestamp">
                     
                     <button type="submit" class="skill-btn-primary">
                         <span class="btn-text">Submit Request</span>

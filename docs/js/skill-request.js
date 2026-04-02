@@ -12,12 +12,17 @@
     
     let currentStep = 'intro';
     let estimateData = {};
+    let formOpenTime = null;
     
     // Open modal function (called from Skills page button)
     window.openSkillRequest = function() {
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
         showStep('intro');
+        
+        // Set timestamp
+        formOpenTime = Date.now();
+        document.getElementById('skillFormTimestamp').value = formOpenTime;
     };
     
     // Close modal
@@ -189,6 +194,19 @@ Return JSON format:
     // Form submission
     document.getElementById('skillContactForm')?.addEventListener('submit', async function(e) {
         e.preventDefault();
+        
+        // Honeypot validation
+        if (this.website.value || this.phone_number.value || this.confirm_email.value) {
+            console.log('Bot detected - honeypot filled');
+            return false;
+        }
+        
+        // Timestamp validation (must take at least 10 seconds for skill form)
+        const timeElapsed = Date.now() - formOpenTime;
+        if (timeElapsed < 10000) {
+            console.log('Bot detected - form completed too quickly');
+            return false;
+        }
         
         const button = this.querySelector('button[type="submit"]');
         const btnText = button.querySelector('.btn-text');
