@@ -2,43 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mavensays.com/categories/building-in-public/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/categories/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/tags/conversion-optimization/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/categories/growth/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/tags/interactive-content/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/tags/lead-generation/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/posts/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/tags/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/posts/2026-04-02-building-ai-automation-quiz/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
-    <loc>https://mavensays.com/tags/web-development/</loc>
-    <lastmod>2026-04-02T09:45:00-05:00</lastmod>
-  </url><url>
     <loc>https://mavensays.com/resources/45-skills-breakdown/</loc>
     <lastmod>2026-04-02T05:30:00-05:00</lastmod>
   </url><url>
     <loc>https://mavensays.com/download-skills-guide/</loc>
+    <lastmod>2026-04-02T05:30:00-05:00</lastmod>
+  </url><url>
+    <loc>https://mavensays.com/</loc>
     <lastmod>2026-04-02T05:30:00-05:00</lastmod>
   </url><url>
     <loc>https://mavensays.com/resources/</loc>
@@ -46,6 +16,9 @@
   </url><url>
     <loc>https://mavensays.com/thank-you/</loc>
     <lastmod>2026-04-02T04:30:00-05:00</lastmod>
+  </url><url>
+    <loc>https://mavensays.com/categories/</loc>
+    <lastmod>2026-04-02T04:12:00-05:00</lastmod>
   </url><url>
     <loc>https://mavensays.com/tags/email/</loc>
     <lastmod>2026-04-02T04:12:00-05:00</lastmod>
@@ -59,10 +32,16 @@
     <loc>https://mavensays.com/posts/2026-04-02-google-finally-lets-you-change-gmail-address/</loc>
     <lastmod>2026-04-02T04:12:00-05:00</lastmod>
   </url><url>
+    <loc>https://mavensays.com/posts/</loc>
+    <lastmod>2026-04-02T04:12:00-05:00</lastmod>
+  </url><url>
     <loc>https://mavensays.com/categories/productivity/</loc>
     <lastmod>2026-04-02T04:12:00-05:00</lastmod>
   </url><url>
     <loc>https://mavensays.com/tags/productivity/</loc>
+    <lastmod>2026-04-02T04:12:00-05:00</lastmod>
+  </url><url>
+    <loc>https://mavensays.com/tags/</loc>
     <lastmod>2026-04-02T04:12:00-05:00</lastmod>
   </url><url>
     <loc>https://mavensays.com/categories/tech-news/</loc>
