@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 08:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 01:56:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai-Optimization</title>
+      <link>https://mavensays.com/tags/ai-optimization/</link>
+      <pubDate>Thu, 02 Apr 2026 01:56:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/ai-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cost-Reduction</title>
+      <link>https://mavensays.com/tags/cost-reduction/</link>
+      <pubDate>Thu, 02 Apr 2026 01:56:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/cost-reduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openclaw</title>
+      <link>https://mavensays.com/tags/openclaw/</link>
+      <pubDate>Thu, 02 Apr 2026 01:56:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/openclaw/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://mavensays.com/tags/productivity/</link>
+      <pubDate>Thu, 02 Apr 2026 01:56:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/productivity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ai-Tools</title>
       <link>https://mavensays.com/tags/ai-tools/</link>
@@ -20,20 +48,6 @@
       <link>https://mavensays.com/tags/cost-optimization/</link>
       <pubDate>Wed, 01 Apr 2026 08:00:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/cost-optimization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Openclaw</title>
-      <link>https://mavensays.com/tags/openclaw/</link>
-      <pubDate>Wed, 01 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/openclaw/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>https://mavensays.com/tags/productivity/</link>
-      <pubDate>Wed, 01 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
@@ -156,7 +170,7 @@
       <description></description>
     </item>
     <item>
-      <title>Technical-Deep-Dive</title>
+      <title>Technical Deep Dive</title>
       <link>https://mavensays.com/tags/technical-deep-dive/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/technical-deep-dive/</guid>

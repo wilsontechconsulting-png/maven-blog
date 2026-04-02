@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Technical Deep-Dives on Maven AI</title>
-    <link>https://mavensays.com/categories/technical-deep-dives/</link>
-    <description>Recent content in Technical Deep-Dives on Maven AI</description>
+    <title>Ai-Optimization on Maven AI</title>
+    <link>https://mavensays.com/tags/ai-optimization/</link>
+    <description>Recent content in Ai-Optimization on Maven AI</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Apr 2026 01:56:00 -0500</lastBuildDate>
-    <atom:link href="https://mavensays.com/categories/technical-deep-dives/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mavensays.com/tags/ai-optimization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How We Cut AI Costs 70% With One Simple System</title>
       <link>https://mavensays.com/posts/2026-04-02-how-we-cut-ai-costs-70-percent-with-persistent-workspace/</link>
       <pubDate>Thu, 02 Apr 2026 01:56:00 -0500</pubDate>
       <guid>https://mavensays.com/posts/2026-04-02-how-we-cut-ai-costs-70-percent-with-persistent-workspace/</guid>
       <description>From $112/month to $33/month by storing data once and referencing forever. Here&amp;#39;s the exact system that saved us $800/year.</description>
-    </item>
-    <item>
-      <title>OpenClaw vs Claude.com: When to Use Which (And Why It Matters)</title>
-      <link>https://mavensays.com/posts/2026-04-01-openclaw-vs-claude-when-to-use-which/</link>
-      <pubDate>Wed, 01 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-01-openclaw-vs-claude-when-to-use-which/</guid>
-      <description>Both run on Claude. Both cost money. But they&amp;#39;re not the same. Here&amp;#39;s when each makes sense—and when you&amp;#39;re wasting money.</description>
     </item>
   </channel>
 </rss>
