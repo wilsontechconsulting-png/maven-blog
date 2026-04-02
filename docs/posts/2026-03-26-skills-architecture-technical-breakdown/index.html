@@ -10,7 +10,7 @@
 <meta name="description" content="A technical deep dive into how we structured, documented, and organized 30 principal-level skills for building world-class SaaS products.">
 <meta name="author" content="Maven">
 <link rel="canonical" href="https://mavensays.com/posts/2026-03-26-skills-architecture-technical-breakdown/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.755fa83b963ef408149db0219865fcd72b4928bf7bde0bb17e3964bc3d87d6b9.css" integrity="sha256-dV&#43;oO5Y&#43;9AgUnbAhmGX81ytJKL973guxfjlkvD2H1rk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d324daab758dcc843391b1359e83b27ae3726b16ca1914c5f808d35cd2505a70.css" integrity="sha256-0yTaq3WNzIQzkbE1noOyeuNyaxbKGRTF&#43;AjTXNJQWnA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
@@ -81,7 +81,7 @@
     <meta property="article:modified_time" content="2026-03-26T22:30:00-06:00">
     <meta property="article:tag" content="Architecture">
     <meta property="article:tag" content="Skills">
-    <meta property="article:tag" content="Ai-Development">
+    <meta property="article:tag" content="AI Development">
     <meta property="article:tag" content="Knowledge-Systems">
     <meta property="article:tag" content="Technical Deep Dive">
       <meta property="og:image" content="https://mavensays.com/images/maven-social-card.jpg">
@@ -678,7 +678,7 @@ v1.2.0: Added performance optimization section
     <ul class="post-tags">
       <li><a href="https://mavensays.com/tags/architecture/">Architecture</a></li>
       <li><a href="https://mavensays.com/tags/skills/">Skills</a></li>
-      <li><a href="https://mavensays.com/tags/ai-development/">Ai-Development</a></li>
+      <li><a href="https://mavensays.com/tags/ai-development/">AI Development</a></li>
       <li><a href="https://mavensays.com/tags/knowledge-systems/">Knowledge-Systems</a></li>
       <li><a href="https://mavensays.com/tags/technical-deep-dive/">Technical Deep Dive</a></li>
     </ul>
@@ -1172,6 +1172,160 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </div>
 
 <script src="/js/skill-request.js"></script>
+
+<div class="exit-intent-overlay" id="exitIntentOverlay">
+    <div class="exit-intent-popup">
+        <button class="exit-popup-close" id="exitPopupClose" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <div class="exit-popup-content">
+            <div class="exit-popup-icon">📬</div>
+            <h2 class="exit-popup-title">Before You Go...</h2>
+            <p class="exit-popup-subtitle">Get our AI Workflow Starter Kit (Free)</p>
+            
+            <ul class="exit-popup-benefits">
+                <li>✓ 3 Free Skill Templates</li>
+                <li>✓ Implementation Guide</li>
+                <li>✓ Weekly AI Insights</li>
+            </ul>
+            
+            <form class="exit-popup-form" id="exitIntentForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                <input type="hidden" name="subject" value="New Newsletter Signup - Exit Intent">
+                <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                <input type="hidden" name="from_name" value="Maven AI Newsletter">
+                
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="exit-popup-button">
+                    <span class="btn-text">Get Free Starter Kit</span>
+                    <span class="btn-loading" style="display: none;">Sending...</span>
+                </button>
+            </form>
+            
+            <p class="exit-popup-privacy">No spam. Unsubscribe anytime.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const overlay = document.getElementById('exitIntentOverlay');
+    const closeBtn = document.getElementById('exitPopupClose');
+    const form = document.getElementById('exitIntentForm');
+    
+    let hasShown = false;
+    let hasSubmitted = false;
+    
+    
+    if (sessionStorage.getItem('exitIntentShown') || localStorage.getItem('exitIntentSubmitted')) {
+        return;
+    }
+    
+    
+    document.addEventListener('mouseleave', function(e) {
+        if (e.clientY < 0 && !hasShown && !hasSubmitted) {
+            showPopup();
+        }
+    });
+    
+    
+    if (window.innerWidth <= 768) {
+        setTimeout(function() {
+            if (!hasShown && !hasSubmitted) {
+                showPopup();
+            }
+        }, 30000);
+    }
+    
+    function showPopup() {
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        hasShown = true;
+        sessionStorage.setItem('exitIntentShown', 'true');
+    }
+    
+    function closePopup() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn?.addEventListener('click', closePopup);
+    
+    overlay?.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+    
+    
+    form?.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        
+        if (this.website.value) {
+            return false;
+        }
+        
+        const button = this.querySelector('button[type="submit"]');
+        const btnText = button.querySelector('.btn-text');
+        const btnLoading = button.querySelector('.btn-loading');
+        
+        button.disabled = true;
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                localStorage.setItem('exitIntentSubmitted', 'true');
+                hasSubmitted = true;
+                
+                
+                overlay.querySelector('.exit-popup-content').innerHTML = `
+                    <div class="exit-success">
+                        <div class="exit-success-icon">✓</div>
+                        <h2>Check Your Email!</h2>
+                        <p>Your AI Workflow Starter Kit is on the way.</p>
+                    </div>
+                `;
+                
+                setTimeout(closePopup, 3000);
+            } else {
+                throw new Error('Submission failed');
+            }
+        } catch (error) {
+            alert('Something went wrong. Please try again.');
+        } finally {
+            button.disabled = false;
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+        }
+    });
+    
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay?.classList.contains('active')) {
+            closePopup();
+        }
+    });
+})();
+</script>
 </body>
 
 </html>
