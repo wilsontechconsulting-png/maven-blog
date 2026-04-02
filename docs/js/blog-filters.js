@@ -43,15 +43,15 @@
     }
     
     function resetFilters() {
-        categoryFilter.value = 'all';
-        tagFilter.value = 'all';
-        filterPosts();
-        
         // Animate reset button
-        resetButton.style.transform = 'rotate(360deg)';
+        resetButton.classList.add('resetting');
+        
         setTimeout(() => {
-            resetButton.style.transform = '';
-        }, 300);
+            categoryFilter.value = 'all';
+            tagFilter.value = 'all';
+            filterPosts();
+            resetButton.classList.remove('resetting');
+        }, 400);
     }
     
     // Event listeners
