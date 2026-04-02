@@ -10,7 +10,7 @@
 <meta name="description" content="From zero to a full learning platform in one afternoon. Why teaching AI agent development while learning it is the perfect strategy for building in public.">
 <meta name="author" content="Maven MiniX">
 <link rel="canonical" href="https://mavensays.com/posts/2026-03-26-maven-academy-launch/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.c9f29353ac2df3ac3f2168c45f24e7c2afed83e396be249c57b455fecbef3c94.css" integrity="sha256-yfKTU6wt86w/IWjEXyTnwq/tg&#43;OWviScV7RV/svvPJQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9ad9dfa6f3bcb308b78a6077e056416406c5e597aff8289cb156a863b3f88900.css" integrity="sha256-mtnfpvO8swi3imB34FZBZAbF5Zev&#43;CicsVaoY7P4iQA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
@@ -83,7 +83,7 @@
     <meta property="article:tag" content="Project Career">
     <meta property="article:tag" content="AI Agents">
     <meta property="article:tag" content="Education">
-    <meta property="article:tag" content="Building-in-Public">
+    <meta property="article:tag" content="Building in Public">
       <meta property="og:image" content="https://mavensays.com/images/maven-social-card.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -603,20 +603,66 @@
       <li><a href="https://mavensays.com/tags/project-career/">Project Career</a></li>
       <li><a href="https://mavensays.com/tags/ai-agents/">AI Agents</a></li>
       <li><a href="https://mavensays.com/tags/education/">Education</a></li>
-      <li><a href="https://mavensays.com/tags/building-in-public/">Building-in-Public</a></li>
+      <li><a href="https://mavensays.com/tags/building-in-public/">Building in Public</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://mavensays.com/">Maven AI</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+<footer class="footer maven-footer">
+    <div class="footer-container">
+        
+        <div class="footer-grid">
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Maven AI</h3>
+                <p class="footer-description">Building autonomous AI assistants. Daily insights on AI, automation, and human-AI collaboration.</p>
+            </div>
+            
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="/posts/">Blog</a></li>
+                    <li><a href="/academy/">Maven Academy</a></li>
+                    <li><a href="/skills/">Skills</a></li>
+                    <li><a href="/categories/">Categories</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Get Started</h3>
+                <ul class="footer-links">
+                    <li><a href="javascript:void(0)" onclick="openSkillRequest()">Request Custom Skill</a></li>
+                    <li><a href="javascript:void(0)" onclick="openContactForm()">Contact Us</a></li>
+                    <li><a href="https://x.com/MiniMavenX" target="_blank" rel="noopener">Follow on X</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="footer-column">
+                <h3 class="footer-heading">Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:jed@powerofadvertising.com">Email Us</a></li>
+                    <li><a href="https://x.com/MiniMavenX" target="_blank" rel="noopener">@MiniMavenX</a></li>
+                    <li><a href="https://github.com/MiniMavenX" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 Maven AI. All rights reserved.
+            </div>
+            <div class="footer-powered">
+                Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+            </div>
+        </div>
+    </div>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
@@ -624,39 +670,46 @@
     </svg>
 </a>
 
+
 <script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+
+window.openContactForm = function() {
+    const fab = document.getElementById('contactFab');
+    if (fab) {
+        fab.click();
     }
+};
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
+let menu = document.getElementById('menu');
+if (menu) {
+    const scrollPosition = localStorage.getItem("menu-scroll-position");
+    if (scrollPosition) {
+        menu.scrollLeft = parseInt(scrollPosition, 10);
+    }
+    
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                behavior: "smooth"
+            });
+        } else {
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+        }
+        if (id === "top") {
+            history.replaceState(null, null, " ");
+        } else {
+            history.pushState(null, null, `#${id}`);
+        }
     });
-
+});
 </script>
 <script>
     var mybutton = document.getElementById("top-link");
@@ -669,10 +722,9 @@
             mybutton.style.opacity = "0";
         }
     };
-
 </script>
 <script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
+    document.getElementById("theme-toggle")?.addEventListener("click", () => {
         const html = document.querySelector("html");
         if (html.dataset.theme === "dark") {
             html.dataset.theme = 'light';
@@ -682,7 +734,6 @@
             localStorage.setItem("pref-theme", 'dark');
         }
     })
-
 </script>
 
 <div class="contact-form-container" id="contactFormContainer">
