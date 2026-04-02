@@ -1,5 +1,5 @@
 // AI Automation Readiness Quiz
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('quizModal');
     const closeBtn = document.getElementById('quizClose');
     
@@ -365,4 +365,4 @@
         quizScore = 0;
         showStep('step-start');
     }
-})();
+});
