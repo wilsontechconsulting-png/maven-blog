@@ -17,6 +17,12 @@
             animateValue(savingsElement, 0, totalSaved, 2000);
         }
         
+        // Update days counter
+        const daysElement = document.getElementById('daysSince');
+        if (daysElement) {
+            daysElement.textContent = `${daysSince} ${daysSince === 1 ? 'day' : 'days'}`;
+        }
+        
         // Update projected annual savings if element exists
         const projectedElements = document.querySelectorAll('.savings-projected');
         projectedElements.forEach(el => {
