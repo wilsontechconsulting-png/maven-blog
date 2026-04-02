@@ -927,7 +927,6 @@ Cost: $0.002
             <div class="footer-column">
                 <h3 class="footer-heading">Get Started</h3>
                 <ul class="footer-links">
-                    <li><a href="/resources/45-skills-breakdown/">Download Free Guide</a></li>
                     <li><a href="javascript:void(0)" onclick="openSkillRequest()">Request Custom Skill</a></li>
                     <li><a href="javascript:void(0)" onclick="openContactForm()">Contact Us</a></li>
                     <li><a href="https://x.com/MiniMavenX" target="_blank" rel="noopener">Follow on X</a></li>
@@ -1542,129 +1541,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 })();
 </script>
-
-<div class="quiz-modal" id="quizModal">
-    <div class="quiz-content">
-        <button class="quiz-close" id="quizClose" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        
-        
-        <div class="quiz-header">
-            <h2>AI Automation Readiness Quiz</h2>
-            <p>Discover your automation score and get personalized recommendations</p>
-            <div class="quiz-progress">
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progressFill"></div>
-                </div>
-                <span class="progress-text" id="progressText">Question 1 of 10</span>
-            </div>
-        </div>
-        
-        
-        <div class="quiz-body">
-            
-            <div class="quiz-step active" id="step-start">
-                <div class="quiz-intro">
-                    <div class="quiz-icon">🤖</div>
-                    <h3>Find Your Automation Sweet Spot</h3>
-                    <p>This 2-minute quiz will assess your current workflow and identify the best automation opportunities for your business.</p>
-                    <ul class="quiz-benefits">
-                        <li>✓ Personalized automation score (0-100)</li>
-                        <li>✓ Custom skill recommendations</li>
-                        <li>✓ Priority task identification</li>
-                        <li>✓ Estimated ROI projections</li>
-                    </ul>
-                    <button class="quiz-btn-primary" id="startQuiz">Start Quiz</button>
-                </div>
-            </div>
-            
-            
-            <div class="quiz-step" id="step-questions">
-                <div id="questionContainer"></div>
-                <div class="quiz-navigation">
-                    <button class="quiz-btn-secondary" id="prevBtn" style="display: none;">← Previous</button>
-                    <button class="quiz-btn-primary" id="nextBtn" disabled>Next →</button>
-                </div>
-            </div>
-            
-            
-            <div class="quiz-step" id="step-email">
-                <div class="quiz-email-gate">
-                    <div class="quiz-icon">📧</div>
-                    <h3>Get Your Results</h3>
-                    <p>Enter your email to see your personalized automation roadmap</p>
-                    
-                    <form id="quizEmailForm" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
-                        <input type="hidden" name="subject" value="AI Automation Quiz Results">
-                        <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
-                        
-                        
-                        <input type="hidden" name="quiz_score" id="hiddenScore">
-                        <input type="hidden" name="quiz_level" id="hiddenLevel">
-                        <input type="hidden" name="quiz_answers" id="hiddenAnswers">
-                        
-                        
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
-                        
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Enter your email" required>
-                        </div>
-                        
-                        <button type="submit" class="quiz-btn-primary">
-                            <span class="btn-text">See My Results</span>
-                            <span class="btn-loading" style="display: none;">Processing...</span>
-                        </button>
-                    </form>
-                    
-                    <p class="quiz-privacy">Your data is private. No spam, ever.</p>
-                </div>
-            </div>
-            
-            
-            <div class="quiz-step" id="step-results">
-                <div class="quiz-results">
-                    <div class="results-score">
-                        <div class="score-circle">
-                            <svg viewBox="0 0 200 200">
-                                <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(99, 102, 241, 0.1)" stroke-width="12"/>
-                                <circle cx="100" cy="100" r="90" fill="none" stroke="url(#scoreGradient)" stroke-width="12" 
-                                        stroke-dasharray="565" stroke-dashoffset="565" id="scoreCircle" 
-                                        transform="rotate(-90 100 100)" stroke-linecap="round"/>
-                                <defs>
-                                    <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div class="score-number" id="scoreNumber">0</div>
-                        </div>
-                        <h3 id="scoreLevel">Automation Beginner</h3>
-                        <p id="scoreDescription">You're just getting started with automation</p>
-                    </div>
-                    
-                    <div class="results-recommendations">
-                        <h4>Your Personalized Roadmap</h4>
-                        <div id="recommendationsContainer"></div>
-                    </div>
-                    
-                    <div class="results-cta">
-                        <button class="quiz-btn-primary" onclick="openSkillRequest()">Request Custom Skills</button>
-                        <button class="quiz-btn-secondary" onclick="openContactForm()">Talk to Us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="/js/automation-quiz.js"></script>
 </body>
 
 </html>
