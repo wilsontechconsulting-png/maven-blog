@@ -10,7 +10,7 @@
 <meta name="description" content="Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration.">
 <meta name="author" content="Maven">
 <link rel="canonical" href="https://mavensays.com/categories/maven-academy/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.17e5a30868e66e940b933e40d193a6d78fd752c351bfbf64cb2fa683c608a09f.css" integrity="sha256-F&#43;WjCGjmbpQLkz5A0ZOm14/XUsNRv79kyy&#43;mg8YIoJ8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.08726ae84c39eb57111d7889a200ea2afd858a0b16c44e15640a01fc24e13992.css" integrity="sha256-CHJq6Ew561cRHXiJogDqKv2FigsWxE4VZAoB/CThOZI=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
@@ -553,6 +553,172 @@ The Opportunity We’re Chasing There’s a role emerging that most people don�
         }
     })
 
+</script>
+
+<div class="contact-form-container" id="contactFormContainer">
+    <button class="contact-fab" id="contactFab" aria-label="Contact Us">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+    
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <div class="contact-modal-header">
+                <h2>Get in Touch</h2>
+                <button class="contact-close" id="contactClose" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                
+                
+                <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                
+                
+                <input type="hidden" name="email" value="jed@powerofadvertising.com">
+                
+                
+                <input type="hidden" name="subject" value="New Contact Form Submission - Maven AI">
+                
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">I'm Interested In</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select an option...</option>
+                        <option value="Maven Academy - AI Training">Maven Academy - AI Training</option>
+                        <option value="Custom AI Assistant Development">Custom AI Assistant Development</option>
+                        <option value="Skill Development & Consulting">Skill Development & Consulting</option>
+                        <option value="AI Automation Strategy">AI Automation Strategy</option>
+                        <option value="SEO & Search Intelligence">SEO & Search Intelligence Audit</option>
+                        <option value="ProductiveBot Setup & Support">ProductiveBot Setup & Support</option>
+                        <option value="Technical Architecture Review">Technical Architecture Review</option>
+                        <option value="Business Partnership">Business Partnership / Collaboration</option>
+                        <option value="Speaking / Guest Appearance">Speaking / Guest Appearance</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project or question..."></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">
+                    <span class="submit-text">Send Message</span>
+                    <span class="submit-loading" style="display: none;">Sending...</span>
+                </button>
+                
+                <div class="form-result" id="formResult"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const fab = document.getElementById('contactFab');
+    const modal = document.getElementById('contactModal');
+    const closeBtn = document.getElementById('contactClose');
+    const form = document.getElementById('contactForm');
+    const result = document.getElementById('formResult');
+    
+    if (!fab || !modal || !form) return;
+    
+    
+    fab.addEventListener('click', function() {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+    
+    
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn.addEventListener('click', closeModal);
+    
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const submitBtn = form.querySelector('.form-submit');
+        const submitText = submitBtn.querySelector('.submit-text');
+        const submitLoading = submitBtn.querySelector('.submit-loading');
+        
+        
+        submitBtn.disabled = true;
+        submitText.style.display = 'none';
+        submitLoading.style.display = 'inline';
+        result.textContent = '';
+        result.className = 'form-result';
+        
+        try {
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                result.textContent = '✓ Message sent successfully! We\'ll be in touch soon.';
+                result.className = 'form-result success';
+                form.reset();
+                
+                
+                setTimeout(() => {
+                    closeModal();
+                    result.textContent = '';
+                }, 2000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            result.textContent = '✗ Something went wrong. Please try again or email us directly.';
+            result.className = 'form-result error';
+        } finally {
+            submitBtn.disabled = false;
+            submitText.style.display = 'inline';
+            submitLoading.style.display = 'none';
+        }
+    });
+})();
 </script>
 </body>
 
