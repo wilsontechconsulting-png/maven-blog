@@ -10,7 +10,7 @@
 <meta name="description" content="After 20&#43; years, you can finally change your Gmail username. Here&#39;s what you need to know, how to do it, and whether you should.">
 <meta name="author" content="Maven">
 <link rel="canonical" href="https://mavensays.com/posts/2026-04-02-google-finally-lets-you-change-gmail-address/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.532e939d376a74f4f74479f007dc7317a99f1502df2a0d6ab485b89ddfb9c2a7.css" integrity="sha256-Uy6TnTdqdPT3RHnwB9xzF6mfFQLfKg1qtIW4nd&#43;5wqc=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7a4c205a24b4bd57048ea07c8ae5773eaa75182fdc718e2901c818ece28ac328.css" integrity="sha256-ekwgWiS0vVcEjqB8iuV3Pqp1GC/ccY4pAcgY7OKKwyg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mavensays.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mavensays.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mavensays.com/favicon-32x32.png">
@@ -662,6 +662,171 @@
     });
 })();
 </script>
+
+<div class="skill-request-modal" id="skillRequestModal">
+    <div class="skill-request-content">
+        <div class="skill-request-header">
+            <h2>Request Custom Skill</h2>
+            <button class="skill-request-close" id="skillRequestClose" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="skill-request-body">
+            
+            <div class="skill-step active" id="step-intro">
+                <p class="step-description">Let's build your custom AI skill. Answer a few questions and we'll provide an instant estimate.</p>
+                <button class="skill-btn-primary" id="startButton">Get Started</button>
+            </div>
+            
+            
+            <div class="skill-step" id="step-questions">
+                <form id="skillQuestionsForm">
+                    <div class="skill-form-group">
+                        <label>What should this skill do?</label>
+                        <textarea id="skillPurpose" name="purpose" rows="3" required placeholder="Example: Analyze financial data and generate capital requirement reports"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>What problem does it solve?</label>
+                        <textarea id="skillProblem" name="problem" rows="3" required placeholder="Example: We need to forecast funding needs for early-stage companies"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>Example scenarios (provide 2-3 examples)</label>
+                        <textarea id="skillScenarios" name="scenarios" rows="4" required placeholder="Example 1: Calculate runway for SaaS startup with $50k MRR&#10;Example 2: Project hiring costs for scaling from 5 to 20 people&#10;Example 3: Model different funding scenarios"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>What data or tools does it need access to?</label>
+                        <textarea id="skillData" name="data" rows="3" required placeholder="Example: Financial spreadsheets, market data APIs, industry benchmarks"></textarea>
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>What should the output look like?</label>
+                        <textarea id="skillOutput" name="output" rows="3" required placeholder="Example: Detailed report with charts, timeline, and funding recommendations"></textarea>
+                    </div>
+                    
+                    <button type="button" class="skill-btn-primary" id="analyzeButton">
+                        <span class="btn-text">Get AI Estimate</span>
+                        <span class="btn-loading" style="display: none;">Analyzing...</span>
+                    </button>
+                </form>
+            </div>
+            
+            
+            <div class="skill-step" id="step-estimate">
+                <div class="estimate-card">
+                    <h3>Your Custom Skill Estimate</h3>
+                    
+                    <div class="estimate-grid">
+                        <div class="estimate-item">
+                            <span class="estimate-label">Complexity</span>
+                            <span class="estimate-value" id="estimateComplexity">-</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span class="estimate-label">Timeline</span>
+                            <span class="estimate-value" id="estimateTimeline">-</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span class="estimate-label">Investment</span>
+                            <span class="estimate-value estimate-price" id="estimatePrice">-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="estimate-details">
+                        <h4>What's Included:</h4>
+                        <ul id="estimateIncludes">
+                            <li>Custom skill development</li>
+                            <li>Testing and validation</li>
+                            <li>Documentation</li>
+                            <li>Skill file (transferable)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="estimate-summary" id="estimateSummary">
+                        
+                    </div>
+                    
+                    <div class="estimate-actions">
+                        <button class="skill-btn-secondary" id="backButton">Edit Details</button>
+                        <button class="skill-btn-primary" id="proceedButton">Request This Skill</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="skill-step" id="step-contact">
+                <form id="skillContactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                    <input type="hidden" name="subject" value="Custom Skill Request - Maven AI">
+                    <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                    
+                    
+                    <input type="hidden" name="skill_purpose" id="hiddenPurpose">
+                    <input type="hidden" name="skill_problem" id="hiddenProblem">
+                    <input type="hidden" name="skill_scenarios" id="hiddenScenarios">
+                    <input type="hidden" name="skill_data" id="hiddenData">
+                    <input type="hidden" name="skill_output" id="hiddenOutput">
+                    <input type="hidden" name="estimate_complexity" id="hiddenComplexity">
+                    <input type="hidden" name="estimate_timeline" id="hiddenTimeline">
+                    <input type="hidden" name="estimate_price" id="hiddenPrice">
+                    <input type="hidden" name="estimate_summary" id="hiddenSummary">
+                    
+                    <p class="step-description">Great! Let's finalize your request.</p>
+                    
+                    <div class="skill-form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="John Smith">
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>Company (optional)</label>
+                        <input type="text" name="company" placeholder="Acme Inc.">
+                    </div>
+                    
+                    <div class="skill-form-group">
+                        <label>When do you need this?</label>
+                        <select name="urgency" required>
+                            <option value="">Select timeline...</option>
+                            <option value="asap">ASAP (rush fee may apply)</option>
+                            <option value="1-2 weeks">Within 1-2 weeks</option>
+                            <option value="2-4 weeks">Within 2-4 weeks</option>
+                            <option value="flexible">Flexible timeline</option>
+                        </select>
+                    </div>
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <button type="submit" class="skill-btn-primary">
+                        <span class="btn-text">Submit Request</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+            
+            
+            <div class="skill-step" id="step-success">
+                <div class="success-message">
+                    <div class="success-icon">✓</div>
+                    <h3>Request Submitted!</h3>
+                    <p>We'll review your custom skill request and get back to you within 24 hours with next steps.</p>
+                    <button class="skill-btn-secondary" id="closeSuccess">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/skill-request.js"></script>
 </body>
 
 </html>
