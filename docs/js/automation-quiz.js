@@ -1,7 +1,10 @@
 // AI Automation Readiness Quiz
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Quiz JS loaded');
     const modal = document.getElementById('quizModal');
     const closeBtn = document.getElementById('quizClose');
+    console.log('Modal:', modal);
+    console.log('Close button:', closeBtn);
     
     // Quiz questions
     const questions = [
@@ -136,21 +139,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Start quiz
-    document.getElementById('startQuiz')?.addEventListener('click', function() {
+    const startBtn = document.getElementById('startQuiz');
+    console.log('Start button:', startBtn);
+    startBtn?.addEventListener('click', function() {
+        console.log('Start button clicked!');
         showStep('step-questions');
         renderQuestion();
     });
     
     // Show step
     function showStep(stepId) {
+        console.log('Showing step:', stepId);
         document.querySelectorAll('.quiz-step').forEach(step => step.classList.remove('active'));
-        document.getElementById(stepId)?.classList.add('active');
+        const targetStep = document.getElementById(stepId);
+        console.log('Target step element:', targetStep);
+        targetStep?.classList.add('active');
     }
     
     // Render question
     function renderQuestion() {
+        console.log('Rendering question', currentQuestion);
         const question = questions[currentQuestion];
         const container = document.getElementById('questionContainer');
+        console.log('Question:', question);
+        console.log('Container:', container);
         
         container.innerHTML = `
             <div class="quiz-question">
