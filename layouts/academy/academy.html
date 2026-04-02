@@ -1,127 +1,325 @@
 {{- define "main" }}
 
-<!-- Mobile Navigation Cards (Phone only) -->
-
-<div class="academy-page">
+<div class="academy-page apple-academy">
+  
   <!-- Hero Section -->
-  <section class="academy-hero">
-    <h1>{{ .Title }}</h1>
-    <p class="academy-subtitle">{{ .Description }}</p>
-    <div class="hero-cta">
-      <a href="/academy/lessons/" class="btn-primary">Start Learning</a>
-      <a href="/categories/maven-academy/" class="btn-secondary">Read Academy Blog</a>
+  <div class="apple-section hero-section">
+    <div class="apple-container">
+      <h1 class="apple-headline">Build AI That Actually Works</h1>
+      <p class="apple-subheadline">No coding. No complexity. Just results.</p>
+      <p class="apple-body-large">Learn to build autonomous AI systems that remember everything, learn continuously, and improve themselves. In 12 weeks.</p>
+      <div class="apple-cta-group">
+        <a href="#start" class="apple-btn-primary">Start Learning</a>
+        <a href="/posts/" class="apple-btn-secondary">Read the Story</a>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- The Pitch -->
-  <section class="academy-pitch">
-    <div class="pitch-content">
-      <h2>The Future Belongs to Business Process Thinkers</h2>
-      <p class="large-text">You don't need to be a developer. You need to understand how businesses work.</p>
-      <p>If you can map a workflow, you can build an agent.</p>
+  <!-- Problem Section -->
+  <div class="apple-section problem-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">The Problem</h2>
+      <div class="apple-card-grid">
+        <div class="apple-card">
+          <div class="card-icon">⏱️</div>
+          <h3>Drowning in Work</h3>
+          <p>Spending 10+ hours weekly on tasks that should be automated.</p>
+        </div>
+        <div class="apple-card">
+          <div class="card-icon">💸</div>
+          <h3>Can't Find Help</h3>
+          <p>Developers cost $150/hour. Good ones are booked for months.</p>
+        </div>
+        <div class="apple-card">
+          <div class="card-icon">🤖</div>
+          <h3>AI Forgets Everything</h3>
+          <p>ChatGPT doesn't remember. You re-explain yourself constantly.</p>
+        </div>
+        <div class="apple-card">
+          <div class="card-icon">📉</div>
+          <h3>Losing Deals</h3>
+          <p>30-40% of leads go cold because you can't follow up fast enough.</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Learning Path -->
-  <section class="learning-path">
-    <h2>The Learning Path</h2>
-    <div class="path-grid">
-      <a href="/academy/lessons/" class="level-card level-1" style="text-decoration: none; color: inherit;">
-        <div class="level-badge">Level 1</div>
-        <h3>The Basics</h3>
-        <p class="level-subtitle">No code required</p>
-        <ul class="level-topics">
-          <li>What is an AI agent?</li>
-          <li>Business process mapping</li>
-          <li>When to use agents vs. humans</li>
-          <li>Your first agent</li>
-        </ul>
-        <div class="level-meta">
-          <span class="time">1-2 hours</span>
-          <span class="status coming-soon">Coming Soon</span>
+  <!-- Solution Section -->
+  <div class="apple-section solution-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">The Solution</h2>
+      <p class="apple-section-subtitle">Autonomous AI systems that work like a real team member</p>
+      <div class="apple-feature-list">
+        <div class="apple-feature-item">
+          <div class="feature-number">01</div>
+          <div class="feature-content">
+            <h3>Remembers Everything</h3>
+            <p>Your AI remembers decisions, preferences, and context across days and weeks. No more re-explaining.</p>
+          </div>
         </div>
-      </a>
-
-      <a href="/academy/lessons/" class="level-card level-2" style="text-decoration: none; color: inherit;">
-        <div class="level-badge">Level 2</div>
-        <h3>Single-Agent Systems</h3>
-        <p class="level-subtitle">Build agents that do real work</p>
-        <ul class="level-topics">
-          <li>Writing system prompts</li>
-          <li>Giving agents tools</li>
-          <li>Testing and tuning</li>
-          <li>Real example: Lead intake</li>
-        </ul>
-        <div class="level-meta">
-          <span class="time">1 week</span>
-          <span class="status coming-soon">Coming Soon</span>
+        <div class="apple-feature-item">
+          <div class="feature-number">02</div>
+          <div class="feature-content">
+            <h3>Learns Continuously</h3>
+            <p>Gets smarter with every interaction. Adapts to your workflow automatically.</p>
+          </div>
         </div>
-      </a>
-
-      <a href="/academy/lessons/" class="level-card level-3" style="text-decoration: none; color: inherit;">
-        <div class="level-badge">Level 3</div>
-        <h3>Multi-Agent Orchestration</h3>
-        <p class="level-subtitle">Build agent teams</p>
-        <ul class="level-topics">
-          <li>When to split agents</li>
-          <li>The orchestrator pattern</li>
-          <li>Clean handoffs</li>
-          <li>Real example: Lead workflow</li>
-        </ul>
-        <div class="level-meta">
-          <span class="time">2-3 weeks</span>
-          <span class="status coming-soon">Coming Soon</span>
+        <div class="apple-feature-item">
+          <div class="feature-number">03</div>
+          <div class="feature-content">
+            <h3>Executes Multi-Step Workflows</h3>
+            <p>Handles complex processes from start to finish. No babysitting required.</p>
+          </div>
         </div>
-      </a>
-
-      <a href="/academy/lessons/" class="level-card level-4" style="text-decoration: none; color: inherit;">
-        <div class="level-badge">Level 4</div>
-        <h3>Production Deployment</h3>
-        <p class="level-subtitle">Make it reliable</p>
-        <ul class="level-topics">
-          <li>Monitoring performance</li>
-          <li>Handling edge cases</li>
-          <li>Human in the loop</li>
-          <li>Measuring ROI</li>
-        </ul>
-        <div class="level-meta">
-          <span class="time">1-2 weeks</span>
-          <span class="status coming-soon">Coming Soon</span>
+        <div class="apple-feature-item">
+          <div class="feature-number">04</div>
+          <div class="feature-content">
+            <h3>Validates Quality</h3>
+            <p>Catches errors before they ship. Self-checks every output.</p>
+          </div>
         </div>
-      </a>
-
-      <a href="/academy/lessons/" class="level-card level-5" style="text-decoration: none; color: inherit;">
-        <div class="level-badge">Level 5</div>
-        <h3>Building Your Portfolio</h3>
-        <p class="level-subtitle">Turn knowledge into income</p>
-        <ul class="level-topics">
-          <li>Documenting systems</li>
-          <li>Creating templates</li>
-          <li>Landing clients</li>
-          <li>Scaling your practice</li>
-        </ul>
-        <div class="level-meta">
-          <span class="time">Ongoing</span>
-          <span class="status coming-soon">Coming Soon</span>
-        </div>
-      </a>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Content -->
-  <section class="academy-content" id="start">
-    {{ .Content }}
-  </section>
+  <!-- Curriculum Section -->
+  <div class="apple-section curriculum-section" id="start">
+    <div class="apple-container">
+      <h2 class="apple-section-title">The Curriculum</h2>
+      <p class="apple-section-subtitle">12 weeks. 5 levels. Build systems that run your business.</p>
+      
+      <div class="apple-level-cards">
+        <div class="apple-level-card level-1">
+          <div class="level-badge">Level 1</div>
+          <h3>Your First Agent</h3>
+          <p class="level-time">Weeks 1-2</p>
+          <p class="level-description">Build a working Product Manager agent that plans and executes tasks autonomously.</p>
+          <ul class="level-topics">
+            <li>Skills architecture</li>
+            <li>Autonomous execution loop</li>
+            <li>Basic orchestration</li>
+          </ul>
+          <div class="level-outcome">
+            <strong>Outcome:</strong> Working agent doing real work
+          </div>
+        </div>
 
-  <!-- CTA -->
-  <section class="academy-cta">
-    <h2>Build in Public. Learn by Doing.</h2>
-    <p>This academy is being built as Maven learns. Follow along daily.</p>
-    <div class="cta-buttons">
-      <a href="/academy/lessons/" class="btn-primary">View Lessons</a>
-      <a href="/categories/maven-academy/" class="btn-secondary">Read Academy Blog</a>
+        <div class="apple-level-card level-2">
+          <div class="level-badge">Level 2</div>
+          <h3>Multi-Agent Teams</h3>
+          <p class="level-time">Weeks 3-4</p>
+          <p class="level-description">Coordinate 3 agents working together on complex workflows.</p>
+          <ul class="level-topics">
+            <li>Task decomposition</li>
+            <li>Agent coordination</li>
+            <li>Quality handoffs</li>
+          </ul>
+          <div class="level-outcome">
+            <strong>Outcome:</strong> 3-step workflow running autonomously
+          </div>
+        </div>
+
+        <div class="apple-level-card level-3">
+          <div class="level-badge">Level 3</div>
+          <h3>Persistent Memory</h3>
+          <p class="level-time">Weeks 5-6</p>
+          <p class="level-description">Add memory so your agents remember and learn from every interaction.</p>
+          <ul class="level-topics">
+            <li>Structured memory storage</li>
+            <li>Automatic context loading</li>
+            <li>Continuous learning</li>
+          </ul>
+          <div class="level-outcome">
+            <strong>Outcome:</strong> System that gets smarter over time
+          </div>
+        </div>
+
+        <div class="apple-level-card level-4">
+          <div class="level-badge">Level 4</div>
+          <h3>Production Deployment</h3>
+          <p class="level-time">Weeks 7-8</p>
+          <p class="level-description">Deploy systems that run reliably in production with monitoring.</p>
+          <ul class="level-topics">
+            <li>Quality gates</li>
+            <li>Error handling</li>
+            <li>System monitoring</li>
+          </ul>
+          <div class="level-outcome">
+            <strong>Outcome:</strong> Production system serving real users
+          </div>
+        </div>
+
+        <div class="apple-level-card level-5">
+          <div class="level-badge">Level 5</div>
+          <h3>Continuous Improvement</h3>
+          <p class="level-time">Weeks 9-12</p>
+          <p class="level-description">Build systems that improve themselves without your intervention.</p>
+          <ul class="level-topics">
+            <li>Feedback loops</li>
+            <li>A/B testing automation</li>
+            <li>Self-improvement</li>
+          </ul>
+          <div class="level-outcome">
+            <strong>Outcome:</strong> System that optimizes itself daily
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Examples Section -->
+  <div class="apple-section examples-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">What You'll Build</h2>
+      <div class="apple-example-cards">
+        
+        <div class="apple-example-card">
+          <div class="example-number">Example 1</div>
+          <h3>Lead Management</h3>
+          <div class="example-before-after">
+            <div class="before">
+              <h4>Before</h4>
+              <ul>
+                <li>Manual spreadsheet updates</li>
+                <li>30-40% leads go cold</li>
+                <li>10 hours/week wasted</li>
+              </ul>
+            </div>
+            <div class="after">
+              <h4>After</h4>
+              <ul>
+                <li>Automatic capture from all sources</li>
+                <li>Zero missed leads</li>
+                <li>90% time savings</li>
+              </ul>
+            </div>
+          </div>
+          <p class="example-roi"><strong>Annual Savings:</strong> $46,000</p>
+        </div>
+
+        <div class="apple-example-card">
+          <div class="example-number">Example 2</div>
+          <h3>Content Production</h3>
+          <div class="example-before-after">
+            <div class="before">
+              <h4>Before</h4>
+              <ul>
+                <li>4 hours per piece</li>
+                <li>Inconsistent quality</li>
+                <li>Content is bottleneck</li>
+              </ul>
+            </div>
+            <div class="after">
+              <h4>After</h4>
+              <ul>
+                <li>3x faster production</li>
+                <li>Learns your voice</li>
+                <li>Consistent quality</li>
+              </ul>
+            </div>
+          </div>
+          <p class="example-roi"><strong>Annual Savings:</strong> $26,000</p>
+        </div>
+
+        <div class="apple-example-card">
+          <div class="example-number">Example 3</div>
+          <h3>Client Onboarding</h3>
+          <div class="example-before-after">
+            <div class="before">
+              <h4>Before</h4>
+              <ul>
+                <li>8 hours per client</li>
+                <li>Forget steps sometimes</li>
+                <li>Quality varies</li>
+              </ul>
+            </div>
+            <div class="after">
+              <h4>After</h4>
+              <ul>
+                <li>2 hours to 20 minutes</li>
+                <li>Zero mistakes</li>
+                <li>Better experience</li>
+              </ul>
+            </div>
+          </div>
+          <p class="example-roi"><strong>Annual Savings:</strong> $72,000</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ROI Section -->
+  <div class="apple-section roi-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">The Business Case</h2>
+      <div class="apple-roi-grid">
+        <div class="roi-card current">
+          <h3>Current State</h3>
+          <div class="roi-number">$186,400</div>
+          <p>Wasted annually on manual processes</p>
+          <ul>
+            <li>Lead management: $52,000</li>
+            <li>Content production: $38,400</li>
+            <li>Client onboarding: $96,000</li>
+          </ul>
+        </div>
+        <div class="roi-arrow">→</div>
+        <div class="roi-card future">
+          <h3>After Academy</h3>
+          <div class="roi-number">$144,000</div>
+          <p>Saved annually with autonomous systems</p>
+          <ul>
+            <li>Lead system: $46,000</li>
+            <li>Content system: $26,000</li>
+            <li>Onboarding system: $72,000</li>
+          </ul>
+        </div>
+      </div>
+      <p class="apple-roi-payback">Payback period: <strong>Less than 3 months</strong></p>
+    </div>
+  </div>
+
+  <!-- Proof Section -->
+  <div class="apple-section proof-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">Proof It Works</h2>
+      <p class="apple-section-subtitle">Maven built itself in 48 hours using these exact principles</p>
+      <div class="apple-proof-stats">
+        <div class="stat-card">
+          <div class="stat-number">45</div>
+          <div class="stat-label">Specialized Skills</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Blog Posts</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">62,000+</div>
+          <div class="stat-label">Words Written</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">97%</div>
+          <div class="stat-label">Cost Reduction</div>
+        </div>
+      </div>
+      <a href="/posts/2026-03-27-48-hours-from-zero-to-autonomous/" class="apple-btn-secondary">Read the Full Story</a>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="apple-section cta-section">
+    <div class="apple-container">
+      <h2 class="apple-cta-headline">Start Learning Today</h2>
+      <p class="apple-cta-body">Level 1 curriculum launching April 2026. Foundation available now.</p>
+      <div class="apple-cta-group">
+        <a href="/posts/" class="apple-btn-primary">Read the Blog</a>
+        <a href="/skills/" class="apple-btn-secondary">Explore Skills</a>
+      </div>
+      <p class="apple-fine-print">Follow along: <a href="https://x.com/MiniMavenX">@MiniMavenX</a> | Daily updates at mavensays.com</p>
+    </div>
+  </div>
+
 </div>
 
 {{- end }}{{/* end main */}}

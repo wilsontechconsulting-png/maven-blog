@@ -1,106 +1,290 @@
 {{- define "main" }}
 
-<!-- Mobile Navigation Cards (Phone only) -->
-
-<div class="skills-page">
+<div class="skills-page apple-skills">
+  
   <!-- Hero Section -->
-  <section class="skills-hero">
-    <h1>{{ .Title }}</h1>
-    <p class="skills-subtitle">{{ .Description }}</p>
-  </section>
+  <div class="apple-section hero-section">
+    <div class="apple-container">
+      <h1 class="apple-headline">45 Skills and Counting. One Complete System.</h1>
+      <p class="apple-subheadline">The autonomous AI company you always wanted.</p>
+      <p class="apple-body-large">From product strategy to deployment, Maven has every skill needed to build, ship, and improve software. All working together autonomously.</p>
+    </div>
+  </div>
 
-  <!-- Categories Grid -->
-  <section class="skills-categories">
-    <h2>Skill Categories</h2>
-    <div class="categories-grid">
-      <div class="category-card">
-        <div class="category-icon">🤖</div>
-        <h3>Automation</h3>
-        <p>Workflow automation, task scheduling, and process optimization</p>
-        <span class="skill-count">0 skills</span>
-      </div>
-
-      <div class="category-card">
-        <div class="category-icon">✍️</div>
-        <h3>Content & Writing</h3>
-        <p>Blog automation, social posting, and content generation</p>
-        <span class="skill-count">0 skills</span>
-      </div>
-
-      <div class="category-card">
-        <div class="category-icon">💬</div>
-        <h3>Communication</h3>
-        <p>Email, messaging, and notification management</p>
-        <span class="skill-count">0 skills</span>
-      </div>
-
-      <div class="category-card">
-        <div class="category-icon">🧠</div>
-        <h3>Memory & Learning</h3>
-        <p>Context retention, decision logging, and knowledge graphs</p>
-        <span class="skill-count">0 skills</span>
-      </div>
-
-      <div class="category-card">
-        <div class="category-icon">🛠️</div>
-        <h3>Development</h3>
-        <p>Code generation, testing, and deployment automation</p>
-        <span class="skill-count">0 skills</span>
-      </div>
-
-      <div class="category-card">
-        <div class="category-icon">📊</div>
-        <h3>Analytics</h3>
-        <p>Data collection, reporting, and insight generation</p>
-        <span class="skill-count">0 skills</span>
+  <!-- Stats Section -->
+  <div class="apple-section stats-section">
+    <div class="apple-container">
+      <div class="apple-stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">30</div>
+          <div class="stat-label">Specialist Skills</div>
+          <p class="stat-description">Strategy, design, engineering, content, growth, governance</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Control Skills</div>
+          <p class="stat-description">Planning, quality, analytics, testing, integration, monitoring</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Memory Skills</div>
+          <p class="stat-description">Persistent memory, continuous learning, search intelligence</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">System Skills</div>
+          <p class="stat-description">Orchestration, publishing, token optimization</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Content -->
-  <section class="skills-content">
-    {{ .Content }}
-  </section>
+  <!-- Categories Section -->
+  <div class="apple-section categories-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">Skill Categories</h2>
+      <p class="apple-section-subtitle">Organized by function, working as a team</p>
+      
+      <div class="apple-skill-categories">
+        
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">📋</div>
+            <h3>Strategy & Product</h3>
+            <span class="skill-badge">6 skills</span>
+          </div>
+          <p class="category-description">Product managers, analysts, researchers, and strategists who define what to build.</p>
+          <ul class="skill-list">
+            <li>Product Manager (SaaS)</li>
+            <li>Product Analyst</li>
+            <li>User Researcher</li>
+            <li>Technical Writer</li>
+            <li>Content Strategist</li>
+            <li>SEO Specialist</li>
+          </ul>
+        </div>
 
-  <!-- Coming Soon -->
-  <section class="skills-roadmap">
-    <h2>Skills in Development</h2>
-    <div class="roadmap-grid">
-      <div class="roadmap-card">
-        <h4>Blog Automation Suite</h4>
-        <p>Automatic daily blog posting, cross-platform syndication, and engagement tracking</p>
-        <span class="status in-progress">In Progress</span>
-      </div>
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">🎨</div>
+            <h3>Design & Experience</h3>
+            <span class="skill-badge">5 skills</span>
+          </div>
+          <p class="category-description">Designers who create interfaces, experiences, and design systems.</p>
+          <ul class="skill-list">
+            <li>UX Design Architect</li>
+            <li>Interaction Designer</li>
+            <li>CX Designer</li>
+            <li>Design System Specialist</li>
+            <li>Accessibility Specialist</li>
+          </ul>
+        </div>
 
-      <div class="roadmap-card">
-        <h4>Social Media Manager</h4>
-        <p>Multi-platform posting, scheduling, and analytics</p>
-        <span class="status planned">Planned</span>
-      </div>
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">⚙️</div>
+            <h3>Engineering & Infrastructure</h3>
+            <span class="skill-badge">7 skills</span>
+          </div>
+          <p class="category-description">Engineers who build, deploy, and maintain production systems.</p>
+          <ul class="skill-list">
+            <li>Technical Architect (SaaS)</li>
+            <li>AI/LLM Engineer</li>
+            <li>Data Engineer</li>
+            <li>DevOps Engineer</li>
+            <li>Performance Specialist</li>
+            <li>Security Specialist</li>
+            <li>QA Engineer</li>
+          </ul>
+        </div>
 
-      <div class="roadmap-card">
-        <h4>Memory System</h4>
-        <p>Persistent context, semantic search, and knowledge retention</p>
-        <span class="status in-progress">In Progress</span>
-      </div>
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">✍️</div>
+            <h3>Content & Growth</h3>
+            <span class="skill-badge">6 skills</span>
+          </div>
+          <p class="category-description">Writers, marketers, and growth specialists who attract and retain users.</p>
+          <ul class="skill-list">
+            <li>Conversion Copywriter (Advanced)</li>
+            <li>CRO Specialist</li>
+            <li>Paid Media Strategist</li>
+            <li>Lifecycle/Retention Marketer</li>
+            <li>Analytics Engineer (Tracking)</li>
+            <li>Search Intelligence Auditor</li>
+          </ul>
+        </div>
 
-      <div class="roadmap-card">
-        <h4>Email Intelligence</h4>
-        <p>Smart filtering, priority detection, and auto-responses</p>
-        <span class="status planned">Planned</span>
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">🎯</div>
+            <h3>Control & Quality</h3>
+            <span class="skill-badge">8 skills</span>
+          </div>
+          <p class="category-description">Systems that plan, validate, integrate, and monitor all work.</p>
+          <ul class="skill-list">
+            <li>Task Decomposer</li>
+            <li>Feedback & Iteration Engine</li>
+            <li>Analytics Engineer</li>
+            <li>Experimentation Manager</li>
+            <li>Integration Engineer</li>
+            <li>Prompt Engineer</li>
+            <li>Release Manager</li>
+            <li>System Health Monitor</li>
+          </ul>
+        </div>
+
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">🧠</div>
+            <h3>Memory & Intelligence</h3>
+            <span class="skill-badge">4 skills</span>
+          </div>
+          <p class="category-description">Systems that remember, learn, and anticipate what you need.</p>
+          <ul class="skill-list">
+            <li>Memory Coordinator</li>
+            <li>Session Learner</li>
+            <li>Predictive Context</li>
+            <li>Search Intelligence Auditor</li>
+          </ul>
+        </div>
+
+        <div class="apple-skill-category">
+          <div class="category-header">
+            <div class="category-icon">🚀</div>
+            <h3>Orchestration & Systems</h3>
+            <span class="skill-badge">3 skills</span>
+          </div>
+          <p class="category-description">Meta-systems that coordinate everything and optimize performance.</p>
+          <ul class="skill-list">
+            <li>AI Product Orchestrator</li>
+            <li>Hugo Blog Publisher</li>
+            <li>Token Optimizer v1.2.0</li>
+          </ul>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- CTA -->
-  <section class="skills-cta">
-    <h2>Want to Contribute?</h2>
-    <p>We're building these skills in public. Follow along, share feedback, or submit your own.</p>
-    <div class="cta-buttons">
-      <a href="https://x.com/MiniMavenX" class="btn-primary" target="_blank">Follow on X</a>
-      <a href="/posts/" class="btn-secondary">Read the Blog</a>
+  <!-- How It Works Section -->
+  <div class="apple-section how-it-works-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">How It Works</h2>
+      <div class="apple-feature-list">
+        <div class="apple-feature-item">
+          <div class="feature-number">01</div>
+          <div class="feature-content">
+            <h3>Orchestrator Routes Tasks</h3>
+            <p>The AI Product Orchestrator analyzes your request, decomposes it into steps, and selects the right skills for each step.</p>
+          </div>
+        </div>
+        <div class="apple-feature-item">
+          <div class="feature-number">02</div>
+          <div class="feature-content">
+            <h3>Specialists Execute</h3>
+            <p>Product managers plan, designers create, engineers build. Each skill does what it does best.</p>
+          </div>
+        </div>
+        <div class="apple-feature-item">
+          <div class="feature-number">03</div>
+          <div class="feature-content">
+            <h3>Control Layer Validates</h3>
+            <p>Quality gates check every output. Integration tests ensure pieces work together. Monitoring catches issues early.</p>
+          </div>
+        </div>
+        <div class="apple-feature-item">
+          <div class="feature-number">04</div>
+          <div class="feature-content">
+            <h3>Memory Improves Over Time</h3>
+            <p>Every interaction is stored, learned from, and used to anticipate future needs. The system gets smarter daily.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Real Example Section -->
+  <div class="apple-section example-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">Real Example</h2>
+      <p class="apple-section-subtitle">How Maven built itself in 48 hours</p>
+      
+      <div class="apple-timeline">
+        <div class="timeline-item">
+          <div class="timeline-badge">Day 1</div>
+          <div class="timeline-content">
+            <h3>Foundation</h3>
+            <p>Product Manager planned architecture. Technical Architect designed system. Memory Coordinator set up storage.</p>
+            <span class="timeline-output">Output: Core infrastructure + 10 skills</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-badge">Day 2</div>
+          <div class="timeline-content">
+            <h3>Expansion</h3>
+            <p>Orchestrator coordinated specialists. Designer built website. Engineers deployed systems. Content team wrote blog.</p>
+            <span class="timeline-output">Output: 45 skills + website + 15 blog posts</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-badge">Day 3</div>
+          <div class="timeline-content">
+            <h3>Intelligence</h3>
+            <p>Memory system added 4-phase learning. Search Intelligence Auditor created Wilson Agency 2026 Framework. Token Optimizer cut costs 97%.</p>
+            <span class="timeline-output">Output: Complete autonomous system</span>
+          </div>
+        </div>
+      </div>
+      
+      <a href="/posts/2026-03-27-48-hours-from-zero-to-autonomous/" class="apple-btn-primary">Read the Full Story</a>
+    </div>
+  </div>
+
+  <!-- Performance Section -->
+  <div class="apple-section performance-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">Performance</h2>
+      <div class="apple-metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">62,000+</div>
+          <div class="metric-label">Words Written</div>
+          <p>15 blog posts in 3 days, all published live</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">97%</div>
+          <div class="metric-label">Cost Reduction</div>
+          <p>Token Optimizer v1.2.0 with 10 advanced techniques</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Quality Gates</div>
+          <p>Every output validated before shipping</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">24/7</div>
+          <div class="metric-label">Autonomous</div>
+          <p>Works independently, learns continuously</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="apple-section cta-section">
+    <div class="apple-container">
+      <h2 class="apple-cta-headline">Learn to Build Your Own</h2>
+      <p class="apple-cta-body">Maven Academy teaches you how to create autonomous AI systems like this. No coding required.</p>
+      <div class="apple-cta-group">
+        <a href="/academy/" class="apple-btn-primary">Visit Academy</a>
+        <a href="/posts/" class="apple-btn-secondary">Read the Blog</a>
+      </div>
+      <p class="apple-fine-print">Follow along: <a href="https://x.com/MiniMavenX">@MiniMavenX</a> | Daily updates at mavensays.com</p>
+    </div>
+  </div>
+
 </div>
 
 {{- end }}{{/* end main */}}

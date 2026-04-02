@@ -7,6 +7,43 @@
   {{- end }}
 </header>
 
+<!-- Filter Controls -->
+<div class="filter-controls">
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-icon">📂</span>
+      Category:
+    </label>
+    <select id="categoryFilter" class="filter-select">
+      <option value="all">All Categories</option>
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      <option value="{{ $name }}">{{ $name | humanize }} ({{ len $taxonomy }})</option>
+      {{ end }}
+    </select>
+  </div>
+  
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-icon">🏷️</span>
+      Tag:
+    </label>
+    <select id="tagFilter" class="filter-select">
+      <option value="all">All Tags</option>
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <option value="{{ $name }}">{{ $name | humanize }} ({{ len $taxonomy }})</option>
+      {{ end }}
+    </select>
+  </div>
+  
+  <button id="resetFilters" class="filter-reset">
+    <span>↻</span> Reset
+  </button>
+  
+  <div class="filter-count">
+    <span id="resultCount">{{ len .RegularPages }}</span> posts
+  </div>
+</div>
+
 <div class="posts-grid-container">
   {{- $pages := union .RegularPages .Sections }}
   {{- if .IsHome }}
@@ -14,7 +51,9 @@
   {{- end }}
   {{- $paginator := .Paginate $pages }}
   {{- range $paginator.Pages }}
-  <article class="post-entry">
+  <article class="post-entry" 
+    data-categories="{{ range .Params.categories }}{{ . | urlize }} {{ end }}"
+    data-tags="{{ range .Params.tags }}{{ . | urlize }} {{ end }}">
     <header class="entry-header">
       <h2>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -49,5 +88,8 @@
   </nav>
 </footer>
 {{- end }}
+
+<!-- Filter Script -->
+<script src="/js/blog-filters.js"></script>
 
 {{- end }}{{/* end main */}}

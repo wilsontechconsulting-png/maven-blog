@@ -1,0 +1,273 @@
+/* ========================================
+   SKILLS PAGE - APPLE.COM STYLE
+   Matching Academy page design
+   ======================================== */
+
+/* Stats Grid */
+.apple-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    margin: 60px 0;
+}
+
+.apple-stats-grid .stat-card {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.apple-stats-grid .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+    border-color: var(--theme-primary);
+}
+
+.stat-description {
+    font-size: 0.9375rem;
+    color: var(--theme-text-secondary);
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+/* Skill Categories */
+.apple-skill-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.apple-skill-category {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 20px;
+    padding: 40px 32px;
+    transition: all 0.3s ease;
+}
+
+.apple-skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+    border-color: var(--theme-primary);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.category-header .category-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.category-header h3 {
+    font-size: 1.75rem;
+    color: var(--theme-white);
+    font-weight: 700;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.skill-badge {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--theme-primary-hover);
+    padding: 6px 16px;
+    border-radius: 980px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.category-description {
+    font-size: 1.0625rem;
+    color: var(--theme-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    padding: 12px 0;
+    color: var(--theme-text-secondary);
+    font-size: 1rem;
+    border-bottom: 1px solid var(--theme-border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-list li:last-child {
+    border-bottom: none;
+}
+
+.skill-list li::before {
+    content: "✓";
+    color: var(--theme-primary);
+    font-weight: bold;
+    font-size: 1.125rem;
+    flex-shrink: 0;
+}
+
+/* Timeline */
+.apple-timeline {
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--theme-border);
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-badge {
+    background: var(--theme-primary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 980px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+
+.timeline-content h3 {
+    font-size: 1.75rem;
+    color: var(--theme-white);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    font-size: 1.125rem;
+    color: var(--theme-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.timeline-output {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: var(--theme-primary-hover);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+/* Metrics Grid */
+.apple-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    margin: 60px 0;
+}
+
+.metric-card {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+    border-color: var(--theme-primary);
+}
+
+.metric-value {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--theme-primary-hover);
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.metric-label {
+    font-size: 1.25rem;
+    color: var(--theme-white);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.metric-card p {
+    font-size: 1rem;
+    color: var(--theme-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Center alignment for buttons in example section */
+.example-section .apple-btn-primary {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .apple-stats-grid,
+    .apple-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .apple-skill-categories {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .category-header {
+        flex-wrap: wrap;
+    }
+    
+    .category-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .timeline-badge {
+        width: fit-content;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.375rem;
+    }
+    
+    .metric-value {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .apple-stats-grid,
+    .apple-metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
