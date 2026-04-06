@@ -1,0 +1,423 @@
+/* ========================================
+   GLOBAL MOBILE RESPONSIVE FIXES
+   Comprehensive mobile optimization
+   ======================================== */
+
+@media (max-width: 768px) {
+    
+    /* ========================================
+       TYPOGRAPHY SCALING
+       ======================================== */
+    
+    .apple-headline {
+        font-size: 2rem !important;
+        line-height: 1.15 !important;
+    }
+    
+    .apple-subheadline {
+        font-size: 1.25rem !important;
+    }
+    
+    .apple-body-large {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    .apple-section-title {
+        font-size: 1.75rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .apple-section-subtitle {
+        font-size: 1.125rem !important;
+    }
+    
+    /* ========================================
+       SECTION PADDING
+       ======================================== */
+    
+    .apple-section {
+        padding: 50px 20px !important;
+    }
+    
+    .hero-section {
+        padding: 60px 20px 40px 20px !important;
+    }
+    
+    /* ========================================
+       ACADEMY PAGE - ROI SECTION
+       ======================================== */
+    
+    .apple-roi-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .roi-arrow {
+        transform: rotate(90deg);
+        font-size: 2rem !important;
+    }
+    
+    .roi-card {
+        padding: 32px 24px !important;
+    }
+    
+    .roi-card h3 {
+        font-size: 0.875rem !important;
+    }
+    
+    /* CRITICAL: Scale down huge numbers */
+    .roi-number {
+        font-size: 2.5rem !important;
+        word-break: break-all;
+        line-height: 1.1 !important;
+    }
+    
+    .roi-card > p {
+        font-size: 0.9375rem !important;
+    }
+    
+    .roi-card ul {
+        font-size: 0.875rem !important;
+    }
+    
+    .roi-card li {
+        font-size: 0.875rem !important;
+        padding: 6px 0 !important;
+    }
+    
+    .apple-roi-payback {
+        font-size: 1.125rem !important;
+    }
+    
+    /* ========================================
+       STATS & METRICS
+       ======================================== */
+    
+    .stat-number {
+        font-size: 2.5rem !important;
+    }
+    
+    .stat-label {
+        font-size: 0.9375rem !important;
+    }
+    
+    .metric-value {
+        font-size: 2.5rem !important;
+    }
+    
+    .metric-label {
+        font-size: 1rem !important;
+    }
+    
+    /* ========================================
+       SAVINGS COUNTER
+       ======================================== */
+    
+    .savings-counter {
+        padding: 32px 20px !important;
+    }
+    
+    .savings-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .savings-amount {
+        font-size: 3rem !important;
+    }
+    
+    .savings-meta {
+        font-size: 0.875rem !important;
+        flex-wrap: wrap;
+    }
+    
+    .savings-comparison {
+        flex-direction: column;
+        gap: 16px !important;
+    }
+    
+    .comparison-value {
+        font-size: 1.5rem !important;
+    }
+    
+    .comparison-label {
+        font-size: 0.75rem !important;
+    }
+    
+    /* ========================================
+       FEATURE CARDS
+       ======================================== */
+    
+    .apple-card-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    .apple-card {
+        padding: 24px 20px !important;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .apple-card h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .apple-card p {
+        font-size: 0.9375rem !important;
+    }
+    
+    /* ========================================
+       LEVEL CARDS (ACADEMY)
+       ======================================== */
+    
+    .apple-level-cards {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .apple-level-card {
+        padding: 28px 24px !important;
+    }
+    
+    .apple-level-card h3 {
+        font-size: 1.375rem !important;
+    }
+    
+    .level-description {
+        font-size: 1rem !important;
+    }
+    
+    /* ========================================
+       EXAMPLE CARDS
+       ======================================== */
+    
+    .apple-example-cards {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .apple-example-card {
+        padding: 32px 24px !important;
+    }
+    
+    .apple-example-card h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .example-before-after {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .before h4,
+    .after h4 {
+        font-size: 0.875rem !important;
+    }
+    
+    .before li,
+    .after li {
+        font-size: 0.875rem !important;
+    }
+    
+    /* ========================================
+       SKILL CATEGORIES
+       ======================================== */
+    
+    .apple-skill-categories {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .apple-skill-category {
+        padding: 28px 24px !important;
+    }
+    
+    .category-header h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    /* ========================================
+       TIMELINE
+       ======================================== */
+    
+    .apple-timeline {
+        padding: 0 !important;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 24px 0 !important;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .timeline-content p {
+        font-size: 1rem !important;
+    }
+    
+    /* ========================================
+       PROMO CARD
+       ======================================== */
+    
+    .apple-promo-card {
+        padding: 40px 24px !important;
+    }
+    
+    .apple-promo-card .apple-section-title {
+        font-size: 1.75rem !important;
+    }
+    
+    .promo-features {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+    }
+    
+    /* ========================================
+       BUTTONS
+       ======================================== */
+    
+    .apple-cta-group {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    
+    .apple-btn-primary,
+    .apple-btn-secondary {
+        width: 100% !important;
+        text-align: center;
+        padding: 14px 32px !important;
+        font-size: 1rem !important;
+    }
+    
+    /* ========================================
+       CONTAINERS
+       ======================================== */
+    
+    .apple-container {
+        padding: 0 20px !important;
+    }
+    
+    /* ========================================
+       FEATURE LIST
+       ======================================== */
+    
+    .apple-feature-list {
+        gap: 24px !important;
+    }
+    
+    .apple-feature-item {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 24px 0 !important;
+    }
+    
+    .feature-number {
+        width: auto !important;
+        font-size: 1.25rem !important;
+    }
+    
+    .feature-content h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .feature-content p {
+        font-size: 1rem !important;
+    }
+    
+    /* ========================================
+       POST TILES/CARDS
+       ======================================== */
+    
+    .posts-grid-compact {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    .post-tile,
+    .apple-post-card {
+        padding: 20px !important;
+    }
+    
+    .post-tile-title,
+    .post-card-title {
+        font-size: 1.125rem !important;
+    }
+    
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+    
+    .breadcrumb-nav {
+        font-size: 0.875rem !important;
+        flex-wrap: wrap;
+    }
+    
+    .quick-actions {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    
+    .quick-actions a {
+        width: 100% !important;
+    }
+    
+    /* ========================================
+       RELATED NAV
+       ======================================== */
+    
+    .related-nav-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    /* ========================================
+       PREVENT OVERFLOW
+       ======================================== */
+    
+    * {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Prevent horizontal scroll */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    
+    .apple-headline {
+        font-size: 1.75rem !important;
+    }
+    
+    .roi-number {
+        font-size: 2rem !important;
+    }
+    
+    .savings-amount {
+        font-size: 2.5rem !important;
+    }
+    
+    .stat-number {
+        font-size: 2rem !important;
+    }
+    
+    .apple-section {
+        padding: 40px 16px !important;
+    }
+}

@@ -1,0 +1,80 @@
+{{- define "main" }}
+
+<div class="taxonomy-single-page apple-taxonomy-single">
+  
+  <!-- Hero with Breadcrumbs -->
+  <div class="apple-section hero-section">
+    <div class="apple-container">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb-nav">
+        <a href="/" class="breadcrumb-link">Home</a>
+        <span class="breadcrumb-separator">→</span>
+        <a href="/{{ .Data.Plural }}/" class="breadcrumb-link">{{ .Data.Plural | humanize }}</a>
+        <span class="breadcrumb-separator">→</span>
+        <span class="breadcrumb-current">{{ .Title }}</span>
+      </nav>
+      
+      <h1 class="apple-headline">{{ .Title }}</h1>
+      <p class="apple-body-large">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }} in this {{ .Data.Singular }}</p>
+      
+      <!-- Quick Actions -->
+      <div class="quick-actions">
+        <a href="/posts/" class="apple-btn-primary">View All Posts</a>
+        <a href="/{{ .Data.Plural }}/" class="apple-btn-secondary">Browse {{ .Data.Plural | humanize }}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Posts Grid -->
+  <div class="apple-section posts-section">
+    <div class="apple-container">
+      <div class="apple-posts-grid">
+        {{- range .Pages }}
+        <a href="{{ .Permalink }}" class="apple-post-card">
+          <div class="post-card-meta">
+            <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            <span class="post-reading-time">{{ .ReadingTime }} min</span>
+          </div>
+          <h3 class="post-card-title">{{ .Title }}</h3>
+          <p class="post-card-excerpt">{{ .Summary | plainify | truncate 180 }}</p>
+          <div class="post-card-footer">
+            <span class="post-cta">Read →</span>
+          </div>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Navigation -->
+  <div class="apple-section related-nav-section">
+    <div class="apple-container">
+      <h2 class="apple-section-title">Explore More</h2>
+      <div class="related-nav-grid">
+        <a href="/posts/" class="related-nav-card">
+          <div class="nav-icon">📝</div>
+          <h3>All Posts</h3>
+          <p>Browse everything we've published</p>
+        </a>
+        <a href="/categories/" class="related-nav-card">
+          <div class="nav-icon">📂</div>
+          <h3>All Categories</h3>
+          <p>Explore posts by topic</p>
+        </a>
+        <a href="/tags/" class="related-nav-card">
+          <div class="nav-icon">🏷️</div>
+          <h3>All Tags</h3>
+          <p>Find posts by keyword</p>
+        </a>
+        <a href="/academy/" class="related-nav-card">
+          <div class="nav-icon">🎓</div>
+          <h3>Academy</h3>
+          <p>Learn to build AI agents</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{{- end }}{{/* end main */}}

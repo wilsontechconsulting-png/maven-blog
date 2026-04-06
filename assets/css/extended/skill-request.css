@@ -1,0 +1,417 @@
+/* ========================================
+   SKILL REQUEST FORM - APPLE STYLE
+   AI-Powered Skill Estimator
+   ======================================== */
+
+.skill-request-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px;
+}
+
+.skill-request-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.skill-request-content {
+    background: rgba(29, 29, 31, 0.95);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                0 1px 1px rgba(255, 255, 255, 0.1) inset;
+    transform: scale(0.95) translateY(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-request-modal.active .skill-request-content {
+    transform: scale(1) translateY(0);
+}
+
+.skill-request-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px 20px 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skill-request-header h2 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.skill-request-close {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 6px;
+}
+
+.skill-request-close:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.skill-request-body {
+    padding: 32px;
+}
+
+/* Steps */
+.skill-step {
+    display: none;
+}
+
+.skill-step.active {
+    display: block;
+    animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Form Groups */
+.skill-form-group {
+    margin-bottom: 24px;
+}
+
+.skill-form-group label {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+}
+
+.skill-form-group input,
+.skill-form-group select,
+.skill-form-group textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.95);
+    padding: 14px 16px;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-form-group input:hover,
+.skill-form-group select:hover,
+.skill-form-group textarea:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.skill-form-group input:focus,
+.skill-form-group select:focus,
+.skill-form-group textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(99, 102, 241, 0.6);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.skill-form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.skill-form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.6)' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 44px;
+}
+
+/* Buttons */
+.skill-btn-primary,
+.skill-btn-secondary {
+    width: 100%;
+    border: none;
+    border-radius: 980px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: -0.01em;
+}
+
+.skill-btn-primary {
+    background: rgba(99, 102, 241, 1);
+    color: white;
+}
+
+.skill-btn-primary:hover {
+    background: rgba(79, 70, 229, 1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+}
+
+.skill-btn-primary:active {
+    transform: translateY(0);
+}
+
+.skill-btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.skill-btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.skill-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Estimate Card */
+.estimate-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.estimate-card h3 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+}
+
+.estimate-card h4 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.estimate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.estimate-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+.estimate-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.estimate-value {
+    display: block;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.estimate-price {
+    color: rgba(34, 197, 94, 1);
+    font-size: 1.375rem;
+}
+
+.estimate-details {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.estimate-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.estimate-details li {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9375rem;
+    padding: 6px 0;
+    padding-left: 24px;
+    position: relative;
+}
+
+.estimate-details li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: rgba(34, 197, 94, 1);
+    font-weight: 600;
+}
+
+.estimate-summary {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.estimate-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 2px solid rgba(34, 197, 94, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: rgba(34, 197, 94, 1);
+    margin: 0 auto 24px auto;
+}
+
+.success-message h3 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.success-message p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .skill-request-modal {
+        padding: 0;
+        align-items: flex-end;
+    }
+    
+    .skill-request-content {
+        max-height: 100vh;
+        border-radius: 20px 20px 0 0;
+        max-width: 100%;
+    }
+    
+    .skill-request-header {
+        padding: 20px;
+    }
+    
+    .skill-request-body {
+        padding: 20px;
+    }
+    
+    .estimate-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .estimate-actions {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-form-group input,
+    .skill-form-group select,
+    .skill-form-group textarea {
+        font-size: 16px; /* Prevents iOS zoom */
+    }
+}
+
+/* Multi-Layer Honeypot Protection */
+.honeypot-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    tab-index: -1 !important;
+}
+
+/* Scrollbar */
+.skill-request-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.skill-request-content::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.skill-request-content::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.5);
+    border-radius: 4px;
+}
+
+.skill-request-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.7);
+}

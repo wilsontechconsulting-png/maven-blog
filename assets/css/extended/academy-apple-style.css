@@ -21,9 +21,27 @@
 
 /* Apple Section Container */
 .apple-section {
-    padding: 100px 40px;
+    padding: 80px 40px;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+/* Reduce spacing for homepage */
+body.home .hero-section {
+    padding: 80px 40px 50px 40px;
+}
+
+body.home .features-section,
+body.home .academy-promo-section {
+    padding: 50px 40px;
+}
+
+body.home .savings-section {
+    padding: 50px 40px;
+}
+
+body.home .blog-section {
+    padding: 50px 40px 80px 40px;
 }
 
 .apple-container {
@@ -169,6 +187,31 @@
     color: var(--theme-text-secondary);
     line-height: 1.6;
     margin: 0;
+}
+
+/* Solution Diagram */
+.solution-diagram {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.solution-diagram img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 768px) {
+    .solution-diagram {
+        padding: 24px 16px;
+        margin: 32px auto;
+    }
 }
 
 /* Feature List */

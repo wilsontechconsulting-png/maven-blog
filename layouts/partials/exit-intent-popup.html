@@ -1,0 +1,154 @@
+<!-- Exit-Intent Newsletter Popup -->
+<div class="exit-intent-overlay" id="exitIntentOverlay">
+    <div class="exit-intent-popup">
+        <button class="exit-popup-close" id="exitPopupClose" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <div class="exit-popup-content">
+            <div class="exit-popup-icon">📬</div>
+            <h2 class="exit-popup-title">Before You Go...</h2>
+            <p class="exit-popup-subtitle">Get our AI Workflow Starter Kit (Free)</p>
+            
+            <ul class="exit-popup-benefits">
+                <li>✓ 3 Free Skill Templates</li>
+                <li>✓ Implementation Guide</li>
+                <li>✓ Weekly AI Insights</li>
+            </ul>
+            
+            <form class="exit-popup-form" id="exitIntentForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                <input type="hidden" name="subject" value="New Newsletter Signup - Exit Intent">
+                <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                <input type="hidden" name="from_name" value="Maven AI Newsletter">
+                
+                <!-- Honeypot -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="exit-popup-button">
+                    <span class="btn-text">Get Free Starter Kit</span>
+                    <span class="btn-loading" style="display: none;">Sending...</span>
+                </button>
+            </form>
+            
+            <p class="exit-popup-privacy">No spam. Unsubscribe anytime.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const overlay = document.getElementById('exitIntentOverlay');
+    const closeBtn = document.getElementById('exitPopupClose');
+    const form = document.getElementById('exitIntentForm');
+    
+    let hasShown = false;
+    let hasSubmitted = false;
+    
+    // Check if already shown/submitted in this session
+    if (sessionStorage.getItem('exitIntentShown') || localStorage.getItem('exitIntentSubmitted')) {
+        return;
+    }
+    
+    // Detect exit intent (mouse leaving viewport)
+    document.addEventListener('mouseleave', function(e) {
+        if (e.clientY < 0 && !hasShown && !hasSubmitted) {
+            showPopup();
+        }
+    });
+    
+    // Also trigger on mobile after 30 seconds
+    if (window.innerWidth <= 768) {
+        setTimeout(function() {
+            if (!hasShown && !hasSubmitted) {
+                showPopup();
+            }
+        }, 30000);
+    }
+    
+    function showPopup() {
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        hasShown = true;
+        sessionStorage.setItem('exitIntentShown', 'true');
+    }
+    
+    function closePopup() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn?.addEventListener('click', closePopup);
+    
+    overlay?.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+    
+    // Form submission
+    form?.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Honeypot check
+        if (this.website.value) {
+            return false;
+        }
+        
+        const button = this.querySelector('button[type="submit"]');
+        const btnText = button.querySelector('.btn-text');
+        const btnLoading = button.querySelector('.btn-loading');
+        
+        button.disabled = true;
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                localStorage.setItem('exitIntentSubmitted', 'true');
+                hasSubmitted = true;
+                
+                // Show success message
+                overlay.querySelector('.exit-popup-content').innerHTML = `
+                    <div class="exit-success">
+                        <div class="exit-success-icon">✓</div>
+                        <h2>Check Your Email!</h2>
+                        <p>Your AI Workflow Starter Kit is on the way.</p>
+                    </div>
+                `;
+                
+                setTimeout(closePopup, 3000);
+            } else {
+                throw new Error('Submission failed');
+            }
+        } catch (error) {
+            alert('Something went wrong. Please try again.');
+        } finally {
+            button.disabled = false;
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+        }
+    });
+    
+    // Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay?.classList.contains('active')) {
+            closePopup();
+        }
+    });
+})();
+</script>

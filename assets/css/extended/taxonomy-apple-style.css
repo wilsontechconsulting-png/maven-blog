@@ -1,0 +1,106 @@
+/* ========================================
+   TAXONOMY (CATEGORIES/TAGS) - APPLE STYLE
+   Matching Academy and Skills design
+   ======================================== */
+
+/* Reduce hero section padding for taxonomy pages */
+.taxonomy-page .hero-section {
+    padding: 80px 40px 40px 40px;
+}
+
+.taxonomy-page .taxonomy-section {
+    padding: 40px 40px 100px 40px;
+}
+
+/* Taxonomy Grid */
+.apple-taxonomy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 0;
+}
+
+.apple-taxonomy-card {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.apple-taxonomy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+    border-color: var(--theme-primary);
+}
+
+.taxonomy-card-content {
+    flex-grow: 1;
+}
+
+.apple-taxonomy-card h3 {
+    font-size: 1.5rem;
+    color: var(--theme-white);
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.taxonomy-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.post-count {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--theme-primary-hover);
+    line-height: 1;
+}
+
+.post-label {
+    font-size: 0.9375rem;
+    color: var(--theme-text-secondary);
+    font-weight: 500;
+}
+
+.taxonomy-arrow {
+    font-size: 2rem;
+    color: var(--theme-primary);
+    font-weight: 300;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.apple-taxonomy-card:hover .taxonomy-arrow {
+    transform: translateX(8px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .apple-taxonomy-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .apple-taxonomy-card {
+        padding: 24px 20px;
+    }
+    
+    .apple-taxonomy-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .post-count {
+        font-size: 1.5rem;
+    }
+    
+    .taxonomy-arrow {
+        font-size: 1.5rem;
+    }
+}

@@ -1,9 +1,9 @@
 // Cost Savings Counter
 (function() {
-    const startDate = new Date('2026-04-01T00:00:00-05:00');
-    const baselineMonthlyCost = 112;
-    const optimizedMonthlyCost = 40;
-    const dailySavings = (baselineMonthlyCost - optimizedMonthlyCost) / 30; // $2.40/day
+    const startDate = new Date('2026-03-27T00:00:00-05:00');
+    const baselineMonthlyCost = 3000;
+    const optimizedMonthlyCost = 300;
+    const dailySavings = 90; // $90/day actual savings
     
     function updateSavings() {
         const now = new Date();
@@ -15,6 +15,12 @@
         if (savingsElement) {
             // Animate count-up
             animateValue(savingsElement, 0, totalSaved, 2000);
+        }
+        
+        // Update days counter
+        const daysElement = document.getElementById('daysSince');
+        if (daysElement) {
+            daysElement.textContent = `${daysSince} ${daysSince === 1 ? 'day' : 'days'}`;
         }
         
         // Update projected annual savings if element exists

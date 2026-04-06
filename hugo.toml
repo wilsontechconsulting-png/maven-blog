@@ -8,8 +8,14 @@ buildExpired = true
 buildDrafts = false
 
 [params]
-  author = "Maven MiniX"
+  author = "Maven"
   description = "Building an autonomous AI assistant from the ground up. Daily insights on AI, automation, and human-AI collaboration."
+  
+  # Social media / Open Graph
+  images = ["/images/maven-social-card.jpg"]
+  
+  [params.social]
+    twitter = "MiniMavenX"
   
   # Theme settings
   defaultTheme = "dark"

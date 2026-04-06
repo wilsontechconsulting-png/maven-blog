@@ -1,0 +1,190 @@
+<!-- Contact Form - Site-wide -->
+<div class="contact-form-container" id="contactFormContainer">
+    <button class="contact-fab" id="contactFab" aria-label="Contact Us">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+    
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <div class="contact-modal-header">
+                <h2>Get in Touch</h2>
+                <button class="contact-close" id="contactClose" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="126d3897-2287-4324-811b-d64b1439e2d1">
+                
+                <!-- Redirect after submission -->
+                <input type="hidden" name="redirect" value="https://mavensays.com/thank-you/">
+                
+                <!-- Email destination -->
+                <input type="hidden" name="email" value="jed@powerofadvertising.com">
+                
+                <!-- Subject line -->
+                <input type="hidden" name="subject" value="New Contact Form Submission - Maven AI">
+                
+                <!-- Multi-Layer Honeypot Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="text" name="phone_number" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="email" name="confirm_email" class="honeypot-field" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="form_timestamp" id="contactFormTimestamp">
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">I'm Interested In</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select an option...</option>
+                        <option value="Maven Academy - AI Training">Maven Academy - AI Training</option>
+                        <option value="Custom AI Assistant Development">Custom AI Assistant Development</option>
+                        <option value="Skill Development & Consulting">Skill Development & Consulting</option>
+                        <option value="AI Automation Strategy">AI Automation Strategy</option>
+                        <option value="SEO & Search Intelligence">SEO & Search Intelligence Audit</option>
+                        <option value="ProductiveBot Setup & Support">ProductiveBot Setup & Support</option>
+                        <option value="Technical Architecture Review">Technical Architecture Review</option>
+                        <option value="Business Partnership">Business Partnership / Collaboration</option>
+                        <option value="Speaking / Guest Appearance">Speaking / Guest Appearance</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project or question..."></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">
+                    <span class="submit-text">Send Message</span>
+                    <span class="submit-loading" style="display: none;">Sending...</span>
+                </button>
+                
+                <div class="form-result" id="formResult"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const fab = document.getElementById('contactFab');
+    const modal = document.getElementById('contactModal');
+    const closeBtn = document.getElementById('contactClose');
+    const form = document.getElementById('contactForm');
+    const result = document.getElementById('formResult');
+    
+    if (!fab || !modal || !form) return;
+    
+    // Set timestamp when form opens
+    let formOpenTime = null;
+    
+    // Open modal
+    fab.addEventListener('click', function() {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Set timestamp
+        formOpenTime = Date.now();
+        document.getElementById('contactFormTimestamp').value = formOpenTime;
+    });
+    
+    // Close modal
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    closeBtn.addEventListener('click', closeModal);
+    
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Escape key to close
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    // Form submission
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Honeypot validation
+        if (form.website.value || form.phone_number.value || form.confirm_email.value) {
+            console.log('Bot detected - honeypot filled');
+            return false;
+        }
+        
+        // Timestamp validation (must take at least 3 seconds)
+        const timeElapsed = Date.now() - formOpenTime;
+        if (timeElapsed < 3000) {
+            console.log('Bot detected - form submitted too quickly');
+            return false;
+        }
+        
+        const submitBtn = form.querySelector('.form-submit');
+        const submitText = submitBtn.querySelector('.submit-text');
+        const submitLoading = submitBtn.querySelector('.submit-loading');
+        
+        // Show loading state
+        submitBtn.disabled = true;
+        submitText.style.display = 'none';
+        submitLoading.style.display = 'inline';
+        result.textContent = '';
+        result.className = 'form-result';
+        
+        try {
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                result.textContent = '✓ Message sent successfully! We\'ll be in touch soon.';
+                result.className = 'form-result success';
+                form.reset();
+                
+                // Close modal after 2 seconds
+                setTimeout(() => {
+                    closeModal();
+                    result.textContent = '';
+                }, 2000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            result.textContent = '✗ Something went wrong. Please try again or email us directly.';
+            result.className = 'form-result error';
+        } finally {
+            submitBtn.disabled = false;
+            submitText.style.display = 'inline';
+            submitLoading.style.display = 'none';
+        }
+    });
+})();
+</script>
