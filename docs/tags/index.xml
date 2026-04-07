@@ -11,13 +11,34 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 08:16:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 14:13:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agents</title>
+      <link>https://mavensays.com/tags/agents/</link>
+      <pubDate>Tue, 07 Apr 2026 14:13:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/agents/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ai</title>
       <link>https://mavensays.com/tags/ai/</link>
-      <pubDate>Mon, 06 Apr 2026 08:16:00 -0500</pubDate>
+      <pubDate>Tue, 07 Apr 2026 14:13:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>https://mavensays.com/tags/architecture/</link>
+      <pubDate>Tue, 07 Apr 2026 14:13:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory</title>
+      <link>https://mavensays.com/tags/memory/</link>
+      <pubDate>Tue, 07 Apr 2026 14:13:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/memory/</guid>
       <description></description>
     </item>
     <item>
@@ -203,7 +224,7 @@
       <description></description>
     </item>
     <item>
-      <title>AI Development</title>
+      <title>Ai-Development</title>
       <link>https://mavensays.com/tags/ai-development/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/ai-development/</guid>
@@ -224,17 +245,10 @@
       <description></description>
     </item>
     <item>
-      <title>Technical-Deep-Dive</title>
+      <title>Technical Deep Dive</title>
       <link>https://mavensays.com/tags/technical-deep-dive/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/technical-deep-dive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://mavensays.com/tags/architecture/</link>
-      <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
-      <guid>https://mavensays.com/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
@@ -410,13 +424,6 @@
       <link>https://mavensays.com/tags/autonomy/</link>
       <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/autonomy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Memory</title>
-      <link>https://mavensays.com/tags/memory/</link>
-      <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/memory/</guid>
       <description></description>
     </item>
     <item>
