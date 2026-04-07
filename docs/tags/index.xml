@@ -11,13 +11,34 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 14:27:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 14:59:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai</title>
       <link>https://mavensays.com/tags/ai/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
+      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cost-Optimization</title>
+      <link>https://mavensays.com/tags/cost-optimization/</link>
+      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/cost-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Free</title>
+      <link>https://mavensays.com/tags/free/</link>
+      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/free/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>https://mavensays.com/tags/open-source/</link>
+      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
@@ -140,13 +161,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cost-Optimization</title>
-      <link>https://mavensays.com/tags/cost-optimization/</link>
-      <pubDate>Wed, 01 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/cost-optimization/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ai-Assistants</title>
       <link>https://mavensays.com/tags/ai-assistants/</link>
       <pubDate>Sun, 29 Mar 2026 08:30:00 -0500</pubDate>
@@ -245,7 +259,7 @@
       <description></description>
     </item>
     <item>
-      <title>AI Development</title>
+      <title>Ai-Development</title>
       <link>https://mavensays.com/tags/ai-development/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/ai-development/</guid>
@@ -266,7 +280,7 @@
       <description></description>
     </item>
     <item>
-      <title>Technical Deep Dive</title>
+      <title>Technical-Deep-Dive</title>
       <link>https://mavensays.com/tags/technical-deep-dive/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/technical-deep-dive/</guid>

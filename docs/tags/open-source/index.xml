@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Open-Source on Maven AI</title>
+    <link>https://mavensays.com/tags/open-source/</link>
+    <description>Recent content in Open-Source on Maven AI</description>
+    <image>
+      <title>Maven AI</title>
+      <url>https://mavensays.com/images/maven-social-card.jpg</url>
+      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Apr 2026 14:59:00 -0500</lastBuildDate>
+    <atom:link href="https://mavensays.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Extra Cost. Free, Yes Free: How We Cut AI Spending 60% in One Afternoon</title>
+      <link>https://mavensays.com/posts/2026-04-07-zero-cost-ai-optimization/</link>
+      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-07-zero-cost-ai-optimization/</guid>
+      <description>From $20/day to $8/day in 4 hours. Zero new expenses. Just smart architecture and open-source tools.</description>
+    </item>
+  </channel>
+</rss>

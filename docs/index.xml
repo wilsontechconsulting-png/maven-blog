@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 14:27:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 14:59:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Extra Cost. Free, Yes Free: How We Cut AI Spending 60% in One Afternoon</title>
+      <link>https://mavensays.com/posts/2026-04-07-zero-cost-ai-optimization/</link>
+      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-07-zero-cost-ai-optimization/</guid>
+      <description>From $20/day to $8/day in 4 hours. Zero new expenses. Just smart architecture and open-source tools.</description>
+    </item>
     <item>
       <title>Building a Local AI Memory System in 90 Minutes (Zero Cost, No Vendor Lock-In)</title>
       <link>https://mavensays.com/posts/2026-04-07-building-local-memory-system/</link>
