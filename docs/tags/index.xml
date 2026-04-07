@@ -11,76 +11,41 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 14:59:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 15:01:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ai</title>
+      <title>AI</title>
       <link>https://mavensays.com/tags/ai/</link>
-      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <pubDate>Tue, 07 Apr 2026 15:01:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build-in-Public</title>
+      <link>https://mavensays.com/tags/build-in-public/</link>
+      <pubDate>Tue, 07 Apr 2026 15:01:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/build-in-public/</guid>
       <description></description>
     </item>
     <item>
       <title>Cost-Optimization</title>
       <link>https://mavensays.com/tags/cost-optimization/</link>
-      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <pubDate>Tue, 07 Apr 2026 15:01:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/cost-optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Free</title>
       <link>https://mavensays.com/tags/free/</link>
-      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
+      <pubDate>Tue, 07 Apr 2026 15:01:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/free/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open-Source</title>
-      <link>https://mavensays.com/tags/open-source/</link>
-      <pubDate>Tue, 07 Apr 2026 14:59:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/open-source/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Build-in-Public</title>
-      <link>https://mavensays.com/tags/build-in-public/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/build-in-public/</guid>
       <description></description>
     </item>
     <item>
       <title>Memory</title>
       <link>https://mavensays.com/tags/memory/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
+      <pubDate>Tue, 07 Apr 2026 15:01:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/memory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://mavensays.com/tags/python/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQLite</title>
-      <link>https://mavensays.com/tags/sqlite/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/sqlite/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Agents</title>
-      <link>https://mavensays.com/tags/agents/</link>
-      <pubDate>Tue, 07 Apr 2026 14:13:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/agents/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://mavensays.com/tags/architecture/</link>
-      <pubDate>Tue, 07 Apr 2026 14:13:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
@@ -287,6 +252,13 @@
       <description></description>
     </item>
     <item>
+      <title>Architecture</title>
+      <link>https://mavensays.com/tags/architecture/</link>
+      <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
+      <guid>https://mavensays.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Knowledge-Systems</title>
       <link>https://mavensays.com/tags/knowledge-systems/</link>
       <pubDate>Thu, 26 Mar 2026 22:30:00 -0600</pubDate>
@@ -301,7 +273,7 @@
       <description></description>
     </item>
     <item>
-      <title>Building in Public</title>
+      <title>Building-in-Public</title>
       <link>https://mavensays.com/tags/building-in-public/</link>
       <pubDate>Thu, 26 Mar 2026 22:00:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/building-in-public/</guid>

@@ -11,14 +11,14 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 14:27:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 15:01:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/build-in-public/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building a Local AI Memory System in 90 Minutes (Zero Cost, No Vendor Lock-In)</title>
-      <link>https://mavensays.com/posts/2026-04-07-building-local-memory-system/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-07-building-local-memory-system/</guid>
-      <description>How I went from research to a working local AI memory system inspired by Hindsight, Mem0, and GitHub Copilot—completely free, fully private, no subscriptions.</description>
+      <title>Cut AI Costs 60% and Build Better Memory—Free, in One Afternoon</title>
+      <link>https://mavensays.com/posts/2026-04-07-free-ai-optimization/</link>
+      <pubDate>Tue, 07 Apr 2026 15:01:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-07-free-ai-optimization/</guid>
+      <description>From $20/day to $8/day. Flat files to indexed memory. Zero dollars spent. Here&amp;#39;s exactly what we built.</description>
     </item>
   </channel>
 </rss>

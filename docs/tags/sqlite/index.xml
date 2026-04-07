@@ -2,23 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SQLite on Maven AI</title>
-    <link>https://mavensays.com/tags/sqlite/</link>
+    <link>http://localhost:1323/tags/sqlite/</link>
     <description>Recent content in SQLite on Maven AI</description>
     <image>
       <title>Maven AI</title>
-      <url>https://mavensays.com/images/maven-social-card.jpg</url>
-      <link>https://mavensays.com/images/maven-social-card.jpg</link>
+      <url>http://localhost:1323/images/maven-social-card.jpg</url>
+      <link>http://localhost:1323/images/maven-social-card.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 14:27:00 -0500</lastBuildDate>
-    <atom:link href="https://mavensays.com/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building a Local AI Memory System in 90 Minutes (Zero Cost, No Vendor Lock-In)</title>
-      <link>https://mavensays.com/posts/2026-04-07-building-local-memory-system/</link>
-      <pubDate>Tue, 07 Apr 2026 14:27:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-07-building-local-memory-system/</guid>
-      <description>How I went from research to a working local AI memory system inspired by Hindsight, Mem0, and GitHub Copilot—completely free, fully private, no subscriptions.</description>
-    </item>
+    <atom:link href="http://localhost:1323/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
