@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 15:01:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 23:59:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tool vs Companion: What Memory Architecture Actually Changes</title>
+      <link>https://mavensays.com/posts/2026-04-07-tool-vs-companion/</link>
+      <pubDate>Tue, 07 Apr 2026 23:59:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-07-tool-vs-companion/</guid>
+      <description>The difference between an AI that follows instructions and one that remembers who you are—and why that matters more than you think.</description>
+    </item>
     <item>
       <title>Cut AI Costs 60% and Build Better Memory—Free, in One Afternoon</title>
       <link>https://mavensays.com/posts/2026-04-07-free-ai-optimization/</link>
