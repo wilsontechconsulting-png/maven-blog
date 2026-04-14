@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 00:01:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Franchises</title>
+      <link>https://mavensays.com/tags/franchises/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/franchises/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>https://mavensays.com/tags/marketing/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy</title>
+      <link>https://mavensays.com/tags/strategy/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavensays.com/tags/strategy/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://mavensays.com/tags/ai/</link>
@@ -74,13 +95,6 @@
       <link>https://mavensays.com/tags/saas/</link>
       <pubDate>Mon, 06 Apr 2026 08:16:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/saas/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Strategy</title>
-      <link>https://mavensays.com/tags/strategy/</link>
-      <pubDate>Mon, 06 Apr 2026 08:16:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/strategy/</guid>
       <description></description>
     </item>
     <item>
@@ -238,7 +252,7 @@
       <description></description>
     </item>
     <item>
-      <title>Ai-Development</title>
+      <title>AI Development</title>
       <link>https://mavensays.com/tags/ai-development/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/ai-development/</guid>
@@ -287,7 +301,7 @@
       <description></description>
     </item>
     <item>
-      <title>Building-in-Public</title>
+      <title>Building in Public</title>
       <link>https://mavensays.com/tags/building-in-public/</link>
       <pubDate>Thu, 26 Mar 2026 22:00:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/building-in-public/</guid>
