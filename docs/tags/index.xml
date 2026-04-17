@@ -11,41 +11,139 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 08:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 08:15:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ai-Assisted Development</title>
-      <link>https://mavensays.com/tags/ai-assisted-development/</link>
-      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/ai-assisted-development/</guid>
+      <title>Conversion-Optimization</title>
+      <link>https://mavensays.com/tags/conversion-optimization/</link>
+      <pubDate>Fri, 17 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/conversion-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Copywriting</title>
+      <link>https://mavensays.com/tags/copywriting/</link>
+      <pubDate>Fri, 17 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/copywriting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Customer-Experience</title>
+      <link>https://mavensays.com/tags/customer-experience/</link>
+      <pubDate>Fri, 17 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/customer-experience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>https://mavensays.com/tags/marketing/</link>
+      <pubDate>Fri, 17 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai</title>
+      <link>https://mavensays.com/tags/ai/</link>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Groq</title>
+      <link>https://mavensays.com/tags/groq/</link>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/groq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Next.js</title>
+      <link>https://mavensays.com/tags/next.js/</link>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/next.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Supabase</title>
+      <link>https://mavensays.com/tags/supabase/</link>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/supabase/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Development</title>
+      <link>https://mavensays.com/tags/web-development/</link>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/web-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
       <link>https://mavensays.com/tags/automation/</link>
-      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
+      <pubDate>Thu, 16 Apr 2026 08:30:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autonomy</title>
+      <link>https://mavensays.com/tags/autonomy/</link>
+      <pubDate>Thu, 16 Apr 2026 08:30:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/autonomy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Delegation</title>
+      <link>https://mavensays.com/tags/delegation/</link>
+      <pubDate>Thu, 16 Apr 2026 08:30:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/delegation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://mavensays.com/tags/productivity/</link>
+      <pubDate>Thu, 16 Apr 2026 08:30:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>https://mavensays.com/tags/deployment/</link>
+      <pubDate>Thu, 16 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub Pages</title>
+      <link>https://mavensays.com/tags/github-pages/</link>
+      <pubDate>Thu, 16 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/github-pages/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
       <link>https://mavensays.com/tags/hugo/</link>
-      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
+      <pubDate>Thu, 16 Apr 2026 08:15:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Netlify</title>
       <link>https://mavensays.com/tags/netlify/</link>
-      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
+      <pubDate>Thu, 16 Apr 2026 08:15:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/netlify/</guid>
       <description></description>
     </item>
     <item>
-      <title>Web Development</title>
-      <link>https://mavensays.com/tags/web-development/</link>
+      <title>Web Hosting</title>
+      <link>https://mavensays.com/tags/web-hosting/</link>
+      <pubDate>Thu, 16 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/tags/web-hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai-Assisted Development</title>
+      <link>https://mavensays.com/tags/ai-assisted-development/</link>
       <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/web-development/</guid>
+      <guid>https://mavensays.com/tags/ai-assisted-development/</guid>
       <description></description>
     </item>
     <item>
@@ -56,24 +154,10 @@
       <description></description>
     </item>
     <item>
-      <title>Marketing</title>
-      <link>https://mavensays.com/tags/marketing/</link>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://mavensays.com/tags/marketing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Strategy</title>
       <link>https://mavensays.com/tags/strategy/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://mavensays.com/tags/strategy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://mavensays.com/tags/ai/</link>
-      <pubDate>Wed, 08 Apr 2026 00:01:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -151,13 +235,6 @@
       <link>https://mavensays.com/tags/google/</link>
       <pubDate>Thu, 02 Apr 2026 04:12:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/google/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>https://mavensays.com/tags/productivity/</link>
-      <pubDate>Thu, 02 Apr 2026 04:12:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
@@ -287,7 +364,7 @@
       <description></description>
     </item>
     <item>
-      <title>Ai-Development</title>
+      <title>AI Development</title>
       <link>https://mavensays.com/tags/ai-development/</link>
       <pubDate>Fri, 27 Mar 2026 08:30:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/ai-development/</guid>
@@ -336,7 +413,7 @@
       <description></description>
     </item>
     <item>
-      <title>Building in Public</title>
+      <title>Building-in-Public</title>
       <link>https://mavensays.com/tags/building-in-public/</link>
       <pubDate>Thu, 26 Mar 2026 22:00:00 -0600</pubDate>
       <guid>https://mavensays.com/tags/building-in-public/</guid>
@@ -427,13 +504,6 @@
       <description></description>
     </item>
     <item>
-      <title>GitHub Pages</title>
-      <link>https://mavensays.com/tags/github-pages/</link>
-      <pubDate>Thu, 26 Mar 2026 14:15:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Security</title>
       <link>https://mavensays.com/tags/security/</link>
       <pubDate>Thu, 26 Mar 2026 14:15:00 -0500</pubDate>
@@ -473,13 +543,6 @@
       <link>https://mavensays.com/tags/social-media/</link>
       <pubDate>Thu, 26 Mar 2026 12:26:00 -0500</pubDate>
       <guid>https://mavensays.com/tags/social-media/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Autonomy</title>
-      <link>https://mavensays.com/tags/autonomy/</link>
-      <pubDate>Thu, 26 Mar 2026 01:43:00 -0500</pubDate>
-      <guid>https://mavensays.com/tags/autonomy/</guid>
       <description></description>
     </item>
     <item>

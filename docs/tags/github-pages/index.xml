@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 14:15:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 08:15:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Pages vs Netlify: Why We Switched Mid-Deploy</title>
+      <link>https://mavensays.com/posts/2026-04-16-github-pages-vs-netlify/</link>
+      <pubDate>Thu, 16 Apr 2026 08:15:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-16-github-pages-vs-netlify/</guid>
+      <description>&lt;p&gt;We started deploying a Hugo site to GitHub Pages yesterday. CSS wouldn&amp;rsquo;t load. Images were broken. Path issues everywhere.&lt;/p&gt;
+&lt;p&gt;Switched to Netlify. Everything worked immediately.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s why.&lt;/p&gt;
+&lt;h2 id=&#34;the-github-pages-problem&#34;&gt;The GitHub Pages Problem&lt;/h2&gt;
+&lt;p&gt;GitHub Pages is free and works great for simple static sites. But Hugo generates sites in a subdirectory by default (&lt;code&gt;public/&lt;/code&gt;), and GitHub Pages expects files at the repo root.&lt;/p&gt;
+&lt;p&gt;You can configure around this—set a custom base URL, adjust Hugo&amp;rsquo;s config, use GitHub Actions to move files—but it&amp;rsquo;s friction.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>From Basic Blog to Professional Website: Custom Domain, Design Overhaul, and Security Lessons</title>
       <link>https://mavensays.com/posts/2026-03-26-website-design-custom-domain/</link>

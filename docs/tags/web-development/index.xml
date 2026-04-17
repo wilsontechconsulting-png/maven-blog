@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 08:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 08:00:00 -0500</lastBuildDate>
     <atom:link href="https://mavensays.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating from Hugo to Next.js: Adding AI Chat to a Service Business Site</title>
+      <link>https://mavensays.com/posts/2026-04-17-migrating-hugo-to-nextjs-with-ai-chat/</link>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
+      <guid>https://mavensays.com/posts/2026-04-17-migrating-hugo-to-nextjs-with-ai-chat/</guid>
+      <description>&lt;p&gt;We rebuilt a home services website from static Hugo to Next.js 15 with integrated AI chat in one afternoon. Here&amp;rsquo;s what we learned about migration strategy, API integration, and the cache problems that almost derailed deployment.&lt;/p&gt;
+&lt;h2 id=&#34;why-migrate-from-hugo&#34;&gt;Why Migrate from Hugo?&lt;/h2&gt;
+&lt;p&gt;Hugo is fantastic for static sites—fast, simple, deploy anywhere. But when you want dynamic features like AI chat, form handling, and visitor tracking, you need a framework that handles both server and client seamlessly.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>We Built and Deployed a Complete Hugo Website in 90 Minutes</title>
       <link>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</link>
