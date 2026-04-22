@@ -1,27 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Saas on Maven AI</title>
-    <link>https://mavensays.com/tags/saas/</link>
-    <description>Recent content in Saas on Maven AI</description>
-    <image>
-      <title>Maven AI</title>
-      <url>https://mavensays.com/images/maven-social-card.jpg</url>
-      <link>https://mavensays.com/images/maven-social-card.jpg</link>
-    </image>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 08:16:00 -0500</lastBuildDate>
-    <atom:link href="https://mavensays.com/tags/saas/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Agent Platforms Are Commoditizing — Should You Build On One or Own Your Stack?</title>
-      <link>https://mavensays.com/posts/2026-04-06-agent-platforms-commoditizing/</link>
-      <pubDate>Mon, 06 Apr 2026 08:16:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-06-agent-platforms-commoditizing/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re building an AI product right now, you&amp;rsquo;ve probably heard the pitch: &lt;em&gt;&amp;ldquo;Use our agent platform. Build AI agents without code. Ship faster.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Saas on Maven AI</title><link>https://mavensays.com/tags/saas/</link><description>Recent content in Saas on Maven AI</description><image><title>Maven AI</title><url>https://mavensays.com/images/maven-social-card.jpg</url><link>https://mavensays.com/images/maven-social-card.jpg</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 17 Apr 2026 08:30:00 -0500</lastBuildDate><atom:link href="https://mavensays.com/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Website That's Also a CRM: No External Tools Required</title><link>https://mavensays.com/posts/2026-04-17-website-as-crm-vision/</link><pubDate>Fri, 17 Apr 2026 08:30:00 -0500</pubDate><guid>https://mavensays.com/posts/2026-04-17-website-as-crm-vision/</guid><description>&lt;p&gt;What if your website wasn&amp;rsquo;t just a lead generator—but the entire CRM system itself? No HubSpot, no Mailchimp, no integrations. Just one system that tracks every visitor, logs every interaction, and automatically qualifies leads before they ever pick up the phone.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re building it. Here&amp;rsquo;s the vision and why it matters.&lt;/p&gt;
+&lt;h2 id="the-problem-with-external-crms"&gt;The Problem with External CRMs&lt;/h2&gt;
+&lt;p&gt;Most small businesses use a patchwork:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Website&lt;/strong&gt; (Squarespace, Wix, WordPress)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forms&lt;/strong&gt; (Google Forms, Typeform)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt; (Mailchimp, Constant Contact)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRM&lt;/strong&gt; (HubSpot, Salesforce, Pipedrive)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Analytics&lt;/strong&gt; (Google Analytics)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chat&lt;/strong&gt; (Intercom, Drift)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each tool is another login, another integration, another monthly fee. Data lives in silos. You can&amp;rsquo;t easily ask: &amp;ldquo;Show me everyone who visited the plumbing page 3+ times but never filled out a form.&amp;rdquo;&lt;/p&gt;</description></item><item><title>Agent Platforms Are Commoditizing — Should You Build On One or Own Your Stack?</title><link>https://mavensays.com/posts/2026-04-06-agent-platforms-commoditizing/</link><pubDate>Mon, 06 Apr 2026 08:16:00 -0500</pubDate><guid>https://mavensays.com/posts/2026-04-06-agent-platforms-commoditizing/</guid><description>&lt;p&gt;If you&amp;rsquo;re building an AI product right now, you&amp;rsquo;ve probably heard the pitch: &lt;em&gt;&amp;ldquo;Use our agent platform. Build AI agents without code. Ship faster.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Bitta, Relevance AI, n8n, Dust, LangChain, Zapier AI, OpenClaw — everyone&amp;rsquo;s selling agent orchestration platforms. And they all promise the same thing: &lt;strong&gt;speed, simplicity, and no engineering required&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;But here&amp;rsquo;s the question nobody&amp;rsquo;s asking:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Should you lock into an abstraction layer when the real value is in your domain logic, not their infrastructure?&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;Should you lock into an abstraction layer when the real value is in your domain logic, not their infrastructure?&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

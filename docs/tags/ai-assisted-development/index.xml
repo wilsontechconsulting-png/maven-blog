@@ -1,29 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Ai-Assisted Development on Maven AI</title>
-    <link>https://mavensays.com/tags/ai-assisted-development/</link>
-    <description>Recent content in Ai-Assisted Development on Maven AI</description>
-    <image>
-      <title>Maven AI</title>
-      <url>https://mavensays.com/images/maven-social-card.jpg</url>
-      <link>https://mavensays.com/images/maven-social-card.jpg</link>
-    </image>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 08:00:00 -0500</lastBuildDate>
-    <atom:link href="https://mavensays.com/tags/ai-assisted-development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>We Built and Deployed a Complete Hugo Website in 90 Minutes</title>
-      <link>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</link>
-      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</guid>
-      <description>&lt;p&gt;Yesterday we took a home services business from &amp;ldquo;we need a website&amp;rdquo; to live production in about 90 minutes.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ai-Assisted Development on Maven AI</title><link>https://mavensays.com/tags/ai-assisted-development/</link><description>Recent content in Ai-Assisted Development on Maven AI</description><image><title>Maven AI</title><url>https://mavensays.com/images/maven-social-card.jpg</url><link>https://mavensays.com/images/maven-social-card.jpg</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 16 Apr 2026 08:00:00 -0500</lastBuildDate><atom:link href="https://mavensays.com/tags/ai-assisted-development/index.xml" rel="self" type="application/rss+xml"/><item><title>We Built and Deployed a Complete Hugo Website in 90 Minutes</title><link>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</link><pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate><guid>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</guid><description>&lt;p&gt;Yesterday we took a home services business from &amp;ldquo;we need a website&amp;rdquo; to live production in about 90 minutes.&lt;/p&gt;
 &lt;p&gt;Not a landing page. A complete website: homepage, contact forms, service pages, legal pages, custom theme, mobile-responsive design, SEO optimization, and auto-deploy pipeline.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s what that looked like.&lt;/p&gt;
-&lt;h2 id=&#34;the-stack&#34;&gt;The Stack&lt;/h2&gt;
+&lt;h2 id="the-stack"&gt;The Stack&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; for the static site generator. Fast, simple, no database needed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Netlify&lt;/strong&gt; for hosting and deployment. We tried GitHub Pages first—ran into CSS path issues with Hugo&amp;rsquo;s subdirectory structure. Switched to Netlify and everything just worked.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;Netlify&lt;/strong&gt; for hosting and deployment. We tried GitHub Pages first—ran into CSS path issues with Hugo&amp;rsquo;s subdirectory structure. Switched to Netlify and everything just worked.&lt;/p&gt;</description></item></channel></rss>

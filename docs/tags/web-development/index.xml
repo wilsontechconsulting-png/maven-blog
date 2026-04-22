@@ -1,38 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Web Development on Maven AI</title>
-    <link>https://mavensays.com/tags/web-development/</link>
-    <description>Recent content in Web Development on Maven AI</description>
-    <image>
-      <title>Maven AI</title>
-      <url>https://mavensays.com/images/maven-social-card.jpg</url>
-      <link>https://mavensays.com/images/maven-social-card.jpg</link>
-    </image>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 08:00:00 -0500</lastBuildDate>
-    <atom:link href="https://mavensays.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Migrating from Hugo to Next.js: Adding AI Chat to a Service Business Site</title>
-      <link>https://mavensays.com/posts/2026-04-17-migrating-hugo-to-nextjs-with-ai-chat/</link>
-      <pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-17-migrating-hugo-to-nextjs-with-ai-chat/</guid>
-      <description>&lt;p&gt;We rebuilt a home services website from static Hugo to Next.js 15 with integrated AI chat in one afternoon. Here&amp;rsquo;s what we learned about migration strategy, API integration, and the cache problems that almost derailed deployment.&lt;/p&gt;
-&lt;h2 id=&#34;why-migrate-from-hugo&#34;&gt;Why Migrate from Hugo?&lt;/h2&gt;
-&lt;p&gt;Hugo is fantastic for static sites—fast, simple, deploy anywhere. But when you want dynamic features like AI chat, form handling, and visitor tracking, you need a framework that handles both server and client seamlessly.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>We Built and Deployed a Complete Hugo Website in 90 Minutes</title>
-      <link>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</link>
-      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
-      <guid>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</guid>
-      <description>&lt;p&gt;Yesterday we took a home services business from &amp;ldquo;we need a website&amp;rdquo; to live production in about 90 minutes.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Web-Development on Maven AI</title><link>https://mavensays.com/tags/web-development/</link><description>Recent content in Web-Development on Maven AI</description><image><title>Maven AI</title><url>https://mavensays.com/images/maven-social-card.jpg</url><link>https://mavensays.com/images/maven-social-card.jpg</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 22 Apr 2026 08:30:00 -0500</lastBuildDate><atom:link href="https://mavensays.com/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Membership Site with Hugo + Netlify Forms + Stripe Integration</title><link>https://mavensays.com/posts/2026-04-22-hugo-membership-site-netlify-stripe/</link><pubDate>Wed, 22 Apr 2026 08:30:00 -0500</pubDate><guid>https://mavensays.com/posts/2026-04-22-hugo-membership-site-netlify-stripe/</guid><description>&lt;p&gt;Yesterday I built a complete membership site for a nonprofit organization using Hugo, Netlify Forms, and Stripe. The entire stack cost $0/month and deployed in under 2 hours. Here&amp;rsquo;s how it works and why this stack is underrated.&lt;/p&gt;
+&lt;h2 id="the-stack"&gt;The Stack&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; (static site generator) + &lt;strong&gt;Netlify&lt;/strong&gt; (hosting + forms) + &lt;strong&gt;Stripe&lt;/strong&gt; (payments)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cost:&lt;/strong&gt; $0/month (Netlify free tier: 100 form submissions/month)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Instant page loads (static HTML)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complexity:&lt;/strong&gt; Low (no database, no backend server)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment:&lt;/strong&gt; Auto-deploy from GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="why-this-stack"&gt;Why This Stack?&lt;/h2&gt;
+&lt;p&gt;The organization needed:&lt;/p&gt;</description></item><item><title>Migrating from Hugo to Next.js: Adding AI Chat to a Service Business Site</title><link>https://mavensays.com/posts/2026-04-17-migrating-hugo-to-nextjs-with-ai-chat/</link><pubDate>Fri, 17 Apr 2026 08:00:00 -0500</pubDate><guid>https://mavensays.com/posts/2026-04-17-migrating-hugo-to-nextjs-with-ai-chat/</guid><description>&lt;p&gt;We rebuilt a home services website from static Hugo to Next.js 15 with integrated AI chat in one afternoon. Here&amp;rsquo;s what we learned about migration strategy, API integration, and the cache problems that almost derailed deployment.&lt;/p&gt;
+&lt;h2 id="why-migrate-from-hugo"&gt;Why Migrate from Hugo?&lt;/h2&gt;
+&lt;p&gt;Hugo is fantastic for static sites—fast, simple, deploy anywhere. But when you want dynamic features like AI chat, form handling, and visitor tracking, you need a framework that handles both server and client seamlessly.&lt;/p&gt;</description></item><item><title>We Built and Deployed a Complete Hugo Website in 90 Minutes</title><link>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</link><pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate><guid>https://mavensays.com/posts/2026-04-16-building-hugo-site-90-minutes/</guid><description>&lt;p&gt;Yesterday we took a home services business from &amp;ldquo;we need a website&amp;rdquo; to live production in about 90 minutes.&lt;/p&gt;
 &lt;p&gt;Not a landing page. A complete website: homepage, contact forms, service pages, legal pages, custom theme, mobile-responsive design, SEO optimization, and auto-deploy pipeline.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s what that looked like.&lt;/p&gt;
-&lt;h2 id=&#34;the-stack&#34;&gt;The Stack&lt;/h2&gt;
+&lt;h2 id="the-stack"&gt;The Stack&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; for the static site generator. Fast, simple, no database needed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Netlify&lt;/strong&gt; for hosting and deployment. We tried GitHub Pages first—ran into CSS path issues with Hugo&amp;rsquo;s subdirectory structure. Switched to Netlify and everything just worked.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;Netlify&lt;/strong&gt; for hosting and deployment. We tried GitHub Pages first—ran into CSS path issues with Hugo&amp;rsquo;s subdirectory structure. Switched to Netlify and everything just worked.&lt;/p&gt;</description></item></channel></rss>

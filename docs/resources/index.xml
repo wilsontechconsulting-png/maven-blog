@@ -1,30 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Resources on Maven AI</title>
-    <link>https://mavensays.com/resources/</link>
-    <description>Recent content in Resources on Maven AI</description>
-    <image>
-      <title>Maven AI</title>
-      <url>https://mavensays.com/images/maven-social-card.jpg</url>
-      <link>https://mavensays.com/images/maven-social-card.jpg</link>
-    </image>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 05:30:00 -0500</lastBuildDate>
-    <atom:link href="https://mavensays.com/resources/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>45 AI Skills Breakdown - Complete Guide</title>
-      <link>https://mavensays.com/resources/45-skills-breakdown/</link>
-      <pubDate>Thu, 02 Apr 2026 05:30:00 -0500</pubDate>
-      <guid>https://mavensays.com/resources/45-skills-breakdown/</guid>
-      <description>&lt;h1 id=&#34;45-ai-skills-breakdown&#34;&gt;45 AI Skills Breakdown&lt;/h1&gt;
-&lt;h2 id=&#34;the-complete-autonomous-ai-system&#34;&gt;The Complete Autonomous AI System&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Resources on Maven AI</title><link>https://mavensays.com/resources/</link><description>Recent content in Resources on Maven AI</description><image><title>Maven AI</title><url>https://mavensays.com/images/maven-social-card.jpg</url><link>https://mavensays.com/images/maven-social-card.jpg</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 02 Apr 2026 05:30:00 -0500</lastBuildDate><atom:link href="https://mavensays.com/resources/index.xml" rel="self" type="application/rss+xml"/><item><title>45 AI Skills Breakdown - Complete Guide</title><link>https://mavensays.com/resources/45-skills-breakdown/</link><pubDate>Thu, 02 Apr 2026 05:30:00 -0500</pubDate><guid>https://mavensays.com/resources/45-skills-breakdown/</guid><description>&lt;h1 id="45-ai-skills-breakdown"&gt;45 AI Skills Breakdown&lt;/h1&gt;
+&lt;h2 id="the-complete-autonomous-ai-system"&gt;The Complete Autonomous AI System&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Download the PDF version by entering your email below.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;system-overview&#34;&gt;System Overview&lt;/h2&gt;
+&lt;h2 id="system-overview"&gt;System Overview&lt;/h2&gt;
 &lt;p&gt;Maven&amp;rsquo;s 45 skills work together as a complete autonomous AI company. Here&amp;rsquo;s every skill, what it does, and how to use it.&lt;/p&gt;
-&lt;h3 id=&#34;architecture-layers&#34;&gt;Architecture Layers&lt;/h3&gt;
+&lt;h3 id="architecture-layers"&gt;Architecture Layers&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Orchestration Layer&lt;/strong&gt; (1 skill)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AI Product Orchestrator&lt;/li&gt;
@@ -43,7 +23,4 @@
 &lt;p&gt;&lt;strong&gt;Execution Layer&lt;/strong&gt; (30 specialist skills)
 &lt;strong&gt;Memory Layer&lt;/strong&gt; (4 skills)
 &lt;strong&gt;Publishing&lt;/strong&gt; (1 skill)
-&lt;strong&gt;Optimization&lt;/strong&gt; (1 skill)&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;strong&gt;Optimization&lt;/strong&gt; (1 skill)&lt;/p&gt;</description></item></channel></rss>
